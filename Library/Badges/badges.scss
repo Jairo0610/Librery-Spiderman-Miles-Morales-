@@ -48,7 +48,7 @@ $font-comic: "Comic Neue", cursive;
 {
     background-color: $bg-warning; 
    color: $font-color-secondary;
-   background-image: url(telarañas-negras.png);
+   background-image: url(resources-badges/telarañas-negras.png);
    padding: 3px 15px;
    box-shadow: 6px 5px 0px #000000f0;
    font-family: $font-comic;
@@ -62,7 +62,7 @@ $font-comic: "Comic Neue", cursive;
 {
     background-color: $bg-secundario; 
    color: $font-color-primary;
-   background-image: url(telarañas-blancas.png);
+   background-image: url(resources-badges/telarañas-blancas.png);
    padding: 3px 15px;
    box-shadow: 6px 5px 0px $bg-danger;
    font-family: $font-comic;
@@ -88,7 +88,7 @@ $font-comic: "Comic Neue", cursive;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-image: url(spider-red-icon.png);
+    background-image: url(resources-badges/spider-red-icon.png);
     background-size: cover;
     margin-right: 5px;
 }
@@ -108,7 +108,7 @@ $font-comic: "Comic Neue", cursive;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-image: url(spider-green-icon.png);
+    background-image: url(resources-badges/spider-green-icon.png);
     background-size: cover;
     margin-right: 5px;
   }
