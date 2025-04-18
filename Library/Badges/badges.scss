@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+//VARIABLES
+$bg-primario: #0A0E17;
+$bg-secundario: #172D44;
+$bg-terciario: #C0189B;
+$bg-danger: #BF0426;
+$bg-warning: #FEF400;
+$font-color-primary: #FEF9FF;
+$font-color-secondary: black;
+$font-family: "Open Sans", sans-serif;
+$font-comic: "Comic Neue", cursive;
+
+// Estilo 1 de badges
+
+
+.badge-comic
+{
+   background-color: rgb($bg-danger,0.2); 
+   color: $bg-danger;
+   padding: 3px 15px;
+    border-radius: 30px;
+   font-family: $font-comic;
+   font-weight: 500;
+  
+   margin: 0px 20px;
+   border: 1px solid $bg-danger;
+}
+
+
+
+.badge-comic-2
+{
+    background-color: black; 
+   color: $font-color-primary;
+   background-image: radial-gradient(#ffffff 0.5px, transparent 0.8px);
+   background-size: 5px 5px;
+   padding: 3px 15px;
+   box-shadow: 6px 5px 0px #ff0000 ;
+   font-family: $font-comic;
+   font-weight: 500;  
+   border: 3px solid;
+   margin: 0px 20px;
+   border-radius: 15px;
+
+}
+.badge-comic-yellow
+{
+    background-color: $bg-warning; 
+   color: $font-color-secondary;
+   background-image: url(telarañas-negras.png);
+   padding: 3px 15px;
+   box-shadow: 6px 5px 0px #000000f0;
+   font-family: $font-comic;
+   font-weight: 600;  
+   margin: 0px 20px;
+   border: 3px solid white;
+   border-radius: 15px;
+
+}
+.badge-comic-blue
+{
+    background-color: $bg-secundario; 
+   color: $font-color-primary;
+   background-image: url(telarañas-blancas.png);
+   padding: 3px 15px;
+   box-shadow: 6px 5px 0px $bg-danger;
+   font-family: $font-comic;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   font-weight: 600;  
+   border: 3px solid white;
+   margin: 0px 20px;
+}
+.badge-dot-red
+{
+    border: 1px solid $bg-secundario;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 3px 15px;
+    width: auto;
+    border-radius: 10px;
+  
+}
+#icon-badge-red{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(spider-red-icon.png);
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.badge-dot-green {
+    border: 1px solid #172D44;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 3px 15px;
+    width: auto;
+    border-radius: 10px;
+  }
+  
+#icon-badge-green {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(spider-green-icon.png);
+    background-size: cover;
+    margin-right: 5px;
+  }
+  
+  
+  
+  
