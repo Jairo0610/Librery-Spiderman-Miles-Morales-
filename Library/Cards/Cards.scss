@@ -1,0 +1,117 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+$primary-color : #0A0E17;
+$second-color : #BF0426;
+$tercer-color: #C02FA8;
+$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, $second-color 75%, $second-color 100%) padding-box, 
+linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
+$borde-redondo: 1.3rem;
+
+//fuentes Anton, Gloria Hallelujah
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&display=swap');
+
+// estilo de carta1
+.card1 {
+    margin: 1.2rem;
+    position: relative;
+    
+    border-radius: $borde-redondo;
+    max-width: 300px;
+    padding: .5rem;
+
+    background: linear-gradient(0deg, white 45%, #D4D4D4 100%);
+    box-shadow: 5px 5px 20px black;
+
+    // contenedor de la carta (fondo rojo degradado)
+    .card1__contenedor {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #ff8c00 0%, $second-color 75%, $second-color 100%);
+        border-radius: $borde-redondo;
+        gap: .7rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: .7rem;
+
+
+        // distribución, responsividad y estilo de fuente para el título
+        .card1__titulo {
+            display: flex;
+            width: 100%;
+            height: 20%;
+
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            text-align: center;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5em;
+            text-transform: uppercase;
+
+            color: white;
+            flex-grow: 1;
+        }
+
+        //  distribución, respondividad, estilo para el contenido
+        .card1__contenido {
+            display: flex;
+            width: 100%;
+            height: 80%;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+
+            text-align: center;
+            font-family: "Gloria Hallelujah", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.3em;
+
+            background-color: white;
+            border-radius: 0 0 $borde-redondo $borde-redondo;
+        }
+    }
+}
+
+// fondo de la card a animar
+.card1:before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    
+    z-index: -1;    
+    border-radius: $borde-redondo;
+    
+    border: .5rem solid transparent;
+    background: $fondo-card-before;  
+    opacity: 0;
+}
+
+// animacion para mostrar el fondo de la carta
+.card1:hover:before { 
+    transition: 0.3s;
+    transform: rotate(-10deg);
+    width: 95%;
+    height: 95%;
+    left: -2%;   
+    opacity: 1;
+    box-shadow: 5px 5px 20px black ;
+    
+}
+
+
+
+
