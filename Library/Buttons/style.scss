@@ -1,0 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/the-amazing-spider-man');
+
+$spiderman-font: 'THE AMAZING SPIDER-MAN', sans-serif;
+
+$color-primario: #BF0426;
+$color-secundario: #172D44;
+$color-terciario: #0A0E17;
+$color-cuaternario: #161616;
+$color-quintario: #FEF9FF;
+$color-sextario: #CEB744;
+$color-septimo: #C0189B;
+
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    width: 800px;
+    gap: 25px;
+
+    h1, h3{
+        width: 100%;
+    }
+
+    h1{
+        margin-top: 50px;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .btn__E1{
+        position: relative;
+        display: inline-block;
+        font-family: $spiderman-font;
+        font-size: 1.3rem;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color-terciario;
+        background-color: $color-quintario;
+        border: 3px solid $color-cuaternario;
+        box-shadow:
+            6px 6px 0 $color-secundario,
+            0 0 0 3px $color-primario;
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        background-image: radial-gradient(rgba($color-terciario, 0.08) 1px, transparent 1px);
+        background-size: 6px 6px;
+
+        &:hover {
+            transform: translate(-3px, -3px);
+            box-shadow:
+                9px 9px 0 $color-secundario,
+                0 0 0 3px $color-septimo;
+            background-color: $color-quintario;
+        }
+    }
+
+    .btn__E2{
+        background-color: $color-primario;
+        color: $color-quintario;
+        border: 3px solid $color-secundario;
+        padding: 0.75rem 1.5rem;
+        font-family: $spiderman-font;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 4px 4px 0 $color-terciario;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        position: relative;
+      
+        &:hover {
+          background-color: $color-septimo;
+          color: $color-cuaternario;
+          box-shadow: 6px 6px 0 $color-sextario;
+        }
+    }
+
+    .btn__E3{
+        background-color: $color-sextario;
+        color: $color-terciario;
+        border: 4px dashed $color-cuaternario;
+        padding: 0.8rem 1.8rem;
+        font-family: 'Bangers', cursive;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px $color-primario;
+        box-shadow: 3px 3px 0 $color-primario;
+        transition: all 0.3s ease;
+        transform: rotate(-2deg);
+        
+        &:hover {
+            background-color: $color-secundario;
+            color: $color-quintario;
+            box-shadow: 5px 5px 0 $color-primario;
+            transform: rotate(1deg) scale(1.05);
+            border: 4px solid $color-quintario;
+        }
+    }
+
+    .btn__E4 {
+        background: linear-gradient(135deg, $color-primario, $color-secundario);
+        color: $color-quintario;
+        border: 3px solid $color-primario;
+        padding: 15px 30px;
+        font-family: $spiderman-font;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px $color-terciario;
+        border-radius: 40px;
+        box-shadow: 0 0 20px $color-primario;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 70%);
+            z-index: 0; // fondo detrás
+        }
+    
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px $color-primario;
+            background: linear-gradient(135deg, $color-primario, $color-terciario);
+        }
+    
+        &:active {
+            transform: scale(0.98);
+        }
+    
+        span {
+            z-index: 1;
+            position: relative;
+        }
+    }
+}
