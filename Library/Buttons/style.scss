@@ -150,13 +150,55 @@ body{
 
     //Tamaño "mediano" para los 4 estilos de botones
     .btn--m{
-        font-size: 1.5rem;
-        padding: 25px 50px;
+        font-size: 1.9rem;
+        padding: 31px 62px;
     }
 
     //Tamaño "grande" para los 4 estilos de botones
     .btn--g{
-        font-size: 2rem;
-        padding: 30px 60px;
+        font-size: 2.4rem;
+        padding: 40px 80px;
+    }
+
+
+    // Responsividad para Teléfonos
+    @media screen and (max-width: 600px) {
+        
+        .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
+            font-size: 1rem;
+            padding: 12px 24px;
+        }
+
+        .btn--p { font-size: 0.8rem; padding: 0.3rem 0.6rem; }
+        .btn--m { font-size: 1.2rem; padding: 0.7rem 1.4rem; }
+        .btn--g { font-size: 1.5rem; padding: 1rem 2rem; }
+    }
+
+    
+    // Responsividad para Tablets
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+        
+        .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
+            font-size: 1.4rem;
+            padding: 18px 36px;
+        }
+
+        .btn--p { font-size: 1rem; padding: 0.4rem 0.8rem; }
+        .btn--m { font-size: 1.5rem; padding: 0.8rem 1.6rem; }
+        .btn--g { font-size: 1.8rem; padding: 1.2rem 2.4rem; }
+    }
+    
+    
+    // Responsividad para PCs
+    
+    @media screen and (min-width: 1024px) {
+        .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
+            font-size: 1.8rem;
+            padding: 24px 48px;
+        }
+        
+        .btn--p { font-size: 1.2rem; padding: 0.5rem 1rem; }
+        .btn--m { font-size: 1.7rem; padding: 0.9rem 1.8rem; }
+        .btn--g { font-size: 2.2rem; padding: 1.4rem 2.8rem; }
     }
 }
