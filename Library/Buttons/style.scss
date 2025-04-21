@@ -143,4 +143,10 @@ body{
             position: relative;
         }
     }
+
+    //Tamaño "pequeño" para los 4 estilos de botones
+    .btn--p{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
