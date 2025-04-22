@@ -277,3 +277,132 @@ $radius: 12px;
         opacity: 1;
     }
 }
+
+
+
+//Responcividad para telefonos
+@media (max-width: 600px) {
+    .alert__E1 {
+        padding: 0.8rem 1rem;
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 0.6rem;
+        }
+
+        .message {
+            font-size: 1rem;
+        }
+    }
+
+    .alert__E2 {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .alert__E3 {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+
+        .message {
+            font-size: 1rem;
+        }
+    }
+
+    .alert__E4 {
+        .alert__body {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .alert__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+//Responcividad para tablets
+@media (min-width: 601px) and (max-width: 1024px) {
+    .alert__E1 {
+        padding: 1rem 1.2rem;
+
+        .icon {
+            font-size: 1.8rem;
+            margin-right: 0.8rem;
+        }
+
+        .message {
+            font-size: 1.1rem;
+        }
+    }
+
+    .alert__E2 {
+        font-size: 1.1rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .alert__E3 {
+        font-size: 1.1rem;
+        padding: 1.2rem 1.4rem;
+
+        .message {
+            font-size: 1.1rem;
+        }
+    }
+
+    .alert__E4 {
+        .alert__body {
+            padding: 1.3rem;
+            font-size: 1.1rem;
+        }
+
+        .alert__header {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+//Responcividad para PCs
+@media (min-width: 1025px) {
+    .alert__E1 {
+        padding: 1.5rem 2rem;
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        .message {
+            font-size: 1.3rem;
+        }
+    }
+
+    .alert__E2 {
+        font-size: 1.3rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .alert__E3 {
+        font-size: 1.3rem;
+        padding: 1.5rem 2rem;
+
+        .message {
+            font-size: 1.3rem;
+        }
+    }
+
+    .alert__E4 {
+        .alert__body {
+            padding: 1.8rem;
+            font-size: 1.3rem;
+        }
+
+        .alert__header {
+            font-size: 1.5rem;
+        }
+    }
+}
