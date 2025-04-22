@@ -1,95 +1,311 @@
+/**Import de fonts de googlepis*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /**Reset.css*/
 @import url(Reset-style/reset.css);
-$bg-primario: black;
-$bg-primario: black;
-$bg-secundario: red;
-$bg-terciario: white;
-$font-primario: "Open Sans", sans-serif;
 
-.container-standard{
-    max-width: 90%;
-    margin: 20px auto;
-    overflow: hidden;
-}
+$bg-primary: #0A0E17;
+$bg-secondary: #BF0426;
+$bg-tertiary: #fff202;
+$bg-quaternary: #ffffff;
+$primary-color: #ffffff;
+$secondary-color: #0A0E17;
+$font-primary: "Open Sans", sans-serif;
+$font-comic: 'Comic Sans MS', cursive, sans-serif;
 
-.container-large{
+/**CONTENEDORES*/
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
     max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 10px auto;
 }
 
-.container-small{
-    max-width: 60%;
-    margin: 20px auto;
-    overflow: hidden;
+.comic-yellow{
+  color: $secondary-color;
+  font-family: "Comic Sans MS", cursive, sans-serif;  
+  font-weight: bold;
+  background-color: $bg-tertiary;
+  background-image: radial-gradient(#BF0426 10%, transparent 11%);
+  background-size: 10px 10px;
+  box-shadow: 6px 6px 0px #333;
+  border: 2px solid black;
+  margin-top: 10px;
 }
-
-.card{
-    font-family:$font-primario;
-    color: $bg-terciario;
-    background-color: $bg-primario;
-    border: 2px solid #ff0000;
-    box-shadow: #ff000070 0px 0px 5px;
-    height: auto;
-    padding: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
+.comic-red{
+  color: white;
+  font-family: $font-comic;  
+  font-weight: bold;
+  background-color: $bg-secondary;
+  background-image: radial-gradient(#010577 10%, transparent 11%);
+  background-size: 10px 10px;
+  box-shadow: 6px 6px 0px #333;
+  border: 2px solid black;
+  margin-top: 10px;
 }
+  
 
-/**Numero de columna a usar en el contenedor*/
-.col-1{display: grid; grid-template-columns: repeat(1, 1fr); gap: 20px;}
-.col-2{display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
-.col-3{display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;}
-.col-4{display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
-.col-5{display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;}
-.col-6{display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;}
-.col-7{display: grid; grid-template-columns: repeat(7, 1fr); gap: 20px;}
-.col-8{display: grid; grid-template-columns: repeat(8, 1fr); gap: 20px;}
-.col-9{display: grid; grid-template-columns: repeat(9, 1fr); gap: 20px;}
-.col-10{display: grid; grid-template-columns: repeat(10, 1fr); gap: 20px;}
-.col-11{display: grid; grid-template-columns: repeat(11, 1fr); gap: 20px;}
-.col-12{display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px;}
+@media (min-width: 375px) {
+    .container, .container-sm {
+      max-width: 370px;
+    }
+    .comic-red, .comic-yellow {
+      max-width: 320px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .container, .container-sm {
+      max-width: 540px;
+    }
+    .comic-red, .comic-yellow {
+      max-width: 530px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container, .container-sm, .container-md {
+      max-width: 720px;
+    }
+    .comic-red, .comic-yellow {
+      max-width: 710px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container, .container-sm, .container-md, .container-lg {
+      max-width: 960px;
+    }
+    .comic-red, .comic-yellow {
+      max-width: 950px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: 1140px;
+    }
+    .comic-red, .comic-yellow{
+      max-width: 1140px;
+    }
+  }
 
-/**Numero de columnas que usara el elemento*/
-.span-col-1{grid-column: span 1;}
-.span-col-2{grid-column: span 2;}
-.span-col-3{grid-column: span 3;}
-.span-col-4{grid-column: span 4;}
-.span-col-5{grid-column: span 5;}
-.span-col-6{grid-column: span 6;}
-.span-col-7{grid-column: span 7;}
-.span-col-8{grid-column: span 8;}
-.span-col-9{grid-column: span 9;}
-.span-col-10{grid-column: span 10;}
-.span-col-11{grid-column: span 11;}
-.span-col-12{grid-column: span 12;}
 
-/**Numero de filas que usara el contanedor*/
-.row-1{display: grid; grid-template-rows: repeat(1, 1fr); gap: 20px;}
-.row-2{display: grid; grid-template-rows: repeat(2, 1fr); gap: 20px;}
-.row-3{display: grid; grid-template-rows: repeat(3, 1fr); gap: 20px;}
-.row-4{display: grid; grid-template-rows: repeat(4, 1fr); gap: 20px;}
-.row-5{display: grid; grid-template-rows: repeat(5, 1fr); gap: 20px;}
-.row-6{display: grid; grid-template-rows: repeat(6, 1fr); gap: 20px;}
-.row-7{display: grid; grid-template-rows: repeat(7, 1fr); gap: 20px;}
-.row-8{display: grid; grid-template-rows: repeat(8, 1fr); gap: 20px;}
-.row-9{display: grid; grid-template-rows: repeat(9, 1fr); gap: 20px;}
-.row-10{display: grid; grid-template-rows: repeat(10, 1fr); gap: 20px;}
-.row-11{display: grid; grid-template-rows: repeat(11, 1fr); gap: 20px;}
-.row-12{display: grid; grid-template-rows: repeat(12, 1fr); gap: 20px;}
-
-/**Espacio de filas que usara el elemento*/
-.span-row-1{grid-row: span 1;}
-.span-row-2{grid-row: span 2;}
-.span-row-3{grid-row: span 3;}
-.span-row-4{grid-row: span 4;}
-.span-row-5{grid-row: span 5;}
-.span-row-6{grid-row: span 6;}
-.span-row-7{grid-row: span 7;}
-.span-row-8{grid-row: span 8;}
-.span-row-9{grid-row: span 9;}
-.span-row-10{grid-row: span 10;}
-.span-row-11{grid-row: span 11;}
-.span-row-12{grid-row: span 12;}
+  /**CLASES UTILITARIAS*/
+  @media (min-width: 375px) {
+    .row{
+      display: flex;
+      flex-wrap:  wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .row{
+      display: flex;
+      flex-wrap:  wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .row{
+      display: flex;
+      flex-wrap:  wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .row{
+      display: flex;
+      flex-wrap:  wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container, .container-sm, .contain
+    .row{
+      display: flex;
+      flex-wrap:  nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      max-width: 100%;
+    }
+  }
+  
+  .col{
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  .col-1  { 
+    padding: 10px;
+    flex: 0 0 8.33%;  
+    max-width: 8.33%;  
+  }
+  .col-2  { 
+    padding: 10px;
+    flex: 0 0 16.66%; 
+    max-width: 16.66%; 
+  }
+  .col-3  { 
+    padding: 10px;
+    flex: 0 0 25%;    
+    max-width: 25%;    
+  }
+  .col-4  { 
+    padding: 10px;
+    flex: 0 0 33.33%; 
+    max-width: 33.33%; 
+  }
+  .col-5  { 
+    padding: 10px;
+    flex: 0 0 41.66%; 
+    max-width: 41.66%; 
+  }
+  .col-6  { 
+    padding: 10px;
+    flex: 0 0 50%;    
+    max-width: 50%;    
+  }
+  .col-7  { 
+    padding: 10px;
+    flex: 0 0 58.33%; 
+    max-width: 58.33%; 
+  }
+  .col-8  { 
+    padding: 10px;
+    flex: 0 0 66.66%; 
+    max-width: 66.66%; 
+  }
+  .col-9  { 
+    padding: 10px;
+    flex: 0 0 75%;    
+    max-width: 75%;    
+  }
+  .col-10 { 
+    padding: 10px;
+    flex: 0 0 83.33%; 
+    max-width: 83.33%; 
+  }
+  .col-11 { 
+    padding: 10px;
+    flex: 0 0 91.66%; 
+    max-width: 91.66%; 
+  }
+  .col-12 { 
+    padding: 10px;
+    flex: 0 0 100%;   
+    max-width: 100%;   
+  }
+  
+  .text-center{
+    text-align: center;
+    justify-content: center;
+  }
+  .align-items-start{
+    align-items: flex-start;
+  }
+  .align-items-center{
+    align-items: center;
+  }
+  .align-items-end{
+    align-items: flex-end;
+  }
+  .align-self-center{
+    align-self: center;
+  }
+  .align-self-start{
+    align-self: self-start;
+  }
+  .align-self-end{
+    align-self: self-end;
+  }
+  .justify-content-start{
+    justify-content: flex-start;
+  }
+  .justify-content-end{
+    justify-content: flex-end;
+  }
+  .justify-content-center{
+    justify-content: center;
+  }
+  .justify-content-between{
+    justify-content: space-between;
+  }
+  .justify-content-around{
+    justify-content: space-around;
+  }
+  .justify-content-evenly{
+    justify-content: space-evenly;
+  }
+  .order-first{
+    order: -1;
+  }
+  .order-last{
+    order: 12;
+  }
+  .order-1{
+    order: 1;
+  }
+  .order-2{
+    order: 2;
+  }
+  .order-3{
+    order: 3;
+  }
+  .order-4{
+    order: 4;
+  }
+  .order-5{
+    order: 5;
+  }
+  .order-6{
+    order: 6;
+  }
+  .order-7{
+    order: 7;
+  }
+  .order-8{
+    order: 8;
+  }
+  .order-9{
+    order: 9;
+  }
+  .order-10{
+    order: 10;
+  }
+  .order-11{
+    order: 11;
+  }
+  .order-12{
+    order: 12;
+  }
