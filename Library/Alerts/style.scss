@@ -173,3 +173,107 @@ $radius: 12px;
         opacity: 1;
     }
 }
+
+
+.alert__E4 {
+    $popup-width: 90%;
+    $popup-max-width: 600px;
+
+    width: $popup-width;
+    max-width: $popup-max-width;
+    margin: 3rem auto;
+    background: $color-terciario;
+    border: 4px solid $color-primario;
+    border-radius: 12px;
+    box-shadow:
+        8px 8px 0 $color-cuaternario,
+        0 0 15px $color-septimo;
+    overflow: hidden;
+    color: $color-quintario;
+    font-family: 'Bangers', cursive;
+    animation: popupZoom 0.6s ease-out;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+            $color-septimo 1px,
+            transparent 1px
+        );
+        background-size: 8px 8px;
+        opacity: 0.05;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .alert__header {
+        background: linear-gradient(
+            to right,
+            $color-primario,
+            $color-secundario
+        );
+        padding: 0.8rem 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px dashed $color-sextario;
+        color: $color-quintario;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px $color-terciario;
+    
+        .close-btn {
+            background: $color-cuaternario;
+            color: $color-quintario;
+            font-size: 1rem;
+            border: none;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 $color-terciario;
+            transition: background 0.3s;
+    
+            &:hover {
+            background: $color-primario;
+            }
+        }
+    }
+
+    .alert__body {
+        padding: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        text-shadow: 1px 1px $color-cuaternario;
+        animation: messageSwing 1s ease;
+    }
+}
+
+@keyframes popupZoom {
+    0% {
+        transform: scale(0.5) rotate(-5deg);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.05) rotate(2deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes messageSwing {
+    0% {
+        transform: translateX(-30px) rotate(-5deg);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(10px) rotate(2deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+}
