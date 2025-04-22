@@ -1,0 +1,48 @@
+$color-primario: #BF0426;
+$color-secundario: #172D44;
+$color-terciario: #0A0E17;
+$color-cuaternario: #161616;
+$color-quintario: #FEF9FF;
+$color-sextario: #CEB744;
+$color-septimo: #C0189B;
+
+$border-thickness: 4px;
+$radius: 12px;
+
+.alert__E1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    margin: 1.2rem 0;
+    border-radius: $radius;
+    border: $border-thickness solid $color-cuaternario;
+    box-shadow: 6px 6px 0 $color-terciario;
+    color: $color-quintario;
+    text-shadow: 1px 1px $color-terciario;
+    animation: popIn 0.35s ease-out;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 10px 10px;
+    background-color: $color-secundario;
+
+    .icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .message {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8) rotate(-5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+}
