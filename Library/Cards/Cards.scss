@@ -1,17 +1,13 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+@use '../Styles/Variables'; 
+@import url(../Styles/Reset.css);
 
-$primary-color : #0A0E17;
-$second-color : #BF0426;
-$tercer-color: #C02FA8;
-$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, $second-color 75%, $second-color 100%) padding-box, 
+
+$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%) padding-box, 
 linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
 $borde-redondo: 1.3rem;
 
-//fuentes Anton, Gloria Hallelujah
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&display=swap');
-
 // estilo de carta1
-.card1 {
+.card1 { 
     margin: 1.2rem;
     position: relative;
     
@@ -26,7 +22,7 @@ $borde-redondo: 1.3rem;
     .card1__contenedor {
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle, #ff8c00 0%, $second-color 75%, $second-color 100%);
+        background: radial-gradient(circle, darken(Variables.$bg-tertiary,15%) 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%);
         border-radius: $borde-redondo;
         gap: .7rem;
 
@@ -43,14 +39,13 @@ $borde-redondo: 1.3rem;
             width: 100%;
             height: 20%;
 
-
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: .5rem;
 
             text-align: center;
-            font-family: "Anton", sans-serif;
+            font-family: Variables.$font-title-cards;
             font-weight: 400;
             font-style: normal;
             font-size: 1.5em;
@@ -72,7 +67,7 @@ $borde-redondo: 1.3rem;
             padding: 1rem;
 
             text-align: center;
-            font-family: "Gloria Hallelujah", cursive;
+            font-family: Variables.$font-content-card1;
             font-weight: 400;
             font-style: normal;
             font-size: 1.3em;
@@ -109,9 +104,117 @@ $borde-redondo: 1.3rem;
     left: -2%;   
     opacity: 1;
     box-shadow: 5px 5px 20px black ;
-    
 }
 
 
 
+.card2{
+    color: white;
+    
+    margin: 0 auto;
+    width: 500px;
+    background: radial-gradient(#480d35 , Variables.$color2);
+    position: relative;
 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    
+
+
+    .card2__titulo{
+        // color de diapo
+        background-color: #C0189B;
+        min-height: 50%;
+        width: 70%;
+        align-self: flex-end;
+        margin-top: -5%;
+        margin-right: -10%;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        font-family: Variables.$font-title-cards;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        text-shadow: -2px .2px red;
+        text-transform: uppercase;
+         
+        background-image: radial-gradient(#423288 15%, transparent 11%);
+        background-size: .4rem .4rem;
+        border: 2px #423288 solid;
+        box-shadow: -5px 5px 0px #423288;    
+
+        transition: transform 0.3s ease;
+    }
+
+    .card2__titulo:hover{
+        transform: scale(1.02);
+    }
+
+    .card2__contenido{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.2rem;
+
+        padding: 30px 30px;
+
+        color: black;
+
+        font-family: Variables.$font-content-card2;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        
+        & > *{
+            position: relative;
+            background-color: white;
+
+            padding: 1.5rem .8rem;
+            width: 100%;
+            box-shadow: 5px 5px 0px cyan, -5px -5px 0px Variables.$bg-tertiary;
+            border: 2px black solid;
+            transition: transform 0.3s ease;
+        }
+
+        & > *::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+            radial-gradient(circle, #423288 15%, transparent 16%);
+            background-size: .5rem .5rem;
+            background-repeat: repeat;
+            mask-image: linear-gradient(to right, black 0%, transparent 50%);
+            -webkit-mask-image: linear-gradient(to right, black 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        & img{
+            padding: 0;
+        }
+
+        & > *:hover {
+            transform: scale(1.02);
+        }
+
+        & > *:hover::before {
+            opacity: 1;
+        }
+    }
+}
