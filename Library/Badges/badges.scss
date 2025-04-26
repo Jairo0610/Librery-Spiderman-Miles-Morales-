@@ -1,0 +1,108 @@
+@use '../Shadows/shadows' ;
+@use'../Styles/Variables';
+
+$badge-red: Variables.$bg-secondary;
+$badge-red-op: #BF04262c;
+$badge-magenta: Variables.$color4;
+$badge-magenta-op: #C0189B2c;
+$badge-yellow: #d3b700;
+$badge-yellow-op: #fef6002f;
+$badge-blue: #014c82;
+$badge-blue-op: #147fcc2c;
+$badge-light: #E3E2F4;
+$badge-light-op: #E3E2F431;
+$badge-dark: Variables.$color1;
+$badge-dark-op: #1f010313;
+
+
+.badge {
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    gap: 5px;
+}
+.badge-magenta {
+    background-color: $badge-magenta-op;
+    color: $badge-magenta;
+}
+.badge-red {
+    background-color: $badge-red-op;
+    color: $badge-red;
+}
+.badge-yellow {
+    background-color: $badge-yellow-op;
+    color: $badge-yellow;
+}
+.badge-blue {
+    background-color: $badge-blue-op;
+    color: $badge-blue;
+}
+.badge-light {
+    background-color: $badge-light-op;
+    color: $badge-light;
+}
+.badge-dark {
+    background-color: $badge-dark-op;
+    color: $badge-dark;
+}
+
+.badge-outline-magenta {
+    border: 2px solid $badge-magenta;
+    color: $badge-magenta;
+}
+.badge-outline-red {
+    border: 2px solid $badge-red;
+    color: $badge-red;
+}
+.badge-outline-yellow {
+    border: 2px solid $badge-yellow;
+    color: $badge-yellow;
+}
+.badge-outline-blue {
+    border: 2px solid $badge-blue;
+    color: $badge-blue;
+}
+.badge-outline-dark {
+    border: 2px solid $badge-dark;
+    color: $badge-dark;
+}
+.badge-outline-light {
+    border: 2px solid $badge-light;
+    color: $badge-light;
+}
+
+.badge-solid-red {
+    background-color: $badge-red;
+    color: Variables.$color3;
+}
+.badge-solid-blue {
+    background-color: $badge-blue;
+    color: Variables.$color3;
+}
+.badge-solid-yellow {
+    background-color: $badge-yellow;
+    color: Variables.$color3;
+}
+.badge-solid-magenta {
+    background-color: $badge-magenta;
+    color: Variables.$color3;
+}
+.badge-solid-dark {
+    background-color: $badge-dark;
+    color: Variables.$color3;
+}
+.badge-solid-light {
+    background-color: $badge-light;
+    color: Variables.$color1;
+}
+
+  
+  
+  
+  
+  
+  
