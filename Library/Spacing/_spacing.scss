@@ -2,8 +2,12 @@
 /*=====================
    MARGINS
 =====================*/
+div {
+    width: 100px;
+    height: 100px;
+}
 
-
+.magin-0 {margin: Variables.$spacing-0;}
 .margin-4 {margin: Variables.$spacing-4;}
 .margin-8 {margin: Variables.$spacing-8;}
 .margin-12 {margin: Variables.$spacing-12;}
@@ -15,7 +19,7 @@
 .margin-36 {margin: Variables.$spacing-36;}
 .margin-48 {margin: Variables.$spacing-48;}
 
-
+.margin-top-0 {margin-top: Variables.$spacing-0;}
 .margin-top-4 {margin-top: Variables.$spacing-4;}
 .margin-top-8 { margin-top: Variables.$spacing-8;}
 .margin-top-12 {margin-top: Variables.$spacing-12;}
@@ -27,6 +31,7 @@
 .margin-top-36 {margin-top: Variables.$spacing-36;}
 .margin-top-48 {margin-top: Variables.$spacing-48;}
 
+.margin-bottom-0 {margin-bottom: Variables.$spacing-0;}
 .margin-bottom-4 {margin-bottom: Variables.$spacing-4;}
 .margin-bottom-8 {margin-bottom: Variables.$spacing-8;}
 .margin-bottom-12 {margin-bottom: Variables.$spacing-12;}
@@ -38,7 +43,7 @@
 .margin-bottom-36 {margin-bottom: Variables.$spacing-36;}
 .margin-bottom-48 {margin-bottom: Variables.$spacing-48;}
 
-
+.margint-right-0 {margin-right: Variables.$spacing-0;}
 .margin-right-4 {margin-right: Variables.$spacing-4;}
 .margin-right-8 {margin-right: Variables.$spacing-8;}
 .margin-right-12 {margin-right: Variables.$spacing-12;}
@@ -50,7 +55,7 @@
 .margin-right-36 {margin-right: Variables.$spacing-36;}
 .margin-right-48 {margin-right: Variables.$spacing-48;}
 
-
+.margin-left-0 {margin-left: Variables.$spacing-0;}
 .margin-left-4 {margin-left: Variables.$spacing-4;}
 .margin-left-8 {margin-left: Variables.$spacing-8;}
 .margin-left-12 {margin-left: Variables.$spacing-12;}
@@ -67,7 +72,7 @@
     PADDINGS
 =====================*/
 
-
+.padding-0 {padding: Variables.$spacing-0;}
 .padding-4 {padding: Variables.$spacing-4;}
 .padding-8 {padding: Variables.$spacing-8;}
 .padding-12 {padding: Variables.$spacing-12;}
@@ -79,6 +84,7 @@
 .padding-36 {padding: Variables.$spacing-36;}
 .padding-48 {padding: Variables.$spacing-48;}
 
+.padding-top-0 {margin-top: Variables.$spacing-0;}
 .padding-top-4 {padding-top: Variables.$spacing-4;}
 .padding-top-8 {padding-top: Variables.$spacing-8;}
 .padding-top-12 {padding-top: Variables.$spacing-12;}
@@ -90,7 +96,7 @@
 .padding-top-36 {padding-top: Variables.$spacing-36;}
 .padding-top-48 {padding-top: Variables.$spacing-48;}
 
-
+.padding-bottom-0 {padding-bottom: Variables.$spacing-0;}
 .padding-bottom-4 {padding-bottom: Variables.$spacing-4;}
 .padding-bottom-8 {padding-bottom: Variables.$spacing-8;}
 .padding-bottom-12 {padding-bottom: Variables.$spacing-12;}
@@ -102,6 +108,7 @@
 .padding-bottom-36 {padding-bottom: Variables.$spacing-36;}
 .padding-bottom-48 {padding-bottom: Variables.$spacing-48;}
 
+.padding-right-0 {padding-right: Variables.$spacing-0;}
 .padding-right-4 {padding-right: Variables.$spacing-4;}
 .padding-right-8 {padding-right: Variables.$spacing-8;}
 .padding-right-12 {padding-right: Variables.$spacing-12;}
@@ -113,6 +120,7 @@
 .padding-right-36 {padding-right: Variables.$spacing-36;}
 .padding-right-48 {padding-right: Variables.$spacing-48;}
 
+.padding-left-0 {padding-left: Variables.$spacing-0;}
 .padding-left-4 {padding-left: Variables.$spacing-4;}
 .padding-left-8 {padding-left: Variables.$spacing-8;}
 .padding-left-12 {padding-left: Variables.$spacing-12;}
@@ -171,34 +179,15 @@
 .border-yellow {border-color: Variables.$bg-tertiary;;}
 .border-magenta {border-color: Variables.$color4;}
 
+.border-radius-0 {border-radius: Variables.$spacing-0;}
+.border-radius-4 {border-radius: Variables.$spacing-4;}
+.border-radius-8 {border-radius: Variables.$spacing-8;}
+.border-radius-12 {border-radius: Variables.$spacing-12;}
+.border-radius-16 {border-radius: Variables.$spacing-16;}
+.border-radius-20 {border-radius: Variables.$spacing-20;}
+.border-radius-24 {border-radius: Variables.$spacing-24;}
+.border-radius-28 {border-radius: Variables.$spacing-28;}
+.border-radius-32 {border-radius: Variables.$spacing-32;}
+.border-radius-36 {border-radius: Variables.$spacing-36;}
+.border-radius-full {border-radius: 999px;}
 
-.border-radius-1 {
-    border-radius: 10%;
-}
-.border-radius-2 {
-    border-radius: 20%;
-}
-.border-radius-3
-{
-    border-radius: 30%;
-}
-.border-radius-4 { border-radius: 40%;}
-.border-radius-5 {border-radius: 50%;}
-
-
-.border-radius-top {
-    border-top-right-radius: 15%;
-    border-top-left-radius: 15%;
-}
-.border-radius-bottom {
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 15%;
-}
-.border-radius-left {
-    border-bottom-left-radius: 15%;
-    border-top-left-radius: 15%;
-}
-.border-radius-right {
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
-}
