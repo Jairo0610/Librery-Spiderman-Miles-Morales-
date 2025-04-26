@@ -1,103 +1,107 @@
-@use '../Styles/Variables';
+@use '../Shadows/shadows' ;
+@use'../Styles/Variables';
 
-.badge-comic
-{
-    background-color: black; 
-   color: Variables.$color3;
-   background-image: radial-gradient(Variables.$color3 0.5px, transparent 0.8px);
-   background-size: 5px 5px;
-   padding: 3px 15px;
-   box-shadow: 6px 5px 0px Variables.$bg-secondary ;
-   font-weight: 600;  
-   border: 3px solid;
-   margin: 0px 20px;
-   border-radius: 15px;
-   letter-spacing: 0.5px;
+$badge-red: Variables.$bg-secondary;
+$badge-red-op: #BF04262c;
+$badge-magenta: Variables.$color4;
+$badge-magenta-op: #C0189B2c;
+$badge-yellow: #d3b700;
+$badge-yellow-op: #fef6002f;
+$badge-blue: #014c82;
+$badge-blue-op: #147fcc2c;
+$badge-light: #E3E2F4;
+$badge-light-op: #E3E2F431;
+$badge-dark: Variables.$color1;
+$badge-dark-op: #1f010313;
 
-}
-.badge-web-yellow
-{
-    background-color: Variables.$bg-tertiary; 
-   color: Variables.$color1;
-   background-image: url(resources-badges/telarañas-negras.png);
-   padding: 3px 15px;
-   box-shadow: 6px 5px 0px Variables.$color1;
-   font-weight: 600;  
-   margin: 0px 20px;
-   border: 3px solid Variables.$color3;
-   border-radius: 15px;
-   letter-spacing: 0.5px;
-}
-.badge-web-yellow2
-{
-    background-color: Variables.$bg-tertiary; 
-   color: Variables.$color1;
-   background-image: url(resources-badges/telarañas-negras.png);
-   padding: 3px 15px;
-   box-shadow: 6px 5px 0px Variables.$color4;
-   font-weight: 600;  
-   margin: 0px 20px;
-   border: 3px solid Variables.$color3;
-   border-radius: 15px;
-   letter-spacing: 0.5px;
-}
-.badge-web-blue
-{
-    background-color: Variables.$color2; 
-   color: Variables.$color3;
-   background-image: url(resources-badges/telarañas-blancas.png);
-   padding: 3px 15px;
-   box-shadow: 6px 5px 0px Variables.$bg-secondary;
-   border-bottom-right-radius: 10px;
-   border-top-left-radius: 10px;
-   font-weight: 600;  
-   border: 3px solid white;
-   margin: 0px 20px;
-   letter-spacing: 0.5px;
-}
-.badge-dot-red
-{
-    border: 1px solid Variables.$bg-primary;
+
+.badge {
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
-    margin: 0px 15px;
-    padding: 2px 5px;
-    width: auto;
-    border-radius: 10px;
-    vertical-align: middle;
+    white-space: nowrap;
     letter-spacing: 1px;
+    gap: 5px;
 }
-#icon-badge-red{
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image: url(resources-badges/spider-red-icon.png);
-    background-size: cover;
-    margin-right: 5px;
+.badge-magenta {
+    background-color: $badge-magenta-op;
+    color: $badge-magenta;
+}
+.badge-red {
+    background-color: $badge-red-op;
+    color: $badge-red;
+}
+.badge-yellow {
+    background-color: $badge-yellow-op;
+    color: $badge-yellow;
+}
+.badge-blue {
+    background-color: $badge-blue-op;
+    color: $badge-blue;
+}
+.badge-light {
+    background-color: $badge-light-op;
+    color: $badge-light;
+}
+.badge-dark {
+    background-color: $badge-dark-op;
+    color: $badge-dark;
 }
 
-.badge-dot-green {
-    border: 1px solid Variables.$bg-primary;
-    display: inline-flex;
-    align-items: center;
-    margin: 0px 5px;
-    padding: 2px 5px;
-    width: auto;
-    border-radius: 10px;
-    vertical-align: middle;
-    letter-spacing: 0.5px;
-  }
+.badge-outline-magenta {
+    border: 2px solid $badge-magenta;
+    color: $badge-magenta;
+}
+.badge-outline-red {
+    border: 2px solid $badge-red;
+    color: $badge-red;
+}
+.badge-outline-yellow {
+    border: 2px solid $badge-yellow;
+    color: $badge-yellow;
+}
+.badge-outline-blue {
+    border: 2px solid $badge-blue;
+    color: $badge-blue;
+}
+.badge-outline-dark {
+    border: 2px solid $badge-dark;
+    color: $badge-dark;
+}
+.badge-outline-light {
+    border: 2px solid $badge-light;
+    color: $badge-light;
+}
+
+.badge-solid-red {
+    background-color: $badge-red;
+    color: Variables.$color3;
+}
+.badge-solid-blue {
+    background-color: $badge-blue;
+    color: Variables.$color3;
+}
+.badge-solid-yellow {
+    background-color: $badge-yellow;
+    color: Variables.$color3;
+}
+.badge-solid-magenta {
+    background-color: $badge-magenta;
+    color: Variables.$color3;
+}
+.badge-solid-dark {
+    background-color: $badge-dark;
+    color: Variables.$color3;
+}
+.badge-solid-light {
+    background-color: $badge-light;
+    color: Variables.$color1;
+}
+
   
-#icon-badge-green {
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image: url(resources-badges/spider-green-icon.png);
-    background-size: cover;
-    margin-right: 5px;
-  }
+  
   
   
   
