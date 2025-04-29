@@ -1,0 +1,95 @@
+$primary-color : #0A0E17;
+$second-color : #BF0426;
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body {
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+
+    .navbar__nav {
+        background-color: $primary-color;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        z-index: 1;
+
+        .nav__item a{
+            background-color: $primary-color;
+            position: relative;
+            display: block;
+            margin-left: 20px;
+            padding: 30px;
+            transition: 0.5s;
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            border: $primary-color 3px solid;
+            border-radius: 2px;
+            
+        }
+
+        
+        @media (hover: hover){
+            .nav__item a:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 100%;
+                height: 100%;
+                background: red;
+                background-image: radial-gradient($primary-color 15%, transparent 11%);
+                background-size: 7px 7px;
+                z-index: -1;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .nav__item a:hover {
+                background-color: yellow;
+                background-image: radial-gradient(red 10%, transparent 11%);
+                background-size: 10px 10px;
+            }
+
+            .nav__item a:nth-child(1):before{
+                transform-origin: top;
+                transform: scaleY(0);
+            }
+    
+            .nav__item a:hover:nth-child(1):before{
+                transform-origin: bottom;
+                transform: scaleY(1);
+            }
+    
+    
+            .nav__item a:hover {
+                animation: 0.5s glitch 1; 
+                color: black;
+            }
+        }
+
+        .nav__item a:active{
+            color: black;
+            background-color: yellow;
+            background-image: radial-gradient(red 10%, transparent 11%);
+            background-size: 10px 10px;
+            animation: 0.5s glitch 1; 
+        }
+
+        @keyframes glitch {
+                0%{
+                    text-shadow: red -4px 0, cyan 4px 0;    
+                }
+                50%{
+                    text-shadow: red 4px 0, cyan -4px 0;       
+                }
+                100%{
+                    text-shadow: red -4px 0, cyan 4px 0;    
+                }
+            }
+    }
+}

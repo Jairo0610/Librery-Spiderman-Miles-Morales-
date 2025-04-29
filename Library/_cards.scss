@@ -1,0 +1,219 @@
+@use 'variables';
+
+
+$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, variables.$bg-secondary 75%, variables.$bg-secondary 100%) padding-box, 
+linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
+$borde-redondo: 1.3rem;
+
+// estilo de carta1
+.card1 { 
+    margin: 1.2rem;
+    position: relative;
+    
+    border-radius: $borde-redondo;
+    max-width: 300px;
+    padding: .5rem;
+
+    background: linear-gradient(0deg, white 45%, #D4D4D4 100%);
+    box-shadow: 5px 5px 20px black;
+
+    // contenedor de la carta (fondo rojo degradado)
+    .card1__contenedor {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, darken(variables.$bg-tertiary,15%) 0%, variables.$bg-secondary 75%, variables.$bg-secondary 100%);
+        border-radius: $borde-redondo;
+        gap: .7rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: .7rem;
+
+
+        // distribución, responsividad y estilo de fuente para el título
+        .card1__titulo {
+            display: flex;
+            width: 100%;
+            height: 20%;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            text-align: center;
+            font-family: variables.$font-title-cards;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5em;
+            text-transform: uppercase;
+
+            color: white;
+            flex-grow: 1;
+        }
+
+        //  distribución, respondividad, estilo para el contenido
+        .card1__contenido {
+            display: flex;
+            width: 100%;
+            height: 80%;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+
+            text-align: center;
+            font-family: variables.$font-content-card1;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.3em;
+
+            background-color: white;
+            border-radius: 0 0 $borde-redondo $borde-redondo;
+        }
+    }
+}
+
+// fondo de la card a animar
+.card1:before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    
+    z-index: -1;    
+    border-radius: $borde-redondo;
+    
+    border: .5rem solid transparent;
+    background: $fondo-card-before;  
+    opacity: 0;
+}
+
+// animacion para mostrar el fondo de la carta
+.card1:hover:before { 
+    transition: 0.3s;
+    transform: rotate(-10deg);
+    width: 95%;
+    height: 95%;
+    left: -2%;   
+    opacity: 1;
+    box-shadow: 5px 5px 20px black ;
+}
+
+
+
+.card2{
+    color: white;
+    
+    margin: 0 auto;
+    width: 500px;
+    background: radial-gradient(#480d35 , variables.$color2);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    
+
+
+    .card2__titulo{
+        // color de diapo
+        background-color: #C0189B;
+        min-height: 50%;
+        width: 70%;
+        align-self: flex-end;
+        margin-top: -5%;
+        margin-right: -10%;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        font-family: variables.$font-title-cards;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        text-shadow: -2px .2px red;
+        text-transform: uppercase;
+         
+        background-image: radial-gradient(#423288 15%, transparent 11%);
+        background-size: .4rem .4rem;
+        border: 2px #423288 solid;
+        box-shadow: -5px 5px 0px #423288;    
+
+        transition: transform 0.3s ease;
+    }
+
+    .card2__titulo:hover{
+        transform: scale(1.02);
+    }
+
+    .card2__contenido{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.2rem;
+
+        padding: 30px 30px;
+
+        color: black;
+
+        font-family: variables.$font-content-card2;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        
+        & > *{
+            position: relative;
+            background-color: white;
+
+            padding: 1.5rem .8rem;
+            width: 100%;
+            box-shadow: 5px 5px 0px cyan, -5px -5px 0px variables.$bg-tertiary;
+            border: 2px black solid;
+            transition: transform 0.3s ease;
+        }
+
+        & > *::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+            radial-gradient(circle, #423288 15%, transparent 16%);
+            background-size: .5rem .5rem;
+            background-repeat: repeat;
+            mask-image: linear-gradient(to right, black 0%, transparent 50%);
+            -webkit-mask-image: linear-gradient(to right, black 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        & img{
+            padding: 0;
+        }
+
+        & > *:hover {
+            transform: scale(1.02);
+        }
+
+        & > *:hover::before {
+            opacity: 1;
+        }
+    }
+}

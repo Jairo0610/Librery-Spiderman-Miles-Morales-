@@ -1,0 +1,536 @@
+@use 'variables';
+@use 'shadows' ;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+
+  }
+  body
+  {
+    margin-top: 15px ;
+    background-color: #ffffff;
+  
+  }
+
+/*=====================
+        INPUT DATE
+=====================*/
+.input-date {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input-week {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-month {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-datetime {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-time {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-date:hover,
+.input-week:hover,
+.input-month:hover,
+.input-datetime:hover,
+.input-time:hover {
+      transform: scale(1.005);
+    background-color: #fef9ff;
+}
+/*=====================
+        INPUTS COLOR
+=====================*/
+
+.input-color {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
+    border: 1px solid black;
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+} 
+.input-color-dark {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
+    border: 1px solid black;
+    background-color: variables.$color3;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: .1s linear all;
+} 
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 10px;
+  }
+  
+input[type="color"]::-moz-color-swatch {
+    border: none;
+    border-radius: 10px;
+  }
+  .input-color:hover,
+  .input-color-dark:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+  }
+  
+/*=====================
+    INPUTS BUTTON
+=====================*/
+.input-button{
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.input-button:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+/*=====================
+    INPUTS RESET
+=====================*/
+
+.input-reset {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  
+}
+.input-reset:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+
+/*=====================
+     INPUTS SUBMIT
+=====================*/
+
+
+.input-submit {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.input-submit:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+
+/*=====================
+        INPUTS NUMBER
+=====================*/
+
+.input-number {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.input-number:hover
+{
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+/*=====================
+ INPUTS TEXT, PASSWORD, EMAIL
+=====================*/
+
+
+.input {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    border-radius: 10px;
+}
+ 
+.input:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+/*=====================
+        LABELS
+=====================*/
+.label-form {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 600;
+    display: block;
+}
+.label-form-light {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: variables.$color3;
+    font-weight: 600;
+    display: block;
+}
+/*=====================
+ELIMINAR ANTES DE SUBIR
+=====================*/
+div
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*=====================
+    FORM-LAYOUT
+=====================*/
+.form-layout
+{
+    background-color: variables.$bg-primary;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+/*=====================
+        CHECKBOX
+=====================*/
+.checkbox-label-light {
+   margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px 10px;
+    padding-right: 15px;
+    border-radius: 15px;
+    color: variables.$color3;
+}
+.checkbox-label-dark {
+    margin-bottom: 20px;
+     display: inline-flex;
+     align-items: center;
+     color: #000000;
+     padding: 5px 10px;
+     padding-right: 15px;
+     border-radius: 15px;
+     font-weight: 600;
+ }
+
+input[type="checkbox"]
+{
+    appearance: none;
+    display: inline-flex;
+    border: 2px solid #BF0426;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-right: 5px;
+    transition: .3s ease-in-out all;
+}
+input[type="checkbox"]:checked {
+   background-color: #172d44;
+   outline: none;
+}
+input[type="checkbox"]:checked::after {
+   content: "🕸️";
+   font-weight: 500;
+   font-size: 15px;
+   position: relative; 
+   top: -2px;
+   left: -2px;
+   outline: none;
+}
+input[type="checkbox"]:hover
+{
+    background-color: #172d44;
+    content: "🕸️";
+    font-weight: 500;
+    font-size: 15px;
+    position: relative; 
+    top: -2px;
+    left: -2px;
+    outline: none;
+}
+
+/*=====================
+        SELECT
+=====================*/
+
+.select {
+    display: block;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    font-size: medium;
+    margin-bottom: 20px;
+    padding-right: 20%;
+    transition: .1s linear all;
+    option {
+        background-color: variables.$bg-primary;
+        color: white;
+        
+    }
+}
+.select:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+
+
+
+
+/*=====================
+       DATALIST
+=====================*/
+.datalist
+{
+    display: block;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #BF0426;
+    font-size: medium;
+    margin-bottom: 20px;
+    transition: .1s linear all;
+} 
+.datalist:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+ 
+
+/*=====================
+        TEXTAREA
+=====================*/
+
+.textarea {
+
+    width: 100%;
+    height: 200px;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #BF0426;
+    padding: 10px 10px;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: block;   
+    transition: .1s linear all;
+}
+.textarea:hover {
+    transform: scale(1.005);
+    background-color: #fef9ff;
+}
+
+
+
+/*=====================
+     RADIO BUTTON
+=====================*/
+
+.radio-label-dark
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: variables.$color3;
+}
+.radio-label-light
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: black;
+}
+   
+input[type="radio"]{
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid variables.$bg-secondary;
+    width: 16px;
+    height: 16px;
+}
+input[type="radio"]:checked {
+    background-color: variables.$bg-tertiary;
+    border: 4px solid variables.$bg-secondary;
+}
+
+input[type="radio"]:hover {
+    background-color: variables.$bg-tertiary;
+    border: 4px solid variables.$bg-secondary;
+}
+
+/*=====================
+     FIELDSET Y LEGEND
+=====================*/
+
+.fieldset-form {
+    border: 3px solid variables.$color1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: variables.$color3;
+}
+.fieldset-form-dark {
+    border: 3px solid variables.$color3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: variables.$color1;
+}
+.legend
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid variables.$bg-primary;
+    font-weight: 600;
+    background-color: variables.$color3;
+}
+
+
+
+
+/*=====================
+      INPUT FILE
+=====================*/
+
+
+.file-container {
+    input[type="file"] {
+        display: none;
+    }
+    i {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    label {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    border: 0;
+    display: inline-block;
+    position: relative;
+    background-color: variables.$bg-secondary;
+    color: variables.$color3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: .1s linear all;
+    cursor: pointer;
+}
+.file-container:hover,
+.file-container:focus,
+.file-container:active {
+   transform: scale(1.05);
+}
+
+.file-bordeado {
+    background-color: transparent;
+    border: 2px solid variables.$bg-secondary;
+    color: variables.$bg-secondary;
+}

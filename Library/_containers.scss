@@ -1,16 +1,4 @@
-/**Import de fonts de googlepis*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/**Reset.css*/
-@import url(Reset-style/reset.css);
-
-$bg-primary: #0A0E17;
-$bg-secondary: #BF0426;
-$bg-tertiary: #fff202;
-$bg-quaternary: #ffffff;
-$primary-color: #ffffff;
-$secondary-color: #0A0E17;
-$font-primary: "Open Sans", sans-serif;
-$font-comic: 'Comic Sans MS', cursive, sans-serif;
+@use 'variables';
 
 /**CONTENEDORES*/
 .container,
@@ -22,30 +10,26 @@ $font-comic: 'Comic Sans MS', cursive, sans-serif;
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 10px auto;
+    margin: variables.$spacing-8 auto;
 }
 
 .comic-yellow{
-  color: $secondary-color;
-  font-family: "Comic Sans MS", cursive, sans-serif;  
-  font-weight: bold;
-  background-color: $bg-tertiary;
-  background-image: radial-gradient(#BF0426 10%, transparent 11%);
+  color: variables.$color1;
+  background-color: variables.$bg-tertiary;
+  background-image: radial-gradient(variables.$bg-secondary 10%, transparent 11%);
   background-size: 10px 10px;
   box-shadow: 6px 6px 0px #333;
   border: 2px solid black;
-  margin-top: 10px;
+  margin-top: variables.$spacing-8;
 }
 .comic-red{
-  color: white;
-  font-family: $font-comic;  
-  font-weight: bold;
-  background-color: $bg-secondary;
+  color: variables.$color3;
+  background-color: variables.$bg-secondary;
   background-image: radial-gradient(#010577 10%, transparent 11%);
   background-size: 10px 10px;
   box-shadow: 6px 6px 0px #333;
   border: 2px solid black;
-  margin-top: 10px;
+  margin-top: variables.$spacing-8;
 }
   
 
@@ -93,18 +77,11 @@ $font-comic: 'Comic Sans MS', cursive, sans-serif;
     }
   }
 
-
-  /**CLASES UTILITARIAS*/
   @media (min-width: 375px) {
     .row{
       display: flex;
       flex-wrap:  wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: -15px;
-      margin-left: -15px;
-      max-width: 100%;
+      width: 100%;
     }
   }
   
@@ -112,12 +89,7 @@ $font-comic: 'Comic Sans MS', cursive, sans-serif;
     .row{
       display: flex;
       flex-wrap:  wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: -15px;
-      margin-left: -15px;
-      max-width: 100%;
+      width: 100%;
     }
   }
   
@@ -125,24 +97,14 @@ $font-comic: 'Comic Sans MS', cursive, sans-serif;
     .row{
       display: flex;
       flex-wrap:  wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: -15px;
-      margin-left: -15px;
-      max-width: 100%;
+      width: 100%;
     }
   }
   @media (min-width: 992px) {
     .row{
       display: flex;
       flex-wrap:  wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: -15px;
-      margin-left: -15px;
-      max-width: 100%;
+      width: 100%;
     }
   }
   
@@ -151,85 +113,81 @@ $font-comic: 'Comic Sans MS', cursive, sans-serif;
     .row{
       display: flex;
       flex-wrap:  nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: -15px;
-      margin-left: -15px;
-      max-width: 100%;
+      width: 100%;
     }
   }
   
   .col{
-    padding: 10px;
+    flex: 1 0 0%;
+    padding: variables.$spacing-8;
     box-sizing: border-box;
     max-width: 100%;
   }
   
   .col-1  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 8.33%;  
     max-width: 8.33%;  
   }
   .col-2  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 16.66%; 
     max-width: 16.66%; 
   }
   .col-3  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 25%;    
     max-width: 25%;    
   }
   .col-4  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 33.33%; 
     max-width: 33.33%; 
   }
   .col-5  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 41.66%; 
     max-width: 41.66%; 
   }
   .col-6  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 50%;    
     max-width: 50%;    
   }
   .col-7  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 58.33%; 
     max-width: 58.33%; 
   }
   .col-8  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 66.66%; 
     max-width: 66.66%; 
   }
   .col-9  { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 75%;    
     max-width: 75%;    
   }
   .col-10 { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 83.33%; 
     max-width: 83.33%; 
   }
   .col-11 { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 91.66%; 
     max-width: 91.66%; 
   }
   .col-12 { 
-    padding: 10px;
+    padding: variables.$spacing-8;
     flex: 0 0 100%;   
     max-width: 100%;   
   }
   
+  /*CLASES UTILITARIAS*/
   .text-center{
     text-align: center;
-    justify-content: center;
   }
   .align-items-start{
     align-items: flex-start;
