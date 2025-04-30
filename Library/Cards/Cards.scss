@@ -6,23 +6,32 @@ $fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, Variables.$
 linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
 $borde-redondo: 1.3rem;
 
+@mixin tipografia($familia, $peso, $estilo, $tamaño) {
+    font-family: $familia;
+    font-weight: $peso;
+    font-style: $estilo;
+    font-size: $tamaño;
+}
+  
 // estilo de carta1
-.card1 { 
-    margin: 1.2rem;
+.card-1 { 
+    margin: 1.5rem;
     position: relative;
-    
+    width: fit-content;
+    max-width: 500px;
     border-radius: $borde-redondo;
-    max-width: 300px;
+
     padding: .5rem;
 
     background: linear-gradient(0deg, white 45%, #D4D4D4 100%);
     box-shadow: 5px 5px 20px black;
 
     // contenedor de la carta (fondo rojo degradado)
-    .card1__contenedor {
+    .card-1__contenedor {
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle, darken(Variables.$bg-tertiary,15%) 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%);
+        background: radial-gradient(circle, Variables.$bg-tertiary 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%);
+
         border-radius: $borde-redondo;
         gap: .7rem;
 
@@ -34,7 +43,7 @@ $borde-redondo: 1.3rem;
 
 
         // distribución, responsividad y estilo de fuente para el título
-        .card1__titulo {
+        .card-1__titulo {
             display: flex;
             width: 100%;
             height: 20%;
@@ -44,11 +53,8 @@ $borde-redondo: 1.3rem;
             justify-content: center;
             gap: .5rem;
 
+            @include tipografia(Variables.$font-title-cards,400,normal,1.5em);
             text-align: center;
-            font-family: Variables.$font-title-cards;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.5em;
             text-transform: uppercase;
 
             color: white;
@@ -56,7 +62,7 @@ $borde-redondo: 1.3rem;
         }
 
         //  distribución, respondividad, estilo para el contenido
-        .card1__contenido {
+        .card-1__contenido {
             display: flex;
             width: 100%;
             height: 80%;
@@ -67,19 +73,20 @@ $borde-redondo: 1.3rem;
             padding: 1rem;
 
             text-align: center;
-            font-family: Variables.$font-content-card1;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.3em;
-
+            @include tipografia(Variables.$font-content-card1,400,normal,1.5em);
+            
             background-color: white;
             border-radius: 0 0 $borde-redondo $borde-redondo;
+
+            & > *{
+                max-width: 100%;
+            }
         }
     }
 }
 
 // fondo de la card a animar
-.card1:before{
+.card-1:before{
     content: '';
     top: 0;
     left: 0;
@@ -96,7 +103,7 @@ $borde-redondo: 1.3rem;
 }
 
 // animacion para mostrar el fondo de la carta
-.card1:hover:before { 
+.card-1:hover:before { 
     transition: 0.3s;
     transform: rotate(-10deg);
     width: 95%;
@@ -107,12 +114,11 @@ $borde-redondo: 1.3rem;
 }
 
 
-
-.card2{
-    color: white;
-    
-    margin: 0 auto;
-    width: 500px;
+// estilo de carta 2
+.card-2{
+    margin: 2rem;
+    width: fit-content;
+    max-width: 500px;
     background: radial-gradient(#480d35 , Variables.$color2);
     position: relative;
 
@@ -122,11 +128,9 @@ $borde-redondo: 1.3rem;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
     
-
-
-    .card2__titulo{
-        // color de diapo
-        background-color: #C0189B;
+    //posicionamiento y estilo para el titulo de la card
+    .card-2__titulo{
+        background-color: Variables.$color4;
         min-height: 50%;
         width: 70%;
         align-self: flex-end;
@@ -138,11 +142,9 @@ $borde-redondo: 1.3rem;
         flex-direction: column;
         justify-content: center;
 
+        color: white;
         text-align: center;
-        font-family: Variables.$font-title-cards;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5em;
+        @include tipografia(Variables.$font-title-cards,400,normal,1.5em);
         text-shadow: -2px .2px red;
         text-transform: uppercase;
          
@@ -154,11 +156,12 @@ $borde-redondo: 1.3rem;
         transition: transform 0.3s ease;
     }
 
-    .card2__titulo:hover{
+    .card-2__titulo:hover{
         transform: scale(1.02);
     }
 
-    .card2__contenido{
+    // estilo, disttibucion flexible para el contenido de la carta
+    .card-2__contenido{
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -166,26 +169,24 @@ $borde-redondo: 1.3rem;
         align-items: center;
         gap: 1.2rem;
 
-        padding: 30px 30px;
+        padding: 1.5rem;
 
         color: black;
-
-        font-family: Variables.$font-content-card2;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.2em;
+        @include tipografia(Variables.$font-content-card2,400,normal,1.2em);
         
+        // hijos del contenedor para el contenido de la carta
         & > *{
             position: relative;
             background-color: white;
 
-            padding: 1.5rem .8rem;
+            padding: 1rem;
             width: 100%;
             box-shadow: 5px 5px 0px cyan, -5px -5px 0px Variables.$bg-tertiary;
             border: 2px black solid;
             transition: transform 0.3s ease;
         }
 
+        // efecto al hacer hover
         & > *::before{
             content: '';
             position: absolute;
@@ -193,8 +194,7 @@ $borde-redondo: 1.3rem;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image:
-            radial-gradient(circle, #423288 15%, transparent 16%);
+            background-image: radial-gradient(circle, #423288 15%, transparent 16%);
             background-size: .5rem .5rem;
             background-repeat: repeat;
             mask-image: linear-gradient(to right, black 0%, transparent 50%);
@@ -205,6 +205,7 @@ $borde-redondo: 1.3rem;
             transition: opacity 0.3s ease;
         }
 
+        // las imagenes no tienen fondo blanco
         & img{
             padding: 0;
         }
