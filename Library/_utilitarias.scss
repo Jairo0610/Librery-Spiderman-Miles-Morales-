@@ -1,0 +1,392 @@
+@use 'variables';
+
+/*=====================
+      VARIABLES
+=====================*/
+
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-50: 50px;
+
+
+$font-weight-100: 100;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+
+
+$font-style-italic: italic;
+$font-style-oblique: oblique;
+$font-style-normal: normal;
+
+/*=====================
+    FONT SIZE
+=====================*/
+
+.fs-12 {font-size: $font-size-12;}
+.fs-14 {font-size: $font-size-14;}
+.fs-16 {font-size: $font-size-16;}
+.fs-18 {font-size: $font-size-18;}
+.fs-20 {font-size: $font-size-20;}
+.fs-22 {font-size: $font-size-22;}
+.fs-24 {font-size: $font-size-24;}
+.fs-26 {font-size: $font-size-26;}
+.fs-28 {font-size: $font-size-28;}
+.fs-30 {font-size: $font-size-30;}
+.fs-32 {font-size: $font-size-32;}
+.fs-34 {font-size: $font-size-34;}
+.fs-36 {font-size: $font-size-36;}
+.fs-38 {font-size: $font-size-38;}
+.fs-40 {font-size: $font-size-40;}
+.fs-42 {font-size: $font-size-42;}
+.fs-44 {font-size: $font-size-44;}
+.fs-46 {font-size: $font-size-46;}
+.fs-48 {font-size: $font-size-48;}
+.fs-50 {font-size: $font-size-50;}
+
+
+/*=====================
+    FONT WEIGHT
+=====================*/
+
+.fw-thin {font-weight: $font-weight-100;}
+.fw-light {font-weight: $font-weight-300;}
+.fw-normal {font-weight: $font-weight-400;}
+.fw-med {font-weight: $font-weight-500;}
+.fw-semibold {font-weight: $font-weight-600;}
+.fw-bold{font-weight: $font-weight-700;}
+.fw-bolder {font-weight: $font-weight-800;}
+
+/*=====================
+    FONT COLOR
+=====================*/
+.font-color-red {
+    color: variables.$bg-secondary;
+}
+.font-color-blue {
+    color: variables.$color2;
+}
+.font-color-darkblue {
+    color: variables.$bg-primary;
+}
+.font-color-darkgray {
+    color: variables.$color1;
+}
+.font-color-white {
+    color: variables.$color3;
+}
+.font-color-yellow {
+    color: variables.$bg-tertiary;
+}
+.font-color-magenta {
+    color: variables.$color4;
+}
+
+/*=====================
+    FONT TYPE
+=====================*/
+
+.font-style-italic {
+    font-style: $font-style-italic;
+}
+.font-style-oblique {
+    font-style: $font-style-oblique;
+}
+.font-style-normal {
+    font-style: $font-style-normal;
+}
+.font-comic {
+    font-family: variables.$font-primario;
+}
+.font-primary{
+    font-family: variables.$font-secundario;
+}
+
+/*=====================
+   MARGINS
+=====================*/
+.magin-0 {margin: variables.$spacing-0;}
+.margin-4 {margin: variables.$spacing-4;}
+.margin-8 {margin: variables.$spacing-8;}
+.margin-12 {margin: variables.$spacing-12;}
+.margin-16 {margin: variables.$spacing-16;}
+.margin-20 {margin: variables.$spacing-20;}
+.margin-24 {margin: variables.$spacing-24;}
+.margin-28 {margin: variables.$spacing-28;}
+.margin-32 {margin: variables.$spacing-32;}
+.margin-36 {margin: variables.$spacing-36;}
+.margin-48 {margin: variables.$spacing-48;}
+
+.margin-top-0 {margin-top: variables.$spacing-0;}
+.margin-top-4 {margin-top: variables.$spacing-4;}
+.margin-top-8 { margin-top: variables.$spacing-8;}
+.margin-top-12 {margin-top: variables.$spacing-12;}
+.margin-top-16 {margin-top: variables.$spacing-16;}
+.margin-top-20 {margin-top: variables.$spacing-20;}
+.margin-top-24 {margin-top: variables.$spacing-24;}
+.margin-top-28 {margin-top: variables.$spacing-28;}
+.margin-top-32 {margin-top: variables.$spacing-32;}
+.margin-top-36 {margin-top: variables.$spacing-36;}
+.margin-top-48 {margin-top: variables.$spacing-48;}
+
+.margin-bottom-0 {margin-bottom: variables.$spacing-0;}
+.margin-bottom-4 {margin-bottom: variables.$spacing-4;}
+.margin-bottom-8 {margin-bottom: variables.$spacing-8;}
+.margin-bottom-12 {margin-bottom: variables.$spacing-12;}
+.margin-bottom-16 {margin-bottom: variables.$spacing-16;}
+.margin-bottom-20 {margin-bottom: variables.$spacing-20;}
+.margin-bottom-24 {margin-bottom: variables.$spacing-24;}
+.margin-bottom-28 {margin-bottom: variables.$spacing-28;}
+.margin-bottom-32 {margin-bottom: variables.$spacing-32;}
+.margin-bottom-36 {margin-bottom: variables.$spacing-36;}
+.margin-bottom-48 {margin-bottom: variables.$spacing-48;}
+
+.margint-right-0 {margin-right: variables.$spacing-0;}
+.margin-right-4 {margin-right: variables.$spacing-4;}
+.margin-right-8 {margin-right: variables.$spacing-8;}
+.margin-right-12 {margin-right: variables.$spacing-12;}
+.margin-right-16 {margin-right: variables.$spacing-16;}
+.margin-right-20 {margin-right: variables.$spacing-20;}
+.margin-right-24 {margin-right: variables.$spacing-24;}
+.margin-right-28 {margin-right: variables.$spacing-28;}
+.margin-right-32 {margin-right: variables.$spacing-32;}
+.margin-right-36 {margin-right: variables.$spacing-36;}
+.margin-right-48 {margin-right: variables.$spacing-48;}
+
+.margin-left-0 {margin-left: variables.$spacing-0;}
+.margin-left-4 {margin-left: variables.$spacing-4;}
+.margin-left-8 {margin-left: variables.$spacing-8;}
+.margin-left-12 {margin-left: variables.$spacing-12;}
+.margin-left-16 {margin-left: variables.$spacing-16;}
+.margin-left-20 {margin-left: variables.$spacing-20;}
+.margin-left-24 {margin-left: variables.$spacing-24;}
+.margin-left-28 {margin-left: variables.$spacing-28;}
+.margin-left-32 {margin-left: variables.$spacing-32;}
+.margin-left-36 {margin-left: variables.$spacing-36;}
+.margin-left-48 {margin-left: variables.$spacing-48;}
+
+
+/*=====================
+    PADDINGS
+=====================*/
+
+.padding-0 {padding: variables.$spacing-0;}
+.padding-4 {padding: variables.$spacing-4;}
+.padding-8 {padding: variables.$spacing-8;}
+.padding-12 {padding: variables.$spacing-12;}
+.padding-16 {padding: variables.$spacing-16;}
+.padding-20 {padding: variables.$spacing-20;}
+.padding-24 {padding: variables.$spacing-24;}
+.padding-28 {padding: variables.$spacing-28;}
+.padding-32 {padding: variables.$spacing-32;}
+.padding-36 {padding: variables.$spacing-36;}
+.padding-48 {padding: variables.$spacing-48;}
+
+.padding-top-0 {margin-top: variables.$spacing-0;}
+.padding-top-4 {padding-top: variables.$spacing-4;}
+.padding-top-8 {padding-top: variables.$spacing-8;}
+.padding-top-12 {padding-top: variables.$spacing-12;}
+.padding-top-16 {padding-top: variables.$spacing-16;}
+.padding-top-20 {padding-top: variables.$spacing-20;}
+.padding-top-24 {padding-top: variables.$spacing-24;}
+.padding-top-28 {padding-top: variables.$spacing-28;}
+.padding-top-32 {padding-top: variables.$spacing-32;}
+.padding-top-36 {padding-top: variables.$spacing-36;}
+.padding-top-48 {padding-top: variables.$spacing-48;}
+
+.padding-bottom-0 {padding-bottom: variables.$spacing-0;}
+.padding-bottom-4 {padding-bottom: variables.$spacing-4;}
+.padding-bottom-8 {padding-bottom: variables.$spacing-8;}
+.padding-bottom-12 {padding-bottom: variables.$spacing-12;}
+.padding-bottom-16 {padding-bottom: variables.$spacing-16;}
+.padding-bottom-20 {padding-bottom: variables.$spacing-20;}
+.padding-bottom-24 {padding-bottom: variables.$spacing-24;}
+.padding-bottom-28 {padding-bottom: variables.$spacing-28;}
+.padding-bottom-32 {padding-bottom: variables.$spacing-32;}
+.padding-bottom-36 {padding-bottom: variables.$spacing-36;}
+.padding-bottom-48 {padding-bottom: variables.$spacing-48;}
+
+.padding-right-0 {padding-right: variables.$spacing-0;}
+.padding-right-4 {padding-right: variables.$spacing-4;}
+.padding-right-8 {padding-right: variables.$spacing-8;}
+.padding-right-12 {padding-right: variables.$spacing-12;}
+.padding-right-16 {padding-right: variables.$spacing-16;}
+.padding-right-20 {padding-right: variables.$spacing-20;}
+.padding-right-24 {padding-right: variables.$spacing-24;}
+.padding-right-28 {padding-right: variables.$spacing-28;}
+.padding-right-32 {padding-right: variables.$spacing-32;}
+.padding-right-36 {padding-right: variables.$spacing-36;}
+.padding-right-48 {padding-right: variables.$spacing-48;}
+
+.padding-left-0 {padding-left: variables.$spacing-0;}
+.padding-left-4 {padding-left: variables.$spacing-4;}
+.padding-left-8 {padding-left: variables.$spacing-8;}
+.padding-left-12 {padding-left: variables.$spacing-12;}
+.padding-left-16 {padding-left: variables.$spacing-16;}
+.padding-left-20 {padding-left: variables.$spacing-20;}
+.padding-left-24 {padding-left: variables.$spacing-24;}
+.padding-left-28 {padding-left: variables.$spacing-28;}
+.padding-left-32 {padding-left: variables.$spacing-32;}
+.padding-left-36 {padding-left: variables.$spacing-36;}
+.padding-left-48 {padding-left: variables.$spacing-48;}
+
+
+
+/*=====================
+         BORDES
+=====================*/
+
+.border-1 {
+    border: 1px solid black;
+}
+.border-2{
+    border: 2px solid black;
+}
+.border-3
+{
+    border: 3px solid black;
+}
+.border-4
+{
+    border: 4px solid black;
+}
+.border-5 {
+    border: 5px solid black;
+}
+.border-6 {
+    border: 6px solid black;
+}
+.border-7 {
+    border: 7px solid black;
+}
+.border-8 {
+    border: 8px solid black;
+}
+.border-9 {
+    border: 9px solid black;
+}
+.border-10 {
+    border: 10px solid black;
+}
+
+.border-red {border-color: variables.$bg-secondary}
+.border-blue {border-color: variables.$color2;}
+.border-darkblue { border-color: variables.$bg-primary;}
+.border-darkgray {border-color: variables.$color1;}
+.border-white {border-color: variables.$color3;}
+.border-yellow {border-color: variables.$bg-tertiary;;}
+.border-magenta {border-color: variables.$color4;}
+
+.border-radius-0 {border-radius: variables.$spacing-0;}
+.border-radius-4 {border-radius: variables.$spacing-4;}
+.border-radius-8 {border-radius: variables.$spacing-8;}
+.border-radius-12 {border-radius: variables.$spacing-12;}
+.border-radius-16 {border-radius: variables.$spacing-16;}
+.border-radius-20 {border-radius: variables.$spacing-20;}
+.border-radius-24 {border-radius: variables.$spacing-24;}
+.border-radius-28 {border-radius: variables.$spacing-28;}
+.border-radius-32 {border-radius: variables.$spacing-32;}
+.border-radius-36 {border-radius: variables.$spacing-36;}
+.border-radius-full {border-radius: 999px;}
+
+.text-center{
+    text-align: center;
+}
+.align-items-start{
+  align-items: flex-start;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-items-end{
+  align-items: flex-end;
+}
+.align-self-center{
+  align-self: center;
+}
+.align-self-start{
+  align-self: self-start;
+}
+.align-self-end{
+  align-self: self-end;
+}
+.justify-content-start{
+  justify-content: flex-start;
+}
+.justify-content-end{
+  justify-content: flex-end;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.justify-content-around{
+  justify-content: space-around;
+}
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+.order-first{
+  order: -1;
+}
+.order-last{
+  order: 12;
+}
+.order-1{
+  order: 1;
+}
+.order-2{
+  order: 2;
+}
+.order-3{
+  order: 3;
+}
+.order-4{
+  order: 4;
+}
+.order-5{
+  order: 5;
+}
+.order-6{
+  order: 6;
+}
+.order-7{
+  order: 7;
+}
+.order-8{
+  order: 8;
+}
+.order-9{
+  order: 9;
+}
+.order-10{
+  order: 10;
+}
+.order-11{
+  order: 11;
+}
+.order-12{
+  order: 12;
+}

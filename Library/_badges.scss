@@ -1,9 +1,9 @@
-@use '../Shadows/shadows' ;
-@use'../Styles/Variables';
+@use 'shadows' ;
+@use'variables';
 
-$badge-red: Variables.$bg-secondary;
+$badge-red: variables.$bg-secondary;
 $badge-red-op: #BF04262c;
-$badge-magenta: Variables.$color4;
+$badge-magenta: variables.$color4;
 $badge-magenta-op: #C0189B2c;
 $badge-yellow: #d3b700;
 $badge-yellow-op: #fef6002f;
@@ -11,7 +11,7 @@ $badge-blue: #014c82;
 $badge-blue-op: #147fcc2c;
 $badge-light: #E3E2F4;
 $badge-light-op: #E3E2F431;
-$badge-dark: Variables.$color1;
+$badge-dark: variables.$color1;
 $badge-dark-op: #1f010313;
 
 
@@ -77,32 +77,25 @@ $badge-dark-op: #1f010313;
 
 .badge-solid-red {
     background-color: $badge-red;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .badge-solid-blue {
     background-color: $badge-blue;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .badge-solid-yellow {
     background-color: $badge-yellow;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .badge-solid-magenta {
     background-color: $badge-magenta;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .badge-solid-dark {
     background-color: $badge-dark;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .badge-solid-light {
     background-color: $badge-light;
-    color: Variables.$color1;
+    color: variables.$color1;
 }
-
-  
-  
-  
-  
-  
-  

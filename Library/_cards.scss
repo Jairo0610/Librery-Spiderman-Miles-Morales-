@@ -1,8 +1,7 @@
-@use '../Styles/Variables'; 
-@import url(../Styles/Reset.css);
+@use 'variables';
 
 
-$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%) padding-box, 
+$fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, variables.$bg-secondary 75%, variables.$bg-secondary 100%) padding-box, 
 linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
 $borde-redondo: 1.3rem;
 
@@ -181,7 +180,7 @@ $borde-redondo: 1.3rem;
 
             padding: 1rem;
             width: 100%;
-            box-shadow: 5px 5px 0px cyan, -5px -5px 0px Variables.$bg-tertiary;
+            box-shadow: 5px 5px 0px cyan, -5px -5px 0px variables.$bg-tertiary;
             border: 2px black solid;
             transition: transform 0.3s ease;
         }
