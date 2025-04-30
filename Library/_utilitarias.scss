@@ -1,4 +1,127 @@
 @use 'variables';
+
+/*=====================
+      VARIABLES
+=====================*/
+
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-50: 50px;
+
+
+$font-weight-100: 100;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+
+
+$font-style-italic: italic;
+$font-style-oblique: oblique;
+$font-style-normal: normal;
+
+/*=====================
+    FONT SIZE
+=====================*/
+
+.fs-12 {font-size: $font-size-12;}
+.fs-14 {font-size: $font-size-14;}
+.fs-16 {font-size: $font-size-16;}
+.fs-18 {font-size: $font-size-18;}
+.fs-20 {font-size: $font-size-20;}
+.fs-22 {font-size: $font-size-22;}
+.fs-24 {font-size: $font-size-24;}
+.fs-26 {font-size: $font-size-26;}
+.fs-28 {font-size: $font-size-28;}
+.fs-30 {font-size: $font-size-30;}
+.fs-32 {font-size: $font-size-32;}
+.fs-34 {font-size: $font-size-34;}
+.fs-36 {font-size: $font-size-36;}
+.fs-38 {font-size: $font-size-38;}
+.fs-40 {font-size: $font-size-40;}
+.fs-42 {font-size: $font-size-42;}
+.fs-44 {font-size: $font-size-44;}
+.fs-46 {font-size: $font-size-46;}
+.fs-48 {font-size: $font-size-48;}
+.fs-50 {font-size: $font-size-50;}
+
+
+/*=====================
+    FONT WEIGHT
+=====================*/
+
+.fw-thin {font-weight: $font-weight-100;}
+.fw-light {font-weight: $font-weight-300;}
+.fw-normal {font-weight: $font-weight-400;}
+.fw-med {font-weight: $font-weight-500;}
+.fw-semibold {font-weight: $font-weight-600;}
+.fw-bold{font-weight: $font-weight-700;}
+.fw-bolder {font-weight: $font-weight-800;}
+
+/*=====================
+    FONT COLOR
+=====================*/
+.font-color-red {
+    color: variables.$bg-secondary;
+}
+.font-color-blue {
+    color: variables.$color2;
+}
+.font-color-darkblue {
+    color: variables.$bg-primary;
+}
+.font-color-darkgray {
+    color: variables.$color1;
+}
+.font-color-white {
+    color: variables.$color3;
+}
+.font-color-yellow {
+    color: variables.$bg-tertiary;
+}
+.font-color-magenta {
+    color: variables.$color4;
+}
+
+/*=====================
+    FONT TYPE
+=====================*/
+
+.font-style-italic {
+    font-style: $font-style-italic;
+}
+.font-style-oblique {
+    font-style: $font-style-oblique;
+}
+.font-style-normal {
+    font-style: $font-style-normal;
+}
+.font-comic {
+    font-family: variables.$font-primario;
+}
+.font-primary{
+    font-family: variables.$font-secundario;
+}
+
 /*=====================
    MARGINS
 =====================*/
@@ -185,3 +308,85 @@
 .border-radius-32 {border-radius: variables.$spacing-32;}
 .border-radius-36 {border-radius: variables.$spacing-36;}
 .border-radius-full {border-radius: 999px;}
+
+.text-center{
+    text-align: center;
+}
+.align-items-start{
+  align-items: flex-start;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-items-end{
+  align-items: flex-end;
+}
+.align-self-center{
+  align-self: center;
+}
+.align-self-start{
+  align-self: self-start;
+}
+.align-self-end{
+  align-self: self-end;
+}
+.justify-content-start{
+  justify-content: flex-start;
+}
+.justify-content-end{
+  justify-content: flex-end;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.justify-content-around{
+  justify-content: space-around;
+}
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+.order-first{
+  order: -1;
+}
+.order-last{
+  order: 12;
+}
+.order-1{
+  order: 1;
+}
+.order-2{
+  order: 2;
+}
+.order-3{
+  order: 3;
+}
+.order-4{
+  order: 4;
+}
+.order-5{
+  order: 5;
+}
+.order-6{
+  order: 6;
+}
+.order-7{
+  order: 7;
+}
+.order-8{
+  order: 8;
+}
+.order-9{
+  order: 9;
+}
+.order-10{
+  order: 10;
+}
+.order-11{
+  order: 11;
+}
+.order-12{
+  order: 12;
+}
