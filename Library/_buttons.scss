@@ -6,7 +6,10 @@ $color-quintario: #FEF9FF;
 $color-sextario: #CEB744;
 $color-septimo: #C0189B;
 
-body{
+/*=====================
+   OBSERVACION: NO SE DEBE TRABAJAR DIRECTAMENTE EN LAS ETIQUITAS DE HTML SI NO CON CLASES
+=====================*/
+.body{
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -14,12 +17,12 @@ body{
     //width: 800px;
     gap: 25px;
 
-    h1, h3{
+    .h1, .h3{
         width: 100%;
         margin-left: 25px;
     }
 
-    h3{
+    .h3{
         text-align: center;
         margin-top: 40px;
     }

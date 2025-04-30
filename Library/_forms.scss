@@ -1,18 +1,5 @@
 @use 'variables';
 @use 'shadows' ;
-
-* {
-    box-sizing: border-box;
-    outline: none;
-
-  }
-  body
-  {
-    margin-top: 15px ;
-    background-color: #ffffff;
-  
-  }
-
 /*=====================
         INPUT DATE
 =====================*/
@@ -262,27 +249,7 @@ input[type="color"]::-moz-color-swatch {
     font-weight: 600;
     display: block;
 }
-/*=====================
-ELIMINAR ANTES DE SUBIR
-=====================*/
-div
-{
-    width: 90%;
-    margin: 0 auto;
-}
 
-/*=====================
-    FORM-LAYOUT
-=====================*/
-.form-layout
-{
-    background-color: variables.$bg-primary;
-    padding: 20px 30px;
-    border-radius: 15px;
-    border: 2px solid rgb(255, 0, 0);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
 /*=====================
         CHECKBOX
 =====================*/
