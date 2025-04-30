@@ -1,18 +1,5 @@
-@use '../Styles/Variables';
-@use '../Shadows/shadows' ;
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-* {
-    box-sizing: border-box;
-    outline: none;
-
-  }
-  body
-  {
-    margin-top: 15px ;
-    background-color: #ffffff;
-  
-  }
-
+@use 'variables';
+@use 'shadows' ;
 /*=====================
         INPUT DATE
 =====================*/
@@ -98,7 +85,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    box-shadow: 4px 4px 0px Variables.$bg-secondary;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
     border: 1px solid black;
     background-color: transparent;
     width: 50px;
@@ -113,9 +100,9 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    box-shadow: 4px 4px 0px Variables.$bg-secondary;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
     border: 1px solid black;
-    background-color: Variables.$color3;
+    background-color: variables.$color3;
     width: 50px;
     height: 40px;
     cursor: pointer;
@@ -145,7 +132,7 @@ input[type="color"]::-moz-color-swatch {
 .input-button{
     padding: 10px 15px;
     border: 2px solid #000000;
-    box-shadow: 4px 4px 0px Variables.$bg-secondary;
+    box-shadow: 4px 4px 0px variables.$bg-secondary;
     margin-bottom: 20px;
     transition: .1s linear all;
     display: block;
@@ -258,31 +245,11 @@ input[type="color"]::-moz-color-swatch {
 .label-form-light {
     margin-bottom: 5px;
     letter-spacing: 1px;
-    color: Variables.$color3;
+    color: variables.$color3;
     font-weight: 600;
     display: block;
 }
-/*=====================
-ELIMINAR ANTES DE SUBIR
-=====================*/
-div
-{
-    width: 90%;
-    margin: 0 auto;
-}
 
-/*=====================
-    FORM-LAYOUT
-=====================*/
-.form-layout
-{
-    background-color: Variables.$bg-primary;
-    padding: 20px 30px;
-    border-radius: 15px;
-    border: 2px solid rgb(255, 0, 0);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
 /*=====================
         CHECKBOX
 =====================*/
@@ -294,7 +261,7 @@ div
     padding: 5px 10px;
     padding-right: 15px;
     border-radius: 15px;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .checkbox-label-dark {
     margin-bottom: 20px;
@@ -360,7 +327,7 @@ input[type="checkbox"]:hover
     padding-right: 20%;
     transition: .1s linear all;
     option {
-        background-color: Variables.$bg-primary;
+        background-color: variables.$bg-primary;
         color: white;
         
     }
@@ -431,7 +398,7 @@ input[type="checkbox"]:hover
     align-items: center;
     gap: 5px;
     margin-bottom: 20px;
-    color: Variables.$color3;
+    color: variables.$color3;
 }
 .radio-label-light
 {
@@ -445,18 +412,18 @@ input[type="checkbox"]:hover
 input[type="radio"]{
     appearance: none;
     border-radius: 50%;
-    border: 2px solid Variables.$bg-secondary;
+    border: 2px solid variables.$bg-secondary;
     width: 16px;
     height: 16px;
 }
 input[type="radio"]:checked {
-    background-color: Variables.$bg-tertiary;
-    border: 4px solid Variables.$bg-secondary;
+    background-color: variables.$bg-tertiary;
+    border: 4px solid variables.$bg-secondary;
 }
 
 input[type="radio"]:hover {
-    background-color: Variables.$bg-tertiary;
-    border: 4px solid Variables.$bg-secondary;
+    background-color: variables.$bg-tertiary;
+    border: 4px solid variables.$bg-secondary;
 }
 
 /*=====================
@@ -464,30 +431,30 @@ input[type="radio"]:hover {
 =====================*/
 
 .fieldset-form {
-    border: 3px solid Variables.$color1;
+    border: 3px solid variables.$color1;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    background-color: Variables.$color3;
+    background-color: variables.$color3;
 }
 .fieldset-form-dark {
-    border: 3px solid Variables.$color3;
+    border: 3px solid variables.$color3;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    background-color: Variables.$color1;
+    background-color: variables.$color1;
 }
 .legend
 {
     padding: 5px 10px;
     border-radius: 10px;
-    border: 3px solid Variables.$bg-primary;
+    border: 3px solid variables.$bg-primary;
     font-weight: 600;
-    background-color: Variables.$color3;
+    background-color: variables.$color3;
 }
 
 
@@ -514,8 +481,8 @@ input[type="radio"]:hover {
     border: 0;
     display: inline-block;
     position: relative;
-    background-color: Variables.$bg-secondary;
-    color: Variables.$color3;
+    background-color: variables.$bg-secondary;
+    color: variables.$color3;
     padding: 10px 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -531,15 +498,6 @@ input[type="radio"]:hover {
 
 .file-bordeado {
     background-color: transparent;
-    border: 2px solid Variables.$bg-secondary;
-    color: Variables.$bg-secondary;
+    border: 2px solid variables.$bg-secondary;
+    color: variables.$bg-secondary;
 }
-
-
-
-
-
-
-
-
-  
