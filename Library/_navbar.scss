@@ -1,95 +1,287 @@
-$primary-color : #0A0E17;
-$second-color : #BF0426;
+@use '../Styles/Variables'; 
+@import url(../Styles/Reset.css);
 
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
-
-body {
-    background-color: white;
+*{
+    box-sizing: border-box;
 }
 
-.navbar {
-    width: 100%;
+// barra de navegación principal
+.menu {
+    background-color: Variables.$bg-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 5%;
 
-    .navbar__nav {
-        background-color: $primary-color;
-        position: relative;
+    font-family: Variables.$font-primario;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+    // contenedor para la imagen
+    .menu__imagen{
+        height: 150px;
+        width: 100%;
+        max-width: 200px;
+        min-width: 100px;
+        max-height: 200px;
+        min-height: 100px;
+        
+        mask-image: 
+            linear-gradient(to right, transparent, black 20%, black 50%, transparent),
+            linear-gradient(to bottom, transparent, black 20%, black 90%, transparent);
+        mask-composite: intersect;
+     
+        & > img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // contenedor para control de busqueda
+    .menu__busqueda{
         display: flex;
-        justify-content: flex-start;
-        z-index: 1;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        min-height: 100px;
 
-        .nav__item a{
-            background-color: $primary-color;
-            position: relative;
-            display: block;
-            margin-left: 20px;
-            padding: 30px;
-            transition: 0.5s;
-            text-decoration: none;
-            color: white;
-            font-size: 2em;
-            border: $primary-color 3px solid;
-            border-radius: 2px;
-            
+
+        .busqueda--barra, .busqueda--boton{
+            color: black;
+            background-color: white;
+
+            font-family: Variables.$font-primario;
+            font-size: .8em;
+            min-height: 30px;
+
+            border-radius: .8rem;
+            box-shadow: 5px 5px 0 Variables.$color2;
         }
 
-        
-        @media (hover: hover){
-            .nav__item a:before {
+        .busqueda--barra{
+            max-width: 200px;
+        }
+
+        .busqueda--barra:focus, .busqueda--boton:active{
+            border: 2px solid Variables.$bg-secondary;
+            outline: none;
+        }      
+    }
+
+
+    // contenedor para los enlaces de navegación
+    .menu__nav {
+        background-color: Variables.$bg-primary;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+             
+        z-index: 1;
+        gap: 10px;
+
+        // estilo base para los elementos enlaces
+        %elementos {
+            min-width: 150px;
+            max-width: 270px;
+            background-color: Variables.$bg-primary;
+            position: relative;
+            display: block;
+            padding: 1rem;
+            transition: 0.5s;
+            
+            text-decoration: none;
+            color: white;
+            border: Variables.$bg-primary 3px solid;
+            border-radius: 0.2rem;
+        }
+
+        /*Elemento normal*/
+        .nav__elemento{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav__elemento a {
+            @extend %elementos;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        //por defecto al hacer click en enlaces (sirve para pantallas queno cuenten con cursor)
+        @media (hover:none) {
+            .nav__elemento a:active {
+                color: black;
+                background-color: yellow;
+                background-image: radial-gradient(red 10%, transparent 11%);
+                background-size: .8rem .8rem;
+                animation: 0.5s glitch 1;
+            }
+        }
+
+        // estilo en hover solo si la pantalla cuenta con cursor
+        @media (hover: hover) {
+            .nav__elemento a:before {
                 content: '';
                 position: absolute;
                 top: 10px;
                 left: 10px;
                 width: 100%;
                 height: 100%;
-                background: red;
-                background-image: radial-gradient($primary-color 15%, transparent 11%);
-                background-size: 7px 7px;
+                background: Variables.$bg-secondary;
+                background-image: radial-gradient(Variables.$bg-primary 15%, transparent 11%);
+                background-size: .4rem .4rem;
                 z-index: -1;
                 transition: transform 0.5s ease-in-out;
             }
 
-            .nav__item a:hover {
+            .nav__elemento a:hover {
                 background-color: yellow;
-                background-image: radial-gradient(red 10%, transparent 11%);
-                background-size: 10px 10px;
+                background-image: radial-gradient(red 5%, transparent 11%);
+                background-size: .8rem .8rem;
             }
 
-            .nav__item a:nth-child(1):before{
+            .nav__elemento a:before {
                 transform-origin: top;
                 transform: scaleY(0);
             }
-    
-            .nav__item a:hover:nth-child(1):before{
+
+            .nav__elemento a:hover:before {
                 transform-origin: bottom;
                 transform: scaleY(1);
             }
-    
-    
-            .nav__item a:hover {
-                animation: 0.5s glitch 1; 
+
+            .nav__elemento a:hover {
+                animation: 0.3s glitch 1;
                 color: black;
             }
         }
 
-        .nav__item a:active{
-            color: black;
-            background-color: yellow;
-            background-image: radial-gradient(red 10%, transparent 11%);
-            background-size: 10px 10px;
-            animation: 0.5s glitch 1; 
+        // animacion glitch para el texto
+        @keyframes glitch {
+            0% {
+                text-shadow: red -4px 0, cyan 4px 0;
+            }
+
+            50% {
+                text-shadow: red 4px 0, cyan -4px 0;
+            }
+
+            100% {
+                text-shadow: red -4px 0, cyan 4px 0;
+            }
         }
 
-        @keyframes glitch {
-                0%{
-                    text-shadow: red -4px 0, cyan 4px 0;    
+        /*Elemento dropdown*/
+        .nav__elemento--dropdown {
+            position: relative;
+            @extend %elementos; 
+                   
+            
+            // contenedor para ver los subelementos del dropdown
+            .dropdown__boton{
+                cursor: pointer;
+                background-color: Variables.$bg-primary;
+                
+
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.5rem;
+                text-align: center;
+
+                // flecha indicadora en el dropdown
+                .flecha {
+                    position: relative;
+                    display: inline-block;
+                    height: 1rem;
+                    width: 1rem;
+                    margin-left: .5rem;
+                    margin-top: .2rem;
                 }
-                50%{
-                    text-shadow: red 4px 0, cyan -4px 0;       
-                }
-                100%{
-                    text-shadow: red -4px 0, cyan 4px 0;    
+        
+                // grosor y posicion de la flecha
+                .flecha div {
+                    position: absolute;
+                    height: .8rem;
+                    width: .8rem;
+                    border-top: .2rem white solid;
+                    border-left: .2rem white solid;
+                    transform: rotate(225deg);
+                    transition: transform 0.3s ease;
                 }
             }
+
+            // contenedor para los subelementos del dropdown
+            .dropdown__lista{
+                background-color: Variables.$bg-primary;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 0 0 0.2rem 0.2rem;
+
+                gap: .5rem;
+                display: none;
+
+                // asegura que se vea enfrente de todo
+                z-index: 100;
+
+                .nav__elemento a{
+                    font-size: 1rem;
+                }
+
+                .nav__elemento a:before {
+                    background-color: Variables.$color4;
+                }
+            }
+
+            // animacion para animar la flecha en el dropdown
+            &:hover {
+                 >.dropdown__boton .flecha div {
+                    transform: rotate(45deg);
+                }
+
+                .dropdown__lista {            
+                    min-width: 100%;
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 1; 
+                    
+                    .nav__elemento a, .nav__elemento a:active{
+                        padding: 1rem;                        
+                    }            
+                }
+            }         
+        }
+    }
+}
+
+// configuracion para moviles cambia a columnas los elementos en navbar
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        .navbar__nav{
+            >.nav__elemento--dropdown{
+                padding: 0 30px;
+            }
+        }
+    }
+
+    .navbar__nav{
+        flex-direction: column;   
     }
 }
