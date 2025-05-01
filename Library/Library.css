@@ -237,7 +237,7 @@ h6 {
 }
 
 /*=====================
-   MARGINS
+        MARGINS
 =====================*/
 .magin-0 {
   margin: 0px !important;
@@ -683,7 +683,7 @@ h6 {
 }
 
 /*=====================
-         BORDES
+        BORDES
 =====================*/
 .border-none {
   border: none !important;
@@ -902,75 +902,94 @@ h6 {
 }
 
 .order-12 {
-  order: 12 !important;
+  order: 12;
 }
 
-.d-flex {
-  display: flex !important;
+/*========================================
+          REDONDEAR ELEMENTOS
+========================================*/
+.br-sm {
+  border-radius: 0.25rem !important;
 }
 
-.d-inline.flex {
-  display: inline-flex !important;
+.br-md {
+  border-radius: 1rem !important;
 }
 
-.d-inline-block {
-  display: inline-block !important;
+.br-lg {
+  border-radius: 3rem !important;
 }
 
-.d-block {
-  display: block !important;
+.br-xl {
+  border-radius: 5rem !important;
 }
 
-.d-grid {
-  display: grid !important;
+.br-full {
+  border-radius: 100% !important;
 }
 
-.d-inline-grid {
-  display: inline-block !important;
+/*=======================================
+          OCULTAR ELEMENTOS
+========================================*/
+@media (min-width: 640px) {
+  .hidden--sm {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .hidden--md {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .hidden--lg {
+    display: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hidden--xl {
+    display: none !important;
+  }
+}
+.hide-everything {
+  display: none !important;
 }
 
-.flex.wrap {
-  flex-wrap: wrap !important;
+.fade-everything {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: visibility 0s 0.5s, opacity 0.5s ease-out !important;
 }
 
-.width-10 {
-  width: 10% !important;
+/*============================================
+          COLORES DE FONDO DE ELEMENTOS
+=============================================*/
+.bg-blue-black {
+  background-color: #0A0E17 !important;
 }
 
-.width-20 {
-  width: 20% !important;
+.bg-deep-red {
+  background-color: #BF0426 !important;
 }
 
-.width-30 {
-  width: 30% !important;
+.bg-sun-yellow {
+  background-color: #FEF400 !important;
 }
 
-.width-40 {
-  width: 40% !important;
+.bg-charcoal-gray {
+  background-color: #161616 !important;
 }
 
-.width-50 {
-  width: 50% !important;
+.bg-dark-blue {
+  background-color: #172D44 !important;
 }
 
-.width-60 {
-  width: 60% !important;
+.bg-warm-white {
+  background-color: #FEF9FF !important;
 }
 
-.width-70 {
-  width: 70% !important;
-}
-
-.width-80 {
-  width: 80% !important;
-}
-
-.width-90 {
-  width: 90% !important;
-}
-
-.width-100 {
-  width: 100% !important;
+.bg-hot-pink {
+  background-color: #C0189B !important;
 }
 
 .container {
@@ -1816,22 +1835,22 @@ input[type=radio]:hover {
 /*=====================
    OBSERVACION: NO SE DEBE TRABAJAR DIRECTAMENTE EN LAS ETIQUITAS DE HTML SI NO CON CLASES
 =====================*/
-.body {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 25px auto;
-  gap: 25px;
-}
-.body .h1, .body .h3 {
+/*display: flex;
+justify-content:space-around;
+flex-wrap: wrap;
+margin: 25px auto;
+gap: 25px;*/
+.h1, .h3 {
   width: 100%;
   margin-left: 25px;
 }
-.body .h3 {
+
+.h3 {
   text-align: center;
   margin-top: 40px;
 }
-.body .btn__E1 {
+
+.btn__E1 {
   position: relative;
   display: inline-block;
   font-size: 1.3rem;
@@ -1847,12 +1866,13 @@ input[type=radio]:hover {
   background-image: radial-gradient(rgba(10, 14, 23, 0.08) 1px, transparent 1px);
   background-size: 6px 6px;
 }
-.body .btn__E1:hover {
+.btn__E1:hover {
   transform: translate(-3px, -3px);
   box-shadow: 9px 9px 0 #172D44, 0 0 0 3px #C0189B;
   background-color: #FEF9FF;
 }
-.body .btn__E2 {
+
+.btn__E2 {
   background-color: #BF0426;
   color: #FEF9FF;
   border: 3px solid #172D44;
@@ -1865,12 +1885,13 @@ input[type=radio]:hover {
   cursor: pointer;
   position: relative;
 }
-.body .btn__E2:hover {
+.btn__E2:hover {
   background-color: #C0189B;
   color: #161616;
   box-shadow: 6px 6px 0 #CEB744;
 }
-.body .btn__E3 {
+
+.btn__E3 {
   background-color: #CEB744;
   color: #0A0E17;
   border: 4px dashed #161616;
@@ -1882,14 +1903,15 @@ input[type=radio]:hover {
   transition: all 0.3s ease;
   transform: rotate(-2deg);
 }
-.body .btn__E3:hover {
+.btn__E3:hover {
   background-color: #172D44;
   color: #FEF9FF;
   box-shadow: 5px 5px 0 #BF0426;
   transform: rotate(1deg) scale(1.05);
   border: 4px solid #FEF9FF;
 }
-.body .btn__E4 {
+
+.btn__E4 {
   background: linear-gradient(135deg, #BF0426, #172D44);
   color: #FEF9FF;
   border: 3px solid #BF0426;
@@ -1904,7 +1926,7 @@ input[type=radio]:hover {
   position: relative;
   overflow: hidden;
 }
-.body .btn__E4::before {
+.btn__E4::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -1914,85 +1936,88 @@ input[type=radio]:hover {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 70%);
   z-index: 0;
 }
-.body .btn__E4:hover {
+.btn__E4:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px #BF0426;
   background: linear-gradient(135deg, #BF0426, #0A0E17);
 }
-.body .btn__E4:active {
+.btn__E4:active {
   transform: scale(0.98);
 }
-.body .btn__E4 span {
+.btn__E4 span {
   z-index: 1;
   position: relative;
 }
-.body .btn--p {
+
+.btn--p {
   font-size: 1rem;
   padding: 10px 20px;
 }
-.body .btn--m {
+
+.btn--m {
   font-size: 1.9rem;
   padding: 31px 62px;
 }
-.body .btn--g {
+
+.btn--g {
   font-size: 2.4rem;
   padding: 40px 80px;
 }
+
 @media screen and (max-width: 600px) {
-  .body .btn__E1, .body .btn__E2, .body .btn__E3, .body .btn__E4 {
+  .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
     font-size: 1rem;
     padding: 12px 24px;
   }
-  .body .btn--p {
+  .btn--p {
     font-size: 0.8rem;
     padding: 0.3rem 0.6rem;
   }
-  .body .btn--m {
+  .btn--m {
     font-size: 1.2rem;
     padding: 0.7rem 1.4rem;
   }
-  .body .btn--g {
+  .btn--g {
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  .body .btn__E1, .body .btn__E2, .body .btn__E3, .body .btn__E4 {
+  .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
     font-size: 1.4rem;
     padding: 18px 36px;
   }
-  .body .btn--p {
+  .btn--p {
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
   }
-  .body .btn--m {
+  .btn--m {
     font-size: 1.5rem;
     padding: 0.8rem 1.6rem;
   }
-  .body .btn--g {
+  .btn--g {
     font-size: 1.8rem;
     padding: 1.2rem 2.4rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .body .btn__E1, .body .btn__E2, .body .btn__E3, .body .btn__E4 {
+  .btn__E1, .btn__E2, .btn__E3, .btn__E4 {
     font-size: 1.8rem;
     padding: 24px 48px;
   }
-  .body .btn--p {
+  .btn--p {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
   }
-  .body .btn--m {
+  .btn--m {
     font-size: 1.7rem;
     padding: 0.9rem 1.8rem;
   }
-  .body .btn--g {
+  .btn--g {
     font-size: 2.2rem;
     padding: 1.4rem 2.8rem;
   }
 }
-
 .badge {
   border-radius: 10px;
   padding: 5px 15px;

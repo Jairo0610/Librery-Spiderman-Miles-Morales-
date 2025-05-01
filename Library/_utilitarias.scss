@@ -129,7 +129,7 @@ $font-style-normal: normal;
 }
 
 /*=====================
-   MARGINS
+        MARGINS
 =====================*/
 .magin-0 {margin: variables.$spacing-0 !important;}
 .margin-4 {margin: variables.$spacing-4 !important;}
@@ -259,7 +259,7 @@ $font-style-normal: normal;
 
 
 /*=====================
-         BORDES
+        BORDES
 =====================*/
 .border-none {
   border: none !important;
@@ -393,68 +393,91 @@ $font-style-normal: normal;
   order: 11  !important;
 }
 .order-12{
-  order: 12  !important;
-}
-.d-flex {
-  display: flex !important;
-}
-.d-inline.flex {
-  display: inline-flex !important;
-}
-.d-inline-block {
-  display: inline-block !important;
-}
-.d-block {
-  display: block !important;
-}
-.d-grid{
-  display: grid !important;
-}
-.d-inline-grid{
-  display: inline-block !important;
-}
-.flex.wrap
-{
-  flex-wrap: wrap !important;
+  order: 12;
 }
 
-.width-10
-{
-  width: 10% !important;
+
+/*========================================
+          REDONDEAR ELEMENTOS
+========================================*/
+
+
+.br-sm{
+  border-radius: 0.25rem !important;
 }
-.width-20
-{
-  width: 20% !important;
+
+.br-md{
+  border-radius: 1rem !important;
 }
-.width-30
-{
-  width: 30% !important;
+
+.br-lg{
+  border-radius: 3rem !important;
 }
-.width-40
-{
-  width: 40% !important;
+
+.br-xl{
+  border-radius: 5rem !important;
 }
-.width-50
-{
-  width: 50% !important;
+
+.br-full{
+  border-radius: 100% !important;
 }
-.width-60
-{
-  width: 60% !important;
+
+
+
+/*=======================================
+          OCULTAR ELEMENTOS
+========================================*/
+
+// Estas clases son para ocultar completamente elementos en diferentes tamaños de pantalla
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+@each $breakpoint, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    .hidden--#{$breakpoint} {
+    display: none !important;
+    }
+  }
 }
-.width-70
-{ 
-  width: 70% !important;
+
+
+// Esta clase es para ocultar completamente cualquier elemento
+.hide-everything{
+  display: none !important;
 }
-.width-80
-{
-  width: 80% !important;
+
+
+// Esta clase oculta completamente con una animación de desvanecimiento
+.fade-everything {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: visibility 0s 0.5s, opacity 0.5s ease-out !important;
 }
-.width-90
-{
-  width: 90% !important;
-}
-.width-100
-{
-  width: 100% !important;
+
+
+
+/*============================================
+          COLORES DE FONDO DE ELEMENTOS
+=============================================*/
+
+$colors: (
+  "blue-black": variables.$bg-primary,
+  "deep-red": variables.$bg-secondary,
+  "sun-yellow": variables.$bg-tertiary,
+
+  "charcoal-gray": variables.$color1,
+  "dark-blue": variables.$color2,
+  "warm-white": variables.$color3,
+  "hot-pink": variables.$color4
+);
+            
+// Generamos las clases utilitarias
+@each $nombre, $color in $colors {
+  .bg-#{$nombre} {
+    background-color: $color !important;
+  }
 }
