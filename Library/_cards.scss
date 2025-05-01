@@ -1,6 +1,5 @@
 @use 'variables';
 
-
 $fondo-card-before: radial-gradient(circle, rgba(255, 140, 0, 1) 0%, variables.$bg-secondary 75%, variables.$bg-secondary 100%) padding-box, 
 linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
 $borde-redondo: 1.3rem;
@@ -29,7 +28,7 @@ $borde-redondo: 1.3rem;
     .card-1__contenedor {
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle, Variables.$bg-tertiary 0%, Variables.$bg-secondary 75%, Variables.$bg-secondary 100%);
+        background: radial-gradient(circle, variables.$bg-tertiary 0%, variables.$bg-secondary 75%, variables.$bg-secondary 100%);
 
         border-radius: $borde-redondo;
         gap: .7rem;
@@ -52,7 +51,7 @@ $borde-redondo: 1.3rem;
             justify-content: center;
             gap: .5rem;
 
-            @include tipografia(Variables.$font-title-cards,400,normal,1.5em);
+            @include tipografia(variables.$font-title-cards,400,normal,1.5em);
             text-align: center;
             text-transform: uppercase;
 
@@ -72,7 +71,7 @@ $borde-redondo: 1.3rem;
             padding: 1rem;
 
             text-align: center;
-            @include tipografia(Variables.$font-content-card1,400,normal,1.5em);
+            @include tipografia(variables.$font-content-card1,400,normal,1.5em);
             
             background-color: white;
             border-radius: 0 0 $borde-redondo $borde-redondo;
@@ -118,7 +117,7 @@ $borde-redondo: 1.3rem;
     margin: 2rem;
     width: fit-content;
     max-width: 500px;
-    background: radial-gradient(#480d35 , Variables.$color2);
+    background: radial-gradient(#480d35 , variables.$color2);
     position: relative;
 
     display: flex;
@@ -129,7 +128,7 @@ $borde-redondo: 1.3rem;
     
     //posicionamiento y estilo para el titulo de la card
     .card-2__titulo{
-        background-color: Variables.$color4;
+        background-color: variables.$color4;
         min-height: 50%;
         width: 70%;
         align-self: flex-end;
@@ -143,7 +142,7 @@ $borde-redondo: 1.3rem;
 
         color: white;
         text-align: center;
-        @include tipografia(Variables.$font-title-cards,400,normal,1.5em);
+        @include tipografia(variables.$font-title-cards,400,normal,1.5em);
         text-shadow: -2px .2px red;
         text-transform: uppercase;
          
@@ -171,7 +170,7 @@ $borde-redondo: 1.3rem;
         padding: 1.5rem;
 
         color: black;
-        @include tipografia(Variables.$font-content-card2,400,normal,1.2em);
+        @include tipografia(variables.$font-content-card2,400,normal,1.2em);
         
         // hijos del contenedor para el contenido de la carta
         & > *{
