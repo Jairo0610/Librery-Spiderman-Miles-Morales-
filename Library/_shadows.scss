@@ -1,36 +1,36 @@
 @use 'variables';
 
 .shadow-none {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .shadow-peq {
-    box-shadow: 0 4px 8px gray;
+    box-shadow: 0 4px 8px gray !important;
 }
 .shadow-med {
-    box-shadow: 0px 8px 16px gray;
+    box-shadow: 0px 8px 16px gray !important;
 }
 .shadow-large {
-    box-shadow: 0px 10px 20px gray;
+    box-shadow: 0px 10px 20px gray !important;
 }
 
 .shadow-comic {
-    box-shadow: 4px 4px 0px variables.$color1;
+    box-shadow: 4px 4px 0px variables.$color1 !important;
 }
 .shadow-comic-red {
-    box-shadow: 4px 4px 0px variables.$bg-secondary;
+    box-shadow: 4px 4px 0px variables.$bg-secondary !important;
 }
 .shadow-comic-blue {
-    box-shadow: 4px 4px 0px variables.$color2;
+    box-shadow: 4px 4px 0px variables.$color2 !important;
 }
 .shadow-comic-yellow {
-    box-shadow: 4px 4px 0px variables.$bg-tertiary;
+    box-shadow: 4px 4px 0px variables.$bg-tertiary !important;
 }
 .shadow-comic-white {
-    box-shadow: 4px 4px 0px variables.$color3;
+    box-shadow: 4px 4px 0px variables.$color3 !important;
 }
 .shadow-comic-magenta {
-    box-shadow: 4px 4px 0px variables.$color4;
+    box-shadow: 4px 4px 0px variables.$color4 !important;
 }
 .shadow-comic-darkblue {
-    box-shadow: 4px 4px 0px variables.$bg-primary;
+    box-shadow: 4px 4px 0px variables.$bg-primary !important;
 }
