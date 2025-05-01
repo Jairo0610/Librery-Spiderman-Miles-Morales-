@@ -111,3 +111,6 @@ $badge-dark-op: #1f010313;
       align-items: flex-start;
     }
   }
+  .badge:hover {
+    filter: brightness(70%);
+  }
