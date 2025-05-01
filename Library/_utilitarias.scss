@@ -416,3 +416,39 @@ $font-style-normal: normal;
 .br-full{
   border-radius: 100% !important;
 }
+
+
+
+/*=======================================
+         OCULTAR ELEMENTOS
+========================================*/
+
+// Estas clases son para ocultar completamente elementos en diferentes tamaños de pantalla
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+@each $breakpoint, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    .hidden--#{$breakpoint} {
+    display: none !important;
+    }
+  }
+}
+
+
+// Esta clase es para ocultar completamente cualquier elemento
+.hide-everything{
+  display: none !important;
+}
+
+
+// Esta clase oculta completamente con una animación de desvanecimiento
+.fade-everything {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: visibility 0s 0.5s, opacity 0.5s ease-out !important;
+}
