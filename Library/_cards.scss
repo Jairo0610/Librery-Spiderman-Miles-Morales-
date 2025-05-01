@@ -16,6 +16,7 @@ $borde-redondo: 1.3rem;
     margin: 1.5rem;
     position: relative;
     width: fit-content;
+    height: fit-content;
     max-width: 500px;
     border-radius: $borde-redondo;
 
@@ -116,6 +117,7 @@ $borde-redondo: 1.3rem;
 .card-2{
     margin: 2rem;
     width: fit-content;
+    height: fit-content;
     max-width: 500px;
     background: radial-gradient(#480d35 , variables.$color2);
     position: relative;
@@ -178,7 +180,7 @@ $borde-redondo: 1.3rem;
             background-color: white;
 
             padding: 1rem;
-            width: 100%;
+            max-width: 100%;
             box-shadow: 5px 5px 0px cyan, -5px -5px 0px variables.$bg-tertiary;
             border: 2px black solid;
             transition: transform 0.3s ease;
