@@ -390,3 +390,29 @@ $font-style-normal: normal;
 .order-12{
   order: 12;
 }
+
+
+/*========================================
+         REDONDEAR ELEMENTOS
+========================================*/
+
+
+.br-sm{
+  border-radius: 0.25rem !important;
+}
+
+.br-md{
+  border-radius: 1rem !important;
+}
+
+.br-lg{
+  border-radius: 3rem !important;
+}
+
+.br-xl{
+  border-radius: 5rem !important;
+}
+
+.br-full{
+  border-radius: 100% !important;
+}
