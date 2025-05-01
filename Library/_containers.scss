@@ -1,7 +1,7 @@
 @use 'variables';
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -25,6 +25,7 @@
   max-width: 100%;
 }
 .container-comic-ye{
+  width: 90%;
   color: variables.$color1;
   background-color: variables.$bg-tertiary;
   background-image: radial-gradient(variables.$bg-secondary 10%, transparent 11%);
@@ -32,15 +33,18 @@
   box-shadow: 6px 6px 0px #333;
   border: 2px solid black;
   margin-top: 10px;
+  margin: 0 auto;
 }
 .container-comic-re{
-color: variables.$color3;
-background-color: variables.$bg-secondary;
-background-image: radial-gradient(#010577 10%, transparent 11%);
-background-size: 10px 10px;
-box-shadow: 6px 6px 0px #333;
-border: 2px solid black;
-margin-top: 10px;
+  width: 90%;
+  color: variables.$color3;
+  background-color: variables.$bg-secondary;
+  background-image: radial-gradient(#010577 10%, transparent 11%);
+  background-size: 10px 10px;
+  box-shadow: 6px 6px 0px #333;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin: 0 auto;
 }
 .container-card {
   background-color: variables.$color3;;
