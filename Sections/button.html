@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Library/Library.css">
+    <script src="script.js"></script>
+
+    <title>Document Buttons</title>
+
+    <style>
+        .code__copy {
+            font-family: "Fira Code", monospace;
+            background-color: #2e2e2e;
+            color: #f8f8f2;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.8;
+            overflow: auto;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu__imagen">
+          <img src="../img/logo.jpg" alt="Logo Spiderman">
+        </div>
+        <ul class="menu__nav">
+          <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+          
+          <li class="nav__elemento--dropdown">
+              <div class="dropdown__boton">
+                  <span>Documentación</span>
+                  <div class="flecha"><div></div></div>            
+              </div>
+    
+              <ul class="dropdown__lista">
+                  <li class="nav__elemento"><a href="container.html">Container</a></li>
+                  <li class="nav__elemento"><a href="badges.html">Badges</a></li>
+                  <li class="nav__elemento"><a href="alert.html">Alerts</a></li>
+                  <li class="nav__elemento"><a href="button.html">Button</a></li>
+                  <li class="nav__elemento"><a href="form.html">Form</a></li>
+              </ul>   
+          </li>
+          <li class="nav__elemento"><a href="https://github.com/Jairo0610/Librery-Spiderman-Miles-Morales-.git">Repositorio</a></li>
+      </ul>
+      </nav>
+    <main class="container-fluid">
+
+        <div class="row justify-content-center">
+
+            <div class="col-10 font-primary">
+
+                <!--------------------------------BOTONES---------------------------------------->
+
+                <div class="container margin-top-12 padding-0">
+                    <h1 class="text-center fw-semibold margin-4">Buttons</h1>
+                    <h4 class="text-center fw-normal margin-8">Este sistema de botones, inspirado en Spider-Man: Miles Morales, está diseñado para interfaces dinámicas y modernas que buscan un equilibrio entre estilo y usabilidad.</h4>
+                </div>
+                <div class="contenedor__ejemplos container-fluid">
+                
+                    <div class="container-card badge-list margin-12 justify-content-center">
+                        <button class="btn__E1">Estilo 1</button>
+                        <button class="btn__E2">Estilo 2</button>
+                        <button class="btn__E3">Estilo 3</button>
+                        <button class="btn__E4">Estilo 4</button>
+                    </div>
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Ejemplo de uso!--&gt;
+                                &lt;button class="btn__E1"&gt;Estilo 1&lt;/button&gt;
+                                &lt;button class="btn__E2"&gt;Estilo 2&lt;/button&gt;
+                                &lt;button class="btn__E3"&gt;Estilo 3&lt;/button&gt;
+                                &lt;button class="btn__E4"&gt;Estilo 4&lt;/button&gt;
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                    <p>Para generar los botones, incluye la clase btn junto con su variante de estilo</p><br><br><br>
+            
+                    <h5 class="nombre__diseño text-center margin-12">Tamaños</h5>
+                    <p class= "font-style-italic text-center">Tus botones pueden tener tres tamaños diferentes</p>
+            
+                    <div class="container-card badge-list margin-12 justify-content-center">
+                        <button class="btn__E1 btn--p">Estilo 1</button>
+                        <button class="btn__E1 btn--m">Estilo 1</button>
+                        <button class="btn__E1 btn--g">Estilo 1</button>
+                    </div>
+
+                    <div class="container-card badge-list margin-12 justify-content-center">
+                        <button class="btn__E2 btn--p">Estilo 2</button>
+                        <button class="btn__E2 btn--m">Estilo 2</button>
+                        <button class="btn__E2 btn--g">Estilo 2</button>
+                    </div>
+
+                    <div class="container-card badge-list margin-12 justify-content-center">
+                        <button class="btn__E3 btn--p">Estilo 3</button>
+                        <button class="btn__E3 btn--m">Estilo 3</button>
+                        <button class="btn__E3 btn--g">Estilo 3</button>
+                    </div>
+
+                    <div class="container-card badge-list margin-12 justify-content-center">
+                        <button class="btn__E4 btn--p">Estilo 4</button>
+                        <button class="btn__E4 btn--m">Estilo 4</button>
+                        <button class="btn__E4 btn--g">Estilo 4</button>
+                    </div>
+
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Pequeño--&gt;<br>
+                                &lt;button class="btn__E1 btn--p"&gt;Estilo 1 pequeño&lt;/button&gt;
+                                &lt;button class="btn__E2 btn--p"&gt;Estilo 2 pequeño&lt;/button&gt;
+                                &lt;button class="btn__E3 btn--p"&gt;Estilo 3 pequeño&lt;/button&gt;
+                                &lt;button class="btn__E4 btn--p"&gt;Estilo 4 pequeño&lt;/button&gt;<br><br>
+
+                                &lt;!--Mediano--&gt;<br>
+                                &lt;button class="btn__E1 btn--m"&gt;Estilo 1 mediano&lt;/button&gt;
+                                &lt;button class="btn__E2 btn--m"&gt;Estilo 2 mediano&lt;/button&gt;
+                                &lt;button class="btn__E3 btn--m"&gt;Estilo 3 mediano&lt;/button&gt;
+                                &lt;button class="btn__E4 btn--m"&gt;Estilo 4 mediano&lt;/button&gt;<br><br>
+
+                                &lt;!--Grande--&gt;<br>
+                                &lt;button class="btn__E1 btn--g"&gt;Estilo 1 grande&lt;/button&gt;
+                                &lt;button class="btn__E2 btn--g"&gt;Estilo 2 grande&lt;/button&gt;
+                                &lt;button class="btn__E3 btn--g"&gt;Estilo 3 grande&lt;/button&gt;
+                                &lt;button class="btn__E4 btn--g"&gt;Estilo 4 grande&lt;/button&gt;
+                            </code></pre>
+            
+                        </div>
+                    </div>
+                    <p>Solo necesitas incluir la clase btn del estilo que prefieras, y luego la clase de uno de los tamaños. No te preocupes por la responsividad, ya la llevan incluidad para telefonos, tablets y PCs.</p><br><br><br>
+                </div>
+                <br><br>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

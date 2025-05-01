@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../Library/Library.css">
-  <link rel="stylesheet" href="../style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Library/Library.css"> 
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script> 
 </head>
 <body>  
   <nav class="menu">
@@ -24,11 +30,310 @@
           <ul class="dropdown__lista">
               <li class="nav__elemento"><a href="container.html">Container</a></li>
               <li class="nav__elemento"><a href="badges.html">Badges</a></li>
-              <li class="nav__elemento"><a href="#">PRUEBA2</a></li>
+              <li class="nav__elemento"><a href="alert.html">Alerts</a></li>
+              <li class="nav__elemento"><a href="button.html">Button</a></li>
+              <li class="nav__elemento"><a href="form.html">Form</a></li>
           </ul>   
       </li>
-      <li class="nav__elemento"><a href="#">Repositorio</a></li>
-    </ul>
+      <li class="nav__elemento"><a href="https://github.com/Jairo0610/Librery-Spiderman-Miles-Morales-.git">Repositorio</a></li>
+  </ul>
   </nav>
+
+  <main class="font-primary">
+    <div class="container-comic-re margin-top-12 padding-20">
+        <h1 class="text-left fw-bold margin-4">Containers</h1>
+        <h5 class="text-left fw-normal margin-8">Clases perfectas para la organización del proyecto ya que cuenta con diferentes estilos</h5>
+    </div>
+    <div class="contenedor__ejemplos container padding-20">
+          
+    <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">Estilo de contenedores</h3>
+    <p class="margin-bottom-20">Library Spiderman Miles cuenta con diferentes diseños de contenedores inspirados en el universo de Spider-Man: Across the
+    Spider-Verse.</p>
+    <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+      <div class="container padding-48">
+        <h2 class="border-2 border-blue text-center padding-20">Contenedor normal</h2>
+      </div>
+      <div class="container-fluid padding-48">
+        <h2 class="border-2 border-blue text-center padding-20">Contenedor amplio</h2>
+      </div>
+      <div class="container-card padding-48 font-color-darkblue">
+        <h2>Contenedor estilo tarjeta</h2>
+      </div>
+      <div class="container-comic-ye padding-48">
+        <p>¡Este es un contenedor con estilo cómic amarillo!</p>
+      </div>
+      <div class="container-comic-re padding-48">
+        <p>¡Este es un contenedor con estilo cómic rojo/azul intenso!</p>
+      </div>            
+    </div>
+    <p>Para generar solo es necesario llamar la clase del contenedor</p>
+    <div class="bloque__codigo">
+        <div class="code__copy margin-top-20 margin-bottom-32">
+            <div class="row justify-content-between margin-8">
+                <div>CÓDIGO</div>
+                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                    onclick="copiarCodigo(this)" padding-8">
+                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                </button>
+            </div>
+            <pre><code class="code__block language-markup">
+              &lt;div class="container"&gt;
+                &lt;h2>Contenedor normal &lt;h2&gt;
+              &lt;div&gt;
+              &lt;div class="container-fluid"&gt;
+                &lt;h2>Contenedor amplio &lt;h2&gt;
+              &lt;div&gt;
+              &lt;div class="container-card"&gt;
+                &lt;h2>Contenedor estilo tarjeta&lt;h2&gt;
+              &lt;div&gt;
+              &lt;div class="container-comic-ye"&gt;
+                &lt;p>¡Este es un contenedor con estilo cómic amarillo!&lt;p&gt;
+              &lt;div&gt;
+              &lt;div class="container-comic-re"&gt;
+                &lt;p&gt;¡Este es un contenedor con estilo cómic rojo/azul intenso!&lt;p&gt;
+              &lt;div&gt;
+        </code></pre>
+        </div>
+        
+        <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">Clases row</h3>
+      <p class="margin-bottom-20">Estos permiten agregar elemento en una fila</p>
+        <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div class="col border-2 border-blue">Col</div>
+            </div>
+            <div class="row">
+              <div class="col border-2 border-blue">Col</div>
+            </div>
+          </div>
+        </div>
+        <p>Para generar utilizar la clase row</p>
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32">
+                <div class="code__copy__header row justify-content-between margin-8">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block language-markup">
+                  &lt;div class="container"&gt;
+                  &nbsp; &nbsp; &lt;div class="row"&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col border-2 border-blue"&gt;Col&lt;/div&gt;
+                  &nbsp; &nbsp; &lt;/div&gt;
+                  &nbsp; &nbsp; &lt;div class="row"&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col border-2 border-blue"&gt;Col&lt;/div&gt;
+                  &nbsp; &nbsp; &lt;/div&gt;
+                  &lt;/div&gt;
+            </code></pre>
+  	  </div>
+
+      <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">Clases col-*</h3>
+      <p class="margin-bottom-20">Estos permiten asignarle un espacio a un elemento dentro del contenedor.</p>
+        <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 border-2 border-blue">Col 6 en escritorio, 100% en móvil</div>
+              <div class="col-6 border-2 border-blue">Col 6 en escritorio, 100% en móvil</div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-3 border-2 border-blue">Col 3 en escritorio, 100% en móvil</div>
+              <div class="col-9 border-2 border-blue">Col 9 en escritorio, 100% en móvil</div>
+            </div>
+          </div>
+        </div>
+        <p>Para generar solo es necesario llamar la clase del contenedor</p>
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32">
+                <div class="code__copy__header row justify-content-between margin-8">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block language-markup">
+                  &lt;div class="container"&gt;
+                  &nbsp; &nbsp; &lt;div class="row"&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-6 border-2 border-blue"&gt;Col 6 en escritorio, 100% en móvil&lt;/div&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-6 border-2 border-blue"&gt;Col 6 en escritorio, 100% en móvil&lt;/div&gt;
+                  &nbsp; &nbsp; &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="container"&gt;
+                  &nbsp; &nbsp; &lt;div class="row"&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-2 border-2 border-blue"&gt;Col 2 en escritorio, 100% en móvil&lt;/div&gt;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-10 border-2 border-blue"&gt;Col 10 en escritorio, 100% en móvil&lt;/div&gt;
+                  &nbsp; &nbsp; &lt;/div&gt;
+                  &lt;/div&gt;
+            </code></pre>
+  	  </div>
+      <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">Clases Utilitarias</h3>
+<p class="margin-bottom-20">Esta sección muestra ejemplos visuales de cada clase utilitaria.</p>
+<div class="ejemplos__utilidades container badge-list margin-bottom-20" style="background-color: #394046;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="margin-bottom-16">Font Sizes</h4>
+        <p class="fs-12">.fs-12</p>
+        <p class="fs-14">.fs-14</p>
+        <p class="fs-16">.fs-16</p>
+        <p class="fs-18">.fs-18</p>
+        <p class="fs-20">.fs-20</p>
+        <p class="fs-22">.fs-22</p>
+        <p class="fs-24">.fs-24</p>
+        <p class="fs-26">.fs-26</p>
+        <p class="fs-28">.fs-28</p>
+        <p class="fs-30">.fs-30</p>
+        <p class="fs-32">.fs-32</p>
+        <p class="fs-34">.fs-34</p>
+        <p class="fs-36">.fs-36</p>
+        <p class="fs-38">.fs-38</p>
+        <p class="fs-40">.fs-40</p>
+        <p class="fs-42">.fs-42</p>
+        <p class="fs-44">.fs-44</p>
+        <p class="fs-46">.fs-46</p>
+        <p class="fs-48">.fs-48</p>
+        <p class="fs-50">.fs-50</p>
+
+        <h4 class="margin-top-32 margin-bottom-16">Font Weight</h4>
+        <p class="fw-thin">.fw-thin</p>
+        <p class="fw-light">.fw-light</p>
+        <p class="fw-normal">.fw-normal</p>
+        <p class="fw-med">.fw-med</p>
+        <p class="fw-semibold">.fw-semibold</p>
+        <p class="fw-bold">.fw-bold</p>
+        <p class="fw-bolder">.fw-bolder</p>
+
+        <h4 class="margin-top-32 margin-bottom-16">Font Style</h4>
+        <p class="font-style-italic">.font-style-italic</p>
+        <p class="font-style-oblique">.font-style-oblique</p>
+        <p class="font-style-normal">.font-style-normal</p>
+
+        <h4 class="margin-top-32 margin-bottom-16">Text Align</h4>
+        <p class="text-left">.text-left</p>
+        <p class="text-center">.text-center</p>
+        <p class="text-right">.text-right</p>
+        <p class="text-justify">.text-justify</p>
+
+        <h4 class="margin-top-32 margin-bottom-16">Colores de texto (dependientes de variables)</h4>
+        <p class="font-color-red">.font-color-red</p>
+        <p class="font-color-blue">.font-color-blue</p>
+        <p class="font-color-darkblue">.font-color-darkblue</p>
+        <p class="font-color-darkgray">.font-color-darkgray</p>
+        <p class="font-color-white">.font-color-white</p>
+        <p class="font-color-yellow">.font-color-yellow</p>
+        <p class="font-color-magenta">.font-color-magenta</p>
+
+        <h4 class="margin-top-32 margin-bottom-16">Margenes y Padding</h4>
+        <div class="border-1 padding-12 margin-bottom-12">.margin-12 .padding-12</div>
+        <div class="border-1 margin-top-20 padding-bottom-20">.margin-top-20 .padding-bottom-20</div>
+
+        <h4 class="margin-top-32 margin-bottom-16">Bordes</h4>
+        <div class="border-2 border-blue margin-bottom-12">.border-2 .border-blue</div>
+        <div class="border-4 border-radius-16">.border-4 .border-radius-16</div>
+
+        <h4 class="margin-top-32 margin-bottom-16">Orden y Alineación (Flex)</h4>
+        <div class="row justify-content-between align-items-center border-1 padding-12">
+          <div class="col-3 order-2">.order-2</div>
+          <div class="col-3 order-1">.order-1</div>
+          <div class="col-3 order-3">.order-3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Para generar solo es necesario llamar la clase del contenedor</p>
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32">
+                <div class="code__copy__header row justify-content-between margin-8">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block language-markup">
+                  
+                  &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                      &lt;div class="col-12"&gt;
+                
+                        &lt;h4 class="margin-bottom-16"&gt;Font Sizes&lt;/h4&gt;
+                        &lt;p class="fs-12"&gt;.fs-12&lt;/p&gt;
+                        &lt;p class="fs-14"&gt;.fs-14&lt;/p&gt;
+                        &lt;p class="fs-16"&gt;.fs-16&lt;/p&gt;
+                        &lt;p class="fs-18"&gt;.fs-18&lt;/p&gt;
+                        &lt;p class="fs-20"&gt;.fs-20&lt;/p&gt;
+                        &lt;p class="fs-22"&gt;.fs-22&lt;/p&gt;
+                        &lt;p class="fs-24"&gt;.fs-24&lt;/p&gt;
+                        &lt;p class="fs-26"&gt;.fs-26&lt;/p&gt;
+                        &lt;p class="fs-28"&gt;.fs-28&lt;/p&gt;
+                        &lt;p class="fs-30"&gt;.fs-30&lt;/p&gt;
+                        &lt;p class="fs-32"&gt;.fs-32&lt;/p&gt;
+                        &lt;p class="fs-34"&gt;.fs-34&lt;/p&gt;
+                        &lt;p class="fs-36"&gt;.fs-36&lt;/p&gt;
+                        &lt;p class="fs-38"&gt;.fs-38&lt;/p&gt;
+                        &lt;p class="fs-40"&gt;.fs-40&lt;/p&gt;
+                        &lt;p class="fs-42"&gt;.fs-42&lt;/p&gt;
+                        &lt;p class="fs-44"&gt;.fs-44&lt;/p&gt;
+                        &lt;p class="fs-46"&gt;.fs-46&lt;/p&gt;
+                        &lt;p class="fs-48"&gt;.fs-48&lt;/p&gt;
+                        &lt;p class="fs-50"&gt;.fs-50&lt;/p&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Font Weight&lt;/h4&gt;
+                        &lt;p class="fw-thin"&gt;.fw-thin&lt;/p&gt;
+                        &lt;p class="fw-light"&gt;.fw-light&lt;/p&gt;
+                        &lt;p class="fw-normal"&gt;.fw-normal&lt;/p&gt;
+                        &lt;p class="fw-med"&gt;.fw-med&lt;/p&gt;
+                        &lt;p class="fw-semibold"&gt;.fw-semibold&lt;/p&gt;
+                        &lt;p class="fw-bold"&gt;.fw-bold&lt;/p&gt;
+                        &lt;p class="fw-bolder"&gt;.fw-bolder&lt;/p&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Font Style&lt;/h4&gt;
+                        &lt;p class="font-style-italic"&gt;.font-style-italic&lt;/p&gt;
+                        &lt;p class="font-style-oblique"&gt;.font-style-oblique&lt;/p&gt;
+                        &lt;p class="font-style-normal"&gt;.font-style-normal&lt;/p&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Text Align&lt;/h4&gt;
+                        &lt;p class="text-left"&gt;.text-left&lt;/p&gt;
+                        &lt;p class="text-center"&gt;.text-center&lt;/p&gt;
+                        &lt;p class="text-right"&gt;.text-right&lt;/p&gt;
+                        &lt;p class="text-justify"&gt;.text-justify&lt;/p&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Colores de texto (dependientes de variables)&lt;/h4&gt;
+                        &lt;p class="font-color-red"&gt;.font-color-red&lt;/p&gt;
+                        &lt;p class="font-color-blue"&gt;.font-color-blue&lt;/p&gt;
+                        &lt;p class="font-color-darkblue"&gt;.font-color-darkblue&lt;/p&gt;
+                        &lt;p class="font-color-darkgray"&gt;.font-color-darkgray&lt;/p&gt;
+                        &lt;p class="font-color-white"&gt;.font-color-white&lt;/p&gt;
+                        &lt;p class="font-color-yellow"&gt;.font-color-yellow&lt;/p&gt;
+                        &lt;p class="font-color-magenta"&gt;.font-color-magenta&lt;/p&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Margenes y Padding&lt;/h4&gt;
+                        &lt;div class="border-1 padding-12 margin-bottom-12"&gt;.margin-12 .padding-12&lt;/div&gt;
+                        &lt;div class="border-1 margin-top-20 padding-bottom-20"&gt;.margin-top-20 .padding-bottom-20&lt;/div&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Bordes&lt;/h4&gt;
+                        &lt;div class="border-2 border-blue margin-bottom-12"&gt;.border-2 .border-blue&lt;/div&gt;
+                        &lt;div class="border-4 border-radius-16"&gt;.border-4 .border-radius-16&lt;/div&gt;
+                
+                        &lt;h4 class="margin-top-32 margin-bottom-16"&gt;Orden y Alineación (Flex)&lt;/h4&gt;
+                        &lt;div class="row justify-content-between align-items-center border-1 padding-12"&gt;
+                          &lt;div class="col-3 order-2"&gt;.order-2&lt;/div&gt;
+                          &lt;div class="col-3 order-1"&gt;.order-1&lt;/div&gt;
+                          &lt;div class="col-3 order-3"&gt;.order-3&lt;/div&gt;
+                        &lt;/div&gt;
+                
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+            </code></pre>
+  	  </div>
+      
+  </main>
 </body>
 </html>

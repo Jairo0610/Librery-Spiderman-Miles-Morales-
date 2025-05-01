@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Library/Library.css">
+    <script src="script.js"></script>
+
+    <title>Document Alerts</title>
+
+    <style>
+        .code__copy {
+            font-family: "Fira Code", monospace;
+            background-color: #2e2e2e;
+            color: #f8f8f2;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.8;
+            overflow: auto;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu__imagen">
+          <img src="../img/logo.jpg" alt="Logo Spiderman">
+        </div>
+        <ul class="menu__nav">
+          <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+          
+          <li class="nav__elemento--dropdown">
+              <div class="dropdown__boton">
+                  <span>Documentación</span>
+                  <div class="flecha"><div></div></div>            
+              </div>
+    
+              <ul class="dropdown__lista">
+                  <li class="nav__elemento"><a href="container.html">Container</a></li>
+                  <li class="nav__elemento"><a href="badges.html">Badges</a></li>
+                  <li class="nav__elemento"><a href="alert.html">Alerts</a></li>
+                  <li class="nav__elemento"><a href="button.html">Button</a></li>
+                  <li class="nav__elemento"><a href="form.html">Form</a></li>
+              </ul>   
+          </li>
+          <li class="nav__elemento"><a href="https://github.com/Jairo0610/Librery-Spiderman-Miles-Morales-.git">Repositorio</a></li>
+      </ul>
+      </nav>
+    <main class="container-fluid">
+
+        <div class="row justify-content-center">
+
+            <div class="col-10 font-primary">
+
+                <!---------------------------ALERTAS--------------------------------->
+
+                <div class="container margin-top-12 padding-0">
+                    <h1 class="text-center fw-semibold margin-4">Alerts</h1>
+                    <h4 class="text-center fw-normal margin-8">Estos estilos de alertas, inspiradas en Spider-Man: Miles Morales, combinan un diseño dinámico con animaciones fluidas y contrastes vibrantes.</h4>
+                </div>
+
+                <div class="contenedor__ejemplos container-fluid">
+                
+                    <div class="container-card badge-list margin-12 justify-content-center">
+
+                        <alert class="alert__E1">
+                            <span class="icon">💬</span>
+                            <p class="message">Dato: Miles puede volverse invisible, ¡tú también puedes destacar!</p>
+                        </alert>
+
+    
+                        <alert class="alert__E2">
+                            ¡PELIGRO! Se ha roto la línea del tiempo.
+                        </alert>
+
+                        
+                        <alert class="alert__E3">
+                            <p class="message">¡Cuidado! Algo no cuadra en el multiverso.</p>
+                        </alert>
+
+
+                        <alert class="alert__E4">
+                            <div class="alert__header">
+                                <span class="title">SPIDEY ALERT</span>
+                                <button class="close-btn">✖</button>
+                            </div>
+                            <div class="alert__body">
+                                🕷️ Se detectó una anomalía multiversal en Brooklyn.
+                            </div>
+                        </alert>
+
+                    </div>
+
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Ejemplo de uso!--&gt;
+
+                                &lt;!--Ejemplo de Alert Estilo 1--&gt;
+
+                                &lt;alert class="alert__E1"&gt;
+                                    &lt;span class="icon"&gt;💬&lt;/span&gt;
+                                    &lt;p class="message"&gt;Dato: Miles puede volverse invisible, 
+                                        ¡tú también puedes destacar!
+                                    &lt;/p&gt;
+                                &lt;/alert&gt;
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Ejemplo de uso!--&gt;
+
+                                &lt;!--Ejemplo de Alert Estilo 2--&gt;
+
+                                &lt;alert class="alert__E2"&gt;
+                                    ¡PELIGRO! Se ha roto la línea del tiempo.
+                                &lt;/alert&gt;
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Ejemplo de uso!--&gt;
+
+                                &lt;!--Ejemplo de Alert Estilo 3--&gt;
+
+                                &lt;alert class="alert__E3"&gt;
+                                    &lt;p class="message"&gt;¡Cuidado! Algo no cuadra en el multiverso.&lt;/p&gt;
+                                &lt;/alert&gt;
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                    <div class="bloque__codigo container width-60">
+                        <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                            <div class="row justify-content-between margin-8 border-bottom-">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block">
+                                &lt;!--Ejemplo de uso!--&gt;
+
+                                &lt;!--Ejemplo de Alert Estilo 4--&gt;
+
+                                &lt;alert class="alert__E4"&gt;
+                                    &lt;div class="alert__header"&gt;
+                                        &lt;span class="title"&gt;SPIDEY ALERT&lt;/span&gt;
+                                        &lt;button class="close-btn">✖&lt;/button&gt;
+                                    &lt;/div>
+                                    &lt;div class="alert__body"&gt;
+                                        🕷️ Se detectó una anomalía multiversal en Brooklyn.
+                                    &lt;/div&gt;
+                                &lt;/alert&gt;
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                    <p>Para generar las alertas 1, 3 y 4, solamente copia el código y modifica el texto a tu eleccion. Para el estilo 2 de alerta, solo es necesario que incluyas la clase a tu etiqueta HTML</p><br><br>
+
+                    <p>En el caso de los iconos, puedes copy/paste en tu HTML, desde <a href="https://unicode.org/emoji/charts/full-emoji-list.html">Full Emoji List</a>, o de cualquier otro sitio de tu preferencia</p>
+
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
