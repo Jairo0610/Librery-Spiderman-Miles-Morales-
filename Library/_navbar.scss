@@ -20,7 +20,7 @@
 
     // contenedor para la imagen
     .menu__imagen{
-        height: 150px;
+        height: 100px;
         width: 100%;
         max-width: 200px;
         min-width: 100px;
@@ -29,7 +29,7 @@
         
         mask-image: 
             linear-gradient(to right, transparent, black 20%, black 50%, transparent),
-            linear-gradient(to bottom, transparent, black 20%, black 90%, transparent);
+            linear-gradient(to bottom, transparent, black 20%, black 50%, transparent);
         mask-composite: intersect;
      
         & > img{
