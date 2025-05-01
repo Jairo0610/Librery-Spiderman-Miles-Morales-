@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
+    <script src="Sections/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,26 +37,39 @@
   </nav>
 
   <main class="main">
-    <section class="container-comic-re">
+    <section class="main__section container-comic-re">
       <div class="main__head row justify-content-center">
         <img src="img/logo.jpg" alt="" class="main__head__logo">
       </div>
       <div class="main__head__content font-comic">
-        <h1>Library Spiderman Miles Morales</h1>
+        <h1 class="main__title">Library Spiderman Miles Morales</h1>
         <div class="container">
           <p class="fs-20">Es una librería tematizada en Spiderman Miles Morales, la cual contiene clases para container, column, buttons, badges, alerts, entre muchas más clases.</p>
           </div>          
         </div>
       </div>
     </section>
-  </main>
-    <section class="container-comic-ye">
+    <section class="main__section__art container-comic-ye">
       <div class="main__content font-comic">
-        <h1>Incluir mediante CDN</h1>
+        <h1 class="main__content__title">Incluir mediante CDN</h1>
         <div class="container">
-          <p class="fs-20">Cuando se requiere agregar el CSS compilado de Library Spiderman Miles Morales</p>
+          <p class="fs-20 main__content__p">Cuando se requiere agregar el CSS compilado de Library Spiderman Miles Morales</p>
         </div>
       </div>
+      <div class="container bloque__codigo">
+        <div class="code__copy margin-top-20 margin-bottom-20" style="overflow: hidden;">
+            <div class="code__copy__header row justify-content-between margin-8">
+                <div>CÓDIGO</div>
+                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                    onclick="copiarCodigo(this)" padding-8">
+                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                </button>
+            </div>
+            <pre><code class="code__block language-markup">
+              &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css"&gt;
+            </code></pre>
+        </div>
+    </div>
     </section>
   </main>
 </body>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Library/Library.css"> 
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script> 
+   
+    <title>Documentacion Cards</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__imagen">
+          <img src="../img/logo.jpg" alt="Logo Spiderman">
+        </div>
+        <ul class="menu__nav">
+          <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+          
+          <li class="nav__elemento--dropdown">
+              <div class="dropdown__boton">
+                  <span>Documentación</span>
+                  <div class="flecha"><div></div></div>            
+              </div>
+    
+              <ul class="dropdown__lista">
+                  <li class="nav__elemento"><a href="container.html">Container</a></li>
+                  <li class="nav__elemento"><a href="badges.html">Badges</a></li>
+                  <li class="nav__elemento"><a href="#">PRUEBA2</a></li>
+              </ul>   
+          </li>
+          <li class="nav__elemento"><a href="#">Repositorio</a></li>
+      </ul>
+    </nav>
+
+    <main class="font-primary">
+        <div class="container-comic-re margin-top-12 padding-20">
+            <h1 class="text-left fw-bold margin-4">Tarjetas</h1>
+            <h5 class="text-left fw-normal margin-8">
+                Tarjetas con diseños inspirados en la estética de elementos vistos en Spiderman: Into the Spider-Verse.
+            </h5>
+        </div>
+        <div class="contenedor__ejemplos container padding-20">
+            <!--Tarjeta estilo 1-->
+           
+            <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">
+                Tarjeta Estilo 1
+            </h3>
+            <h4 class="text-center fw-semibold margin-12">
+                Estilo basado en tarjeta de presentasión de Miles Morales.
+            </h4>
+            <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+                <div class="card-1">
+                    <div class="card-1__contenedor">
+                      <div class="card-1__titulo">
+                        <h3>hello my name is</h3>
+                      </div>
+                      <div class="card-1__contenido" style="color: black;">
+                        <img src="../img/miles.jpg" alt="">
+                        <h1>Miles Morales</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem omnis 
+                            sed temporibus itaque magni expedita architecto explicabo fugit dolorum culpa.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="card-1__contenedor">
+                      <div class="card-1__titulo">
+                        <h3>hello my name is</h3>
+                      </div>
+                      <div class="card-1__contenido" style="color: black;">
+                        <img src="../img/peterb.jpg" alt="">
+                        <h1>Peter B. Parker</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem omnis 
+                            sed temporibus itaque magni expedita architecto explicabo fugit dolorum culpa.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <p >Genera este estilo con el siguiente código.</p>
+       
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-32">
+                    <div class="row justify-content-between margin-8">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                    </div>
+                        <pre><code class="code__block language-markup">
+        &lt;div class=&quot;card-1&quot;&gt;
+            &lt;div class=&quot;card-1__contenedor&quot;&gt;
+                &lt;div class=&quot;card-1__titulo&quot;&gt;
+                    &lt;!--Coloca tu título aquí--&gt;
+                &lt;/div&gt;
+                &lt;div div class=&quot;card-1__contenido&quot; &gt;
+                    &lt;!--Coloca tu contenido aquí (imágenes, párrafos...)--&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                    </code></pre>
+    
+                </div>
+            </div>
+           
+        <!-- Tarjeta estilo 2-->
+
+        <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">
+            Tarjeta Estilo 2
+        </h3>
+        <h4 class="text-center fw-semibold margin-12">
+            Estilo inspirado en colores neón y efectos visuales de tipo cómic.
+        </h4>
+
+        <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+            <div class="card-2">
+                <div class="card-2__titulo">
+                  <h3>Gwen Stacy</h3>
+                </div>
+                <div class="card-2__contenido">
+                  <img src="../img/gwen.jpg" alt="" >
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem omnis 
+                        sed temporibus itaque magni expedita architecto explicabo fugit dolorum culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="card-2__titulo">
+                  <h3>Penny Parker</h3>
+                </div>
+                <div class="card-2__contenido">
+                  <img src="../img/penny.jpg" alt="" >
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem omnis 
+                        sed temporibus itaque magni expedita architecto explicabo fugit dolorum culpa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32">
+                <div class="code__copy__header row justify-content-between margin-8">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block language-markup">
+        &lt;div class=&quot;card-2&quot;&gt;
+            &lt;div class=&quot;card-2__titulo&quot;&gt;
+                &lt;!--Coloca tu título aquí--&gt;
+            &lt;/div&gt;
+            &lt;div div class=&quot;card-2__contenido&quot;&gt;
+                &lt;!--Coloca tu contenido aquí (imágenes, párrafos...)--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            </code></pre>
+            </div>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
