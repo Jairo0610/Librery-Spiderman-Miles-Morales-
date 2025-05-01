@@ -452,3 +452,27 @@ $breakpoints: (
   visibility: hidden !important;
   transition: visibility 0s 0.5s, opacity 0.5s ease-out !important;
 }
+
+
+
+/*============================================
+         COLORES DE FONDO DE ELEMENTOS
+=============================================*/
+
+$colors: (
+  "blue-black": variables.$bg-primary,
+  "deep-red": variables.$bg-secondary,
+  "sun-yellow": variables.$bg-tertiary,
+
+  "charcoal-gray": variables.$color1,
+  "dark-blue": variables.$color2,
+  "warm-white": variables.$color3,
+  "hot-pink": variables.$color4
+);
+            
+// Generamos las clases utilitarias
+@each $nombre, $color in $colors {
+  .bg-#{$nombre} {
+    background-color: $color !important;
+  }
+}
