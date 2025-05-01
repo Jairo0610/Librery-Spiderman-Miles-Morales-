@@ -771,10 +771,6 @@ table {
   border-radius: 999px;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .align-items-start {
   align-items: flex-start;
 }
@@ -904,7 +900,7 @@ table {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -933,6 +929,7 @@ table {
 }
 
 .container-comic-ye {
+  width: 90%;
   color: #161616;
   background-color: #FEF400;
   background-image: radial-gradient(#BF0426 10%, transparent 11%);
@@ -940,9 +937,11 @@ table {
   box-shadow: 6px 6px 0px #333;
   border: 2px solid black;
   margin-top: 10px;
+  margin: 0 auto;
 }
 
 .container-comic-re {
+  width: 90%;
   color: #FEF9FF;
   background-color: #BF0426;
   background-image: radial-gradient(#010577 10%, transparent 11%);
@@ -950,6 +949,7 @@ table {
   box-shadow: 6px 6px 0px #333;
   border: 2px solid black;
   margin-top: 10px;
+  margin: 0 auto;
 }
 
 .container-card {
