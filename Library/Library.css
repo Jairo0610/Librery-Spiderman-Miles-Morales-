@@ -1008,17 +1008,6 @@ h6 {
   background-color: #C0189B !important;
 }
 
-.code__copy {
-  font-family: "Fira Code", monospace;
-  background-color: #272822;
-  color: #f8f8f2;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 1.8;
-  padding: 10px;
-  margin: 20px;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
