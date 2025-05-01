@@ -316,7 +316,18 @@ $font-style-normal: normal;
 .border-radius-32 {border-radius: variables.$spacing-32 !important;}
 .border-radius-36 {border-radius: variables.$spacing-36 !important;}
 .border-radius-full {border-radius: 999px !important;}
-
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
 .align-items-start{
   align-items: flex-start  !important;
 }
@@ -457,4 +468,14 @@ $font-style-normal: normal;
 .width-100
 {
   width: 100% !important;
+}
+.code__copy {
+  font-family: "Fira Code", monospace;
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 10px;
+  margin: 20px;
 }
