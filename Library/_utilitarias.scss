@@ -3,6 +3,12 @@
 /*=====================
       VARIABLES
 =====================*/
+h1 { font-size: 3rem; display: block !important;}
+h2 { font-size: 2.5rem;display: block !important;}
+h3 { font-size: 2rem;display: block !important;}
+h4 { font-size: 1.5rem;display: block !important;}
+h5 { font-size: 1.25rem;display: block !important;}
+h6 { font-size: 1rem;display: block !important;}
 
 $font-size-12: 12px;
 $font-size-14: 14px;
@@ -406,4 +412,49 @@ $font-style-normal: normal;
 }
 .d-inline-grid{
   display: inline-block !important;
+}
+.flex.wrap
+{
+  flex-wrap: wrap !important;
+}
+
+.width-10
+{
+  width: 10% !important;
+}
+.width-20
+{
+  width: 20% !important;
+}
+.width-30
+{
+  width: 30% !important;
+}
+.width-40
+{
+  width: 40% !important;
+}
+.width-50
+{
+  width: 50% !important;
+}
+.width-60
+{
+  width: 60% !important;
+}
+.width-70
+{ 
+  width: 70% !important;
+}
+.width-80
+{
+  width: 80% !important;
+}
+.width-90
+{
+  width: 90% !important;
+}
+.width-100
+{
+  width: 100% !important;
 }
