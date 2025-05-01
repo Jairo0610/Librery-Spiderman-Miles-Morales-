@@ -18,9 +18,19 @@ body{
   padding: 10px;
   margin: 10px;
 }
-.main__head__content h1{
-  font-weight: bold;
+.main__section{
+  margin: 50px auto;
 }
-.main__content h1{
-  font-weight: bold;
+.main__title{
+  margin: 50px;
+}
+.main__content__title{
+  font-weight: bolder;
+  margin: 50px;
+}
+.main__content__p{
+  margin: 20px;
+}
+.main__section__art{
+  margin: 50px auto;
 }
