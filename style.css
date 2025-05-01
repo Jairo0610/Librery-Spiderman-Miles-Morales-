@@ -33,3 +33,13 @@ h3{
 .main__content h1{
   font-weight: bold;
 }
+.code__copy {
+  font-family: "Fira Code", monospace;
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow: auto;
+  padding: 10px;
+}
