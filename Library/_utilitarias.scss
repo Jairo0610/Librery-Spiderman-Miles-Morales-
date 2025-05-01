@@ -317,16 +317,16 @@ $font-style-normal: normal;
 .border-radius-36 {border-radius: variables.$spacing-36 !important;}
 .border-radius-full {border-radius: 999px !important;}
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 .align-items-start{
   align-items: flex-start  !important;
