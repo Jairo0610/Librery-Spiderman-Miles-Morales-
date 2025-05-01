@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url(../Styles/Reset.css);
+.card1 {
+  margin: 1.2rem;
+  position: relative;
+  border-radius: 1.3rem;
+  max-width: 300px;
+  padding: 0.5rem;
+  background: linear-gradient(0deg, white 45%, #D4D4D4 100%);
+  box-shadow: 5px 5px 20px black;
+}
+.card1 .card1__contenedor {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #b2ab00 0%, #BF0426 75%, #BF0426 100%);
+  border-radius: 1.3rem;
+  gap: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem;
+}
+.card1 .card1__contenedor .card1__titulo {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  flex-grow: 1;
+}
+.card1 .card1__contenedor .card1__contenido {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  background-color: white;
+  border-radius: 0 0 1.3rem 1.3rem;
+}
+
+.card1:before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1.3rem;
+  border: 0.5rem solid transparent;
+  background: radial-gradient(circle, rgb(255, 140, 0) 0%, #BF0426 75%, #BF0426 100%) padding-box, linear-gradient(0deg, white 45%, #D4D4D4 100%) border-box;
+  opacity: 0;
+}
+
+.card1:hover:before {
+  transition: 0.3s;
+  transform: rotate(-10deg);
+  width: 95%;
+  height: 95%;
+  left: -2%;
+  opacity: 1;
+  box-shadow: 5px 5px 20px black;
+}
+
+.card2 {
+  color: white;
+  margin: 0 auto;
+  width: 500px;
+  background: radial-gradient(#480d35, #172D44);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+.card2 .card2__titulo {
+  background-color: #C0189B;
+  min-height: 50%;
+  width: 70%;
+  align-self: flex-end;
+  margin-top: -5%;
+  margin-right: -10%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  text-shadow: -2px 0.2px red;
+  text-transform: uppercase;
+  background-image: radial-gradient(#423288 15%, transparent 11%);
+  background-size: 0.4rem 0.4rem;
+  border: 2px #423288 solid;
+  box-shadow: -5px 5px 0px #423288;
+  transition: transform 0.3s ease;
+}
+.card2 .card2__titulo:hover {
+  transform: scale(1.02);
+}
+.card2 .card2__contenido {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 30px 30px;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+.card2 .card2__contenido > * {
+  position: relative;
+  background-color: white;
+  padding: 1.5rem 0.8rem;
+  width: 100%;
+  box-shadow: 5px 5px 0px cyan, -5px -5px 0px #FEF400;
+  border: 2px black solid;
+  transition: transform 0.3s ease;
+}
+.card2 .card2__contenido > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #423288 15%, transparent 16%);
+  background-size: 0.5rem 0.5rem;
+  background-repeat: repeat;
+  mask-image: linear-gradient(to right, black 0%, transparent 50%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 50%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card2 .card2__contenido img {
+  padding: 0;
+}
+.card2 .card2__contenido > *:hover {
+  transform: scale(1.02);
+}
+.card2 .card2__contenido > *:hover::before {
+  opacity: 1;
+}/*# sourceMappingURL=Cards.css.map */
