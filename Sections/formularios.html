@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Library/Library.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__imagen">
+          <img src="../img/logo.jpg" alt="Logo Spiderman">
+        </div>
+        <ul class="menu__nav">
+          <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+          
+          <li class="nav__elemento--dropdown">
+              <div class="dropdown__boton">
+                  <span>Documentación</span>
+                  <div class="flecha"><div></div></div>            
+              </div>
+    
+              <ul class="dropdown__lista">
+                  <li class="nav__elemento"><a href="container.html">Container</a></li>
+                  <li class="nav__elemento"><a href="badges.html">Badges</a></li>
+                  <li class="nav__elemento"><a href="#">PRUEBA2</a></li>
+                  <li class="nav__elemento"><a href="formularios.html">Formularios</a></li>
+              </ul>   
+          </li>
+          <li class="nav__elemento"><a href="#">Repositorio</a></li>
+      </ul>
+    </nav>
+    <main class="font-primary">
+        <div class="container__titulo container-comic-re margin-top-12">
+            <h1 class="container__titulo_principal fw-bold text-center margin-12">Formularios</h1>
+            <h5 class="container__titulo__descripcion text-center margin-12">Los formularios en Library Spiderman Miles
+                siguen una estética limpia y funcional, priorizando la claridad y la usabilidad. Con un diseño
+                minimalista y
+                estructurado</h5>
+
+        </div>
+        <div class="ejemplos__forms margin-top-20 font-color-white margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+    justify-content-center">
+            <h3 class="text-center margin-bottom-12">Inputs</h3>
+            <p class="text-center margin-bottom-12">Esta clase es especifica para inputs de tipo text, password y email
+            </p>
+            <p class="text-center">Todos los elementos de los formularios pueden personalizarse utilizando la siguiente
+                paleta de colores, inspirada en el estilo vibrante de Miles Morales.</p>
+
+            <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                <div class="container col margin-12 padding-20 justify-content-center border-radius-8 bg-dark-blue">
+                    <input type="text" class="input" placeholder="Input por defecto color rojo">
+                    <input type="text" class="input shadow-comic-white" placeholder="Input Color Blanco">
+                    <input type="text" class="input shadow-comic-yellow" placeholder="Input Color Amarillo">
+                    <input type="text" class="input shadow-comic-magenta" placeholder="Input color Magenta">
+                    <input type="text" class="input shadow-comic-darkblue" placeholder="Input Color DarkBlue">
+                    <input type="text" class="input shadow-comic" placeholder="Input color Dark">
+
+                </div>
+                <div class="container col margin-12 padding-20 border-radius-8 bg-warm-white justify-content-center">
+                    <input type="text" class="input" placeholder="Input por defecto color rojo">
+                    <input type="text" class="input shadow-comic-blue" placeholder="Input Color Azul">
+                    <input type="text" class="input shadow-comic-yellow" placeholder="Input Color Amarillo">
+                    <input type="text" class="input shadow-comic-magenta" placeholder="Input color Magenta">
+                    <input type="text" class="input shadow-comic-darkblue" placeholder="Input Color DarkBlue">
+                    <input type="text" class="input shadow-comic" placeholder="Input color Dark">
+                </div>
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="text" class="input width-100"&gt;
+            &lt;input type="text" class="input shadow-comic-blue width-100"&gt;
+            &lt;input type="text" class="input shadow-comic-yellow width-100"&gt;
+            &lt;input type="password" class="input shadow-comic-magenta width-100"&gt;
+            &lt;input type="password" class="input shadow-comic-darkblue width-100"&gt;
+            &lt;input type="email" class="input shadow-comic width-100"&gt;
+            &lt;input type="email" class="input shadow-comic-white width-100"&gt;
+                    </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input Date</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="date" class="input-date width-100">
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <input type="date" class="input-date shadow-comic width-100">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="date" class="input-date width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic-blue width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic-yellow width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic-magenta width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic-darkblue width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic width-100"&gt;
+            &lt;input type="date" class="input-date shadow-comic-white width-100"&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+            justify-content-center">
+            <h3 class="text-center">Input Week</h3>
+
+            <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="week" class="input-week width-100">
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <input type="week" class="input-week shadow-comic width-100">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="week" class="input-week width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic-blue width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic-yellow width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic-magenta width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic-darkblue width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic width-100"&gt;
+            &lt;input type="week" class="input-week shadow-comic-white width-100"&gt;
+                            </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+                justify-content-center">
+            <h3 class="text-center">Input Month</h3>
+
+            <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="month" class="input-month width-100">
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <input type="month" class="input-month shadow-comic width-100">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="month" class="input-month width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic-blue width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic-yellow width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic-magenta width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic-darkblue width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic width-100"&gt;
+            &lt;input type="month" class="input-month shadow-comic-white width-100"&gt;
+                                </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+                    justify-content-center">
+            <h3 class="text-center">Input DateTime</h3>
+
+            <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="datetime-local" class="input-datetime width-100">
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <input type="datetime-local" class="input-datetime shadow-comic width-100">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="datetime-local" class="input-datetime width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic-blue width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic-yellow width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic-magenta width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic-darkblue width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic width-100"&gt;
+            &lt;input type="datetime-local" class="input-datetime shadow-comic-white width-100"&gt;
+                                    </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+                        justify-content-center">
+            <h3 class="text-center">Input Time</h3>
+
+            <div class="ejemplos__forms__visual row font-color-white container justify-content-center  padding-32">
+                <div class="container justify-content-center col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="time" class="input-time width-100">
+
+
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+
+                    <input type="time" class="input-time shadow-comic width-100">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="time" class="input-time width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic-blue width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic-yellow width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic-magenta width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic-darkblue width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic width-100"&gt;
+            &lt;input type="time" class="input-time shadow-comic-white width-100"&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+                            justify-content-center">
+            <h3 class="text-center">Input Color</h3>
+
+            <div class="ejemplos__forms__visual row  container  justify-content-center  padding-32">
+                <div class="container justify-content-center col font-color-white margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <input type="color" class="input-color-dark">
+
+
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <input type="color" class="input-color shadow-comic-darkblue">
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;input type="color" class="input-color width-100"&gt;
+            &lt;input type="color" class="input-color shadow-comic-blue width-100"&gt;
+            &lt;input type="color" class="input-color shadow-comic-yellow width-100"&gt;
+            &lt;input type="color" class="input-color-dark shadow-comic-magenta width-100"&gt;
+            &lt;input type="color" class="input-color-dark shadow-comic-darkblue width-100"&gt;
+            &lt;input type="color" class="input-color-dark shadow-comic width-100"&gt;
+            &lt;input type="color" class="input-color-dark shadow-comic-white width-100"&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input Button</h3>
+
+            <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                <div class="container justify-content-center col font-color-white margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <form >
+                        <label for="" class="label-form">Email</label>
+                        <input type="email" class="input" required>
+                        <button class="input-button shadow-comic-red" type="submit"> Submit </button>
+                    </form>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+
+                    <form >
+                        <label for="" class="label-form">Email</label>
+                        <input type="email" class="input shadow-comic-magenta" required>
+                        <button class="input-button shadow-comic-magenta" type="submit"> Submit </button>
+                    </form>
+            
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+                            <form >
+            &lt;label for="" class="label-form"&gt;Email&lt;/label&gt;
+            &lt;input type="email" class="input shadow-comic-magenta" required&gt;
+            &lt;button class="input-button shadow-comic-magenta" type="submit"&gt; Submit &lt;/button>
+                            </form>
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+                <h3 class="text-center">Input Reset</h3>
+    
+                <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                    <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                        <form >
+                            <label for="" class="label-form">Nombre:</label>
+                            <input type="text" value="" class="input shadow-comic-white">
+                            <input type="reset" class="input-reset shadow-comic-red">
+                        </form>
+                    </div>
+                    <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                        <form >
+                            <label for="" class="label-form">Nombre:</label>
+                            <input type="text" value="" class="input shadow-comic-blue">
+                            <input type="reset" class="input-reset shadow-comic-yellow">
+                        </form>
+                    </div>
+
+                    <div class="bloque__codigo">
+                        <div class="code__copy margin-top-20 margin-bottom-32">
+                            <div class="row justify-content-between margin-8">
+                                <div>CÓDIGO</div>
+                                <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                    onclick="copiarCodigo(this)" padding-8">
+                                    <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                </button>
+                            </div>
+                            <pre><code class="code__block language-markup">
+            &lt;form >
+                &lt;label for="" class="label-form">Nombre:&lt;/label&gt;
+                &lt;input type="text" value="" class="input shadow-comic-blue"&gt;
+                &lt;input type="reset" class="input-reset shadow-comic-yellow"&gt;
+            &lt;/form>
+                        </code></pre>
+            
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+            justify-content-center">
+                    <h3 class="text-center">Input Radio Button</h3>
+        
+                    <div class="ejemplos__forms__visual row  container justify-content-center  padding-32">
+                        <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                            <form action="">
+                                <label  class="label-form">Elige tu equipo favorito</label><br>
+                               
+                                <label for="barcelona" class="radio-label">
+                                     <input type="radio" name="equipo" id="barcelona">Barcelona
+                                    </label>
+                                
+                                <label for="real-madrid" class="radio-label">
+                                    <input type="radio" name="equipo" id="real-madrid">Real Madrid
+                                </label>
+                            </form> 
+        
+                        </div>
+                        <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                        
+                            <form action="">
+                                <label  class="label-form">Elige tu equipo favorito</label><br>
+                               
+                                <label for="barcelona" class="radio-label-light">
+                                     <input type="radio" name="equipo" id="barcelona">Barcelona
+                                    </label>
+                                
+                                <label for="real-madrid" class="radio-label-light">
+                                    <input type="radio" name="equipo" id="real-madrid">Real Madrid
+                                </label>
+                            </form>
+                        
+                        </div>
+    
+                        <div class="bloque__codigo">
+                            <div class="code__copy margin-top-20 margin-bottom-32">
+                                <div class="row justify-content-between margin-8">
+                                    <div>CÓDIGO</div>
+                                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                        onclick="copiarCodigo(this)" padding-8">
+                                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                                    </button>
+                                </div>
+                                <pre><code class="code__block language-markup">
+             
+            &lt;form action=""&gt;
+                &lt;label  class="label-form"&gt;Elige tu equipo favorito&lt;/label&gt;&lt;br&gt;
+                
+                &lt;label for="barcelona" class="radio-label-light"&gt;
+                        &lt;input type="radio" name="equipo" id="barcelona"&gt;Barcelona
+                    &lt;/label&gt;
+                
+                &lt;label for="real-madrid" class="radio-label-light"&gt;
+                    &lt;input type="radio" name="equipo" id="real-madrid"&gt;Real Madrid
+                &lt;/label&gt;
+            &lt;/form&gt;
+                            </code></pre>
+                
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input CheckBox</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <form>
+        
+                        <label for="redes" class="checkbox-label-light"> <input type="checkbox">Facebook </label>
+                       
+                        <label for="redes" class="checkbox-label-light">  <input type="checkbox">  Instagram </label>
+                        
+                        <label for="" class="checkbox-label-light"> <input type="checkbox"> TikTok </label>
+                    </form>
+                
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <form>
+        
+                        <label for="redes" class="checkbox-label-dark"> <input type="checkbox">Facebook </label>
+                       
+                        <label for="redes" class="checkbox-label-dark">  <input type="checkbox">  Instagram </label>
+                        
+                        <label for="" class="checkbox-label-dark"> <input type="checkbox"> TikTok </label>
+                    </form>
+                
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+&lt;form&gt;
+
+    &lt;label for="redes" class="checkbox-label-dark"&gt; &lt;input type="checkbox"&gt;Facebook &lt;/label&gt;
+    
+    &lt;label for="redes" class="checkbox-label-dark"&gt;  &lt;input type="checkbox"&gt;  Instagram &lt;/label&gt;
+    
+    &lt;label for="" class="checkbox-label-dark"&gt; &lt;input type="checkbox"&gt; TikTok &lt;/label&gt;
+&lt;/form&gt;
+&lt;form&gt;
+
+    &lt;label for="redes" class="checkbox-label-light"&gt; &lt;input type="checkbox"&gt;Facebook &lt;/label&gt;
+    
+    &lt;label for="redes" class="checkbox-label-light"&gt;  &lt;input type="checkbox"&gt;  Instagram &lt;/label&gt;
+    
+    &lt;label for="" class="checkbox-label-light"&gt; &lt;input type="checkbox"&gt; TikTok &lt;/label&gt;
+&lt;/form&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input Search</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <form >
+                        <label for="" class="label-form">Buscar: </label>
+                        <input type="search" class="input shadow-comic-magenta" >
+                    </form>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <form >
+                        <label for="" class="label-form">Buscar: </label>
+                        <input type="search" class="input shadow-comic-magenta" >
+                    </form>
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+                &lt;form &gt;
+                &lt;label for="" class="label-form"&gt;Buscar: &lt;/label&gt;
+                &lt;input type="search" class="input shadow-comic-magenta" &gt;
+
+                &lt;/form&gt;
+                                    
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input Number</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <form>
+                        <label for="" class="label-form">Numero: </label>
+                        <input type="number" class="input-number shadow-comic-yellow" > 
+                    </form>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <form>
+                        <label for="" class="label-form">Numero: </label>
+                        <input type="number" class="input-number shadow-comic-magenta" >
+                    </form>
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+            &lt;form&gt;
+                &lt;label for="" class="label-form"&gt;Numero: &lt;/label&gt;
+                &lt;input type="number" class="input-number shadow-comic-yellow" &gt;
+                
+            &lt;/form&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input URL</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <form>
+                        <label for="" class="label-form">URL: </label>
+                        <input type="url" class="input shadow-comic-magenta" >
+                    </form>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <form>
+                        <label for="" class="label-form">URL: </label>
+                        <input type="url" class="input shadow-comic-darkblue" >
+                    </form>
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+                &lt;form&gt;
+                    &lt;label for="" class="label-form"&gt;URL: &lt;/label&gt;
+                    &lt;input type="url" class="input shadow-comic-darkblue" &gt;
+                &lt;/form&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input DataList</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                        <label for="" class="label-form">DataList: </label>
+                        <input list="lenguajes" placeholder="Lenguajes de Programacion" name="lenguajes" class="datalist">
+                        <datalist id="lenguajes">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Java">
+                        </datalist>
+                        
+                    </form>
+                </div>
+        
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <form>
+                        <label for="" class="label-form">DataList: </label>
+                        <input list="lenguajes" placeholder="Lenguajes de Programacion" name="lenguajes" class="datalist">
+                        <datalist id="lenguajes">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Java">
+                        </datalist>
+                        
+                    </form>
+            
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+            <pre><code class="code__block language-markup">
+&lt;form&gt;
+    &lt;label for="" class="label-form"&gt;DataList: &lt;/label&gt;
+    &lt;input list="lenguajes" placeholder="Lenguajes de Programacion" name="lenguajes" class="datalist"&gt;
+    &lt;datalist id="lenguajes"&gt;
+        &lt;option value="C#"&gt;
+        &lt;option value="C++"&gt;
+        &lt;option value="Java"&gt;
+    &lt;/datalist&gt;
+&lt;/form&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Input File</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                      <button class="file-container">
+                        <i class='bx bxs-file-image' style='color:#ffffff'  ></i>
+                        <label for="uploadFile">Subir Archivo</label>
+                        <input type="file" id="uploadFile">
+                    </button>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                 <button class="file-container file-bordeado">
+                    <i class='bx bxs-file-image' style='color:#b51f1f'  ></i>
+                        <label for="uploadFile">Subir Archivos</label>
+                        <input type="file" id="uploadFile">
+                    </button> 
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+                    &lt;button class="file-container"&gt;
+                        &lt;i class="fa-solid fa-file"&gt;&lt;/i&gt;
+                        &lt;label for="uploadFile"&gt;Subir Archivo&lt;/label&gt;
+                        &lt;input type="file" id="uploadFile"&gt;
+                    &lt;/button&gt;
+
+                    &lt;button class="file-container file-bordeado"&gt;
+                        &lt;i class="fa-solid fa-file"&gt;&lt;/i&gt;
+                        &lt;label for="uploadFile"&gt;Subir Archivos&lt;/label&gt;
+                        &lt;input type="file" id="uploadFile"&gt;
+                    &lt;/button&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Select</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <select name="" id="" class="select" >
+                        <option value="" disabled selected >Elige a tu spiderman favorito</option>
+                        <option value="Miles Morales" >Miles Morales</option>
+                        <option value="">Peter Parker</option>
+                    </select>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <select name="" id="" class="select" >
+                        <option value="" disabled selected >Elige a tu spiderman favorito</option>
+                        <option value="Miles Morales" >Miles Morales</option>
+                        <option value="">Peter Parker</option>
+                    </select>
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+&lt;select name="" id="" class="select" &gt;
+    &lt;option value="" disabled selected &gt;Elige a tu spiderman favorito&lt;/option&gt;
+    &lt;option value="Miles Morales" &gt;Miles Morales&lt;/option&gt;
+    &lt;option value=""&gt;Peter Parker&lt;/option&gt;
+&lt;/select&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Fieldset y Legend</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <fieldset class="fieldset-form-dark ">
+                        <legend class="legend font-color-darkgray">Datos Personales: </legend>
+                        <label for="" class="label-form-dark">Nombre: </label>
+                        <input type="text" class="input shadow-comic-yellow" placeholder="Introduzca su nombre">
+                        <label for="" class="label-form-light">Apellido</label>
+                        <input type="text" class="input" placeholder="Introduzca su apellido">                
+                    </fieldset>
+            
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <fieldset class="fieldset-form ">
+                        <legend class="legend font-color-darkgray">Datos Personales: </legend>
+                        <label for="" class="label-form">Nombre: </label>
+                        <input type="text" class="input shadow-comic-blue" placeholder="Introduzca su nombre">
+                        <label for="" class="label-form">Apellido</label>
+                        <input type="text" class="input" placeholder="Introduzca su apellido">
+                
+                    </fieldset>
+                
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+&lt;fieldset class="fieldset-form-dark "&gt;
+    &lt;legend class="legend font-color-darkgray"&gt;Datos Personales: &lt;/legend&gt;
+    &lt;label for="" class="label-form-dark"&gt;Nombre: &lt;/label&gt;
+    &lt;input type="text" class="input shadow-comic-yellow" placeholder="Introduzca su nombre"&gt;
+    &lt;label for="" class="label-form-light"&gt;Apellido&lt;/label&gt;
+    &lt;input type="text" class="input" placeholder="Introduzca su apellido"&gt;                
+&lt;/fieldset&gt;
+
+&lt;fieldset class="fieldset-form "&gt;
+    &lt;legend class="legend font-color-darkgray"&gt;Datos Personales: &lt;/legend&gt;
+    &lt;label for="" class="label-form"&gt;Nombre: &lt;/label&gt;
+    &lt;input type="text" class="input shadow-comic-blue" placeholder="Introduzca su nombre"&gt;
+    &lt;label for="" class="label-form"&gt;Apellido&lt;/label&gt;
+    &lt;input type="text" class="input" placeholder="Introduzca su apellido"&gt;
+
+&lt;/fieldset&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="ejemplos__forms margin-top-20 margin-bottom-20 font-color-white bg-blue-black container width-60 shadow-peq border-radius-8 
+        justify-content-center">
+            <h3 class="text-center">Textarea</h3>
+
+            <div class="ejemplos__forms__visual row   container justify-content-center  padding-32">
+                <div class="container justify-content-center font-color-white col margin-12 padding-20 border-radius-8 bg-dark-blue">
+                    <div>
+                        <label for="mensaje" class="label-form">Mensaje:</label>
+                         <textarea  class="textarea" id="mensaje" placeholder="Escribe tu mensaje..." ></textarea>
+                    </div>
+                </div>
+                <div class="container justify-content-center  col margin-12 padding-20 border-radius-8 bg-warm-white">
+                    <div>
+                        <label for="mensaje" class="label-form">Mensaje:</label>
+                         <textarea  class="textarea" id="mensaje" placeholder="Escribe tu mensaje..." ></textarea>
+                    </div>
+                </div>
+
+                <div class="bloque__codigo">
+                    <div class="code__copy margin-top-20 margin-bottom-32">
+                        <div class="row justify-content-between margin-8">
+                            <div>CÓDIGO</div>
+                            <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                                onclick="copiarCodigo(this)" padding-8">
+                                <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                            </button>
+                        </div>
+                        <pre><code class="code__block language-markup">
+&lt;div&gt;
+    &lt;label for="mensaje" class="label-form"&gt;Mensaje:&lt;/label&gt;
+        &lt;textarea  class="textarea" id="mensaje" placeholder="Escribe tu mensaje..." &gt;&lt;/textarea&gt;
+&lt;/div&gt;
+                        </code></pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
