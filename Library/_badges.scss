@@ -99,3 +99,15 @@ $badge-dark-op: #1f010313;
     background-color: $badge-light;
     color: variables.$color1;
 }
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .badge-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
