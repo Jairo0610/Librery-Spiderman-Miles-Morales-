@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Library/Library.css">
-    <script src="../Library/script.js"></script>
+    <link rel="stylesheet" href="../Library/Library.css"> 
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script> 
-    <link rel="stylesheet" href="../style.css">
+   
     <title>Documentacion Badges</title>
 </head>
 
@@ -40,51 +41,58 @@
     </nav>
 
     <main class="font-primary">
-    <div class="container margin-top-12 padding-0">
-        <h1 class="text-center fw-semibold margin-4">Badges</h1>
-        <h4 class="text-center fw-normal margin-8">Pequeñas etiquetas visuales, perfectas para mostrar estados, alertas
-            o contadores.</h4>
+    <div class="container-comic-re margin-top-12 padding-20">
+        <h1 class="text-left fw-bold margin-4">Badges</h1>
+        <h5 class="text-left fw-normal margin-8">Pequeñas etiquetas visuales, perfectas para mostrar estados, alertas
+            o contadores.</h5>
     </div>
-    <div class="contenedor__ejemplos container-fluid justify-content-center">
-        <h3 class="titulo__seccion">Colores y estilos disponibles</h3>
-        <p class="text-center">Library Spiderman Miles cuenta con diferentes colores inspirados en el universo de Spider-Man: Across the
-            Spider-Verse.</p>
+    <div class="contenedor__ejemplos container padding-20">
+       
         <!--BADGE CON FONDO SOLIDO-->
-        <h5 class="text-center margin-12">Badge con fondo sólido</h5>
-        <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
-            <span class="badge badge-solid-magenta">Magenta</span>
-            <span class="badge badge-solid-yellow">Yellow</span>
-            <span class="badge badge-solid-blue">Blue</span>
-            <span class="badge badge-solid-red">Red</span>
-            <span class="badge badge-solid-dark">Dark</span>
-            <span class="badge badge-solid-light">Light</span>
-        </div>
-        <div class="bloque__codigo container width-60">
-            <div class="code__copy"">
-                <div class="row justify-content-between margin-8 border-bottom-">
-                    <div>CÓDIGO</div>
-                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
-                        onclick="copiarCodigo(this)" padding-8">
-                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
-                    </button>
-                </div>
-                <pre><code class="code__block language-markup">
-                    &lt;!--Ejemplo de uso!--&gt;
-                    &lt;span class="badge badge-solid-magenta"&gt;Magenta&lt;/span&gt;
-                    &lt;span class="badge badge-solid-yellow"&gt;Yellow&lt;/span&gt;
-                    &lt;span class="badge badge-solid-blue"&gt;Blue&lt;/span&gt;
-                    &lt;span class="badge badge-solid-red"&gt;Red&lt;/span&gt;
-                    &lt;span class="badge badge-solid-dark"&gt;Dark&lt;/span&gt;
-                    &lt;span class="badge badge-solid-light"&gt;Light&lt;/span&gt;
-            </code></pre>
-
+           
+            <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">Colores y estilos disponibles</h3>
+            <p class="margin-bottom-20">Library Spiderman Miles cuenta con diferentes colores inspirados en el universo de Spider-Man: Across the
+            Spider-Verse.</p>
+            <h4 class="text-center fw-semibold margin-12">Badge con fondo sólido</h4>
+            <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+                <span class="badge badge-solid-magenta">Magenta</span>
+                <span class="badge badge-solid-yellow">Yellow</span>
+                <span class="badge badge-solid-blue">Blue</span>
+                <span class="badge badge-solid-red">Red</span>
+                <span class="badge badge-solid-dark">Dark</span>
+                <span class="badge badge-solid-light">Light</span>
             </div>
-        </div>
-        <p>Para generar los badges, incluye la clase badge y luego su variante de estilo y color</p>
+            <p >Para generar los badges, incluye la clase badge y luego su variante de estilo y color</p>
+       
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-32">
+                    <div class="row justify-content-between margin-8">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                    </div>
+                    <pre><code class="code__block language-markup">
+            &lt;!--Ejemplo de uso!--&gt;
+            &lt;span class="badge badge-solid-magenta"&gt;Magenta&lt;/span&gt;
+            &lt;span class="badge badge-solid-yellow"&gt;Yellow&lt;/span&gt;
+            &lt;span class="badge badge-solid-blue"&gt;Blue&lt;/span&gt;
+            &lt;span class="badge badge-solid-red"&gt;Red&lt;/span&gt;
+            &lt;span class="badge badge-solid-dark"&gt;Dark&lt;/span&gt;
+            &lt;span class="badge badge-solid-light"&gt;Light&lt;/span&gt;
+                </code></pre>
+    
+                </div>
+            </div>
+           
+   
+       
 
         <!-- BADGE OUTLINE -->
 
-        <h5 class="nombre__diseño text-center margin-12">Badge Outline</h5>
+        
+        <h5 class="nombre__diseño text-center fw-semibold margin-12">Badge Outline</h5>
 
         <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
             <span class="badge badge-outline-magenta">Magenta</span>
@@ -95,16 +103,16 @@
             <span class="badge badge-outline-light">Light</span>
         </div>
 
-        <div class="container__codigo container width-60">
-            <div class="code__copy">
-                <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32">
+                <div class="code__copy__header row justify-content-between margin-8">
                     <div>CÓDIGO</div>
                     <button class="copy__clipboard border-none margin-right-12 border-radius-4"
                         onclick="copiarCodigo(this)" padding-8">
                         <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
                     </button>
                 </div>
-                <pre><code class="code__block language-markup language-markup">
+                <pre><code class="code__block language-markup">
                     &lt;!--Ejemplo de uso!--&gt;
                     &lt;span class="badge badge-outline-magenta"&gt;Magenta&lt;/span&gt;
                     &lt;span class="badge badge-outline-yellow"&gt;Yellow&lt;/span&gt;
@@ -116,7 +124,7 @@
             </div>
         </div>
         <!-- BADGE CON FONDO CLARO -->
-        <h5 class="nombre__diseño text-center margin-12">Badge con fondo claro (por defecto)</h5>
+        <h5 class="nombre__diseño text-center fw-semibold margin-12">Badge con fondo claro (por defecto)</h5>
         <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
             <span class="badge badge-magenta">Magenta</span>
             <span class="badge badge-yellow">Yellow</span>
@@ -125,9 +133,9 @@
             <span class="badge badge-dark">Dark</span>
             <span class="badge badge-light">Light</span>
         </div>
-        <div class="bloque__codigo container width-60">
-            <div class="code__copy" style=" font-family: Consolas, monospace;">
-                <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
+        <div class="bloque__codigo ">
+            <div class="code__copy margin-top-20 margin-bottom-32" >
+                <div class="code__copy__header row justify-content-between margin-8">
                     <div>CÓDIGO</div>
                     <button class="copy__clipboard border-none margin-right-12 border-radius-4"
                         onclick="copiarCodigo(this)" padding-8">
@@ -147,14 +155,14 @@
         </div>
 
         <!-- BADGE CON ICONO PERSONALIZADO -->
-        <h5 class="nombre__diseño text-center margin-12">Badge con icono personalizado</h5>
-        <p class= "font-style-italic text-center">Puedes personalizar tus badges agregando iconos de cualquier fuente,
+        <h5 class="nombre__diseño text-center fw-semibold margin-12">Badge con icono personalizado</h5>
+        <p class= "font-style-italic text-center margin-bottom-12">Puedes personalizar tus badges agregando iconos de cualquier fuente,
             haciéndolos más descriptivos y visualmente atractivos.</p>
-        <p class="text-center">En este caso, utilizaremos iconos de <a href="https://boxicons.com/">Boxicons</a>, que
+        <p class="text-center margin-bottom-20">En este caso, utilizaremos iconos de <a href="https://boxicons.com/">Boxicons</a>, que
             puedes integrar fácilmente en tus páginas utilizando el siguiente link</p>
-        <div class="bloque__codigo container width-60">
-            <div class="code__copy" style=" font-family: Consolas, monospace;">
-                <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
+        <div class="bloque__codigo">
+            <div class="code__copy margin-top-20 margin-bottom-20" >
+                <div class="code__copy__header row justify-content-between margin-8">
                     <div>ENLACE</div>
                     <button class="copy__clipboard border-none margin-right-12 border-radius-4"
                         onclick="copiarCodigo(this)" padding-8">
@@ -172,16 +180,16 @@
             <span class="badge badge-magenta"><i class='bx bxs-check-circle' style='color:#c0189b'></i>Success</span>
             <span class="badge badge-solid-blue"><i class='bx bx-images' style='color:#ffffff'></i>Images</span>
         </div>
-        <div class="bloque__codigo container width-60">
-            <div class="code__copy" style=" font-family: Consolas, monospace;">
-                <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
+        <div class="bloque__codigo">
+            <div class="code__copy margin-top-20 margin-bottom-20">
+                <div class="code__copy__header row justify-content-between margin-8">
                     <div>CÓDIGO</div>
                     <button class="copy__clipboard border-none margin-right-12 border-radius-4"
                         onclick="copiarCodigo(this)" padding-8">
                         <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
                     </button>
-
-                   <pre><code class="code__block language-markup">         
+                </div>
+                <pre><code class="code__block language-markup">         
     &lt;span class="badge badge-outline-red"&gt; &lt;i class='bx bx-home' style='color:#b80303'&gt;&lt;/i&gt;Home&lt;/span&gt;
     &lt;span class="badge badge-magenta"&gt;&lt;i class='bx bxs-check-circle' style='color:#c0189b'&gt;&lt;/i&gt;Success&lt;/span&gt;
     &lt;span class="badge badge-solid-blue"&gt;&lt;i class='bx bx-images' style='color:#ffffff'&gt;&lt;/i&gt;Images&lt;/span&gt;
@@ -190,89 +198,110 @@
                 </div>
 
             </div>
-        </div>
-        <p class="font-style-italic text-center">!También puedes agregar iconos al final del contenido!</p>
-        <div class="ejemplos__badges container badge-list margin-bottom-20 margin-top-20 justify-content-center">
-            <span class="badge badge-outline-yellow">Cerrar<i class='bx bxs-x-circle'style='color:#d3b700'></i></span>
-            <span class="badge badge-dark">Cerrar<i class='bx bxs-x-circle'style='color:#161616'></i></span>
-            <span class="badge badge-solid-red">Cerrar <i class='bx bxs-x-circle'style='color:#FEF9FF'></i></span>
-        </div>
-        <div class="bloque__codigo container width-60">
-            <div class="code__copy" style=" font-family: Consolas, monospace;">
-                <div class="code__copy__header row justify-content-between margin-bottom-8 ">
-                    <div>CÓDIGO</div>
-                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
-                        onclick="copiarCodigo(this)" padding-8">
-                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
-                    </button>
-
-                    <pre><code class="code__block language-markup">
-    &lt;span class="badge badge-outline-yellow"&gt;Cerrar&lt;i class='bx bxs-x-circle'style='color:#d3b700'&gt;&lt;/i&gt;&lt;/span&gt;
-    &lt;span class="badge badge-dark"&gt;Cerrar&lt;i class='bx bxs-x-circle'style='color:#161616'&gt;&lt;/i&gt;&lt;/span&gt;
-    &lt;span class="badge badge-solid-red"&gt;Cerrar &lt;i class='bx bxs-x-circle'style='color:#FEF9FF'&gt;&lt;/i&gt;&lt;/span&gt;
-                    </code></pre>
-
-                </div>
-
+            <p class="font-style-italic fs-18 margin-top-20">!También puedes agregar iconos al final del contenido!</p>
+            <div class="ejemplos__badges container badge-list margin-bottom-20 margin-top-20 justify-content-center">
+                <span class="badge badge-outline-yellow">Cerrar<i class='bx bxs-x-circle'style='color:#d3b700'></i></span>
+                <span class="badge badge-light">Cerrar<i class='bx bxs-x-circle'style='color:#161616'></i></span>
+                <span class="badge badge-solid-red">Cerrar <i class='bx bxs-x-circle'style='color:#FEF9FF'></i></span>
             </div>
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-20">
+                    <div class="code__copy__header row justify-content-between margin-bottom-8 ">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                   
+                
+            </div>
+    
+                        <pre><code class="code__block language-markup">
+        &lt;span class="badge badge-outline-yellow"&gt;Cerrar&lt;i class='bx bxs-x-circle'style='color:#d3b700'&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="badge badge-dark"&gt;Cerrar&lt;i class='bx bxs-x-circle'style='color:#161616'&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="badge badge-solid-red"&gt;Cerrar &lt;i class='bx bxs-x-circle'style='color:#FEF9FF'&gt;&lt;/i&gt;&lt;/span&gt;
+                        </code></pre>
+    
+            </div>
+
+            <h3 class="titulo__seccion text-center fw-semibold margin-12">Badges en fondo claro</h3>
+
+            <!--BADGES EN MODO CLARO DE LOS BADGES-->
+           
+            <div class="ejemplos__badges container bg-warm-white border-radius-8 padding-20 margin-bottom-20 text-center d-block">
+                   <div class="margin-bottom-20">        
+                       <span class="badge badge-magenta">Magenta</span>
+                       <span class="badge badge-yellow">Yellow</span>
+                       <span class="badge badge-blue">Blue</span>
+                       <span class="badge badge-red">Red</span>
+                       <span class="badge badge-dark">Dark</span>
+                       <span class="badge badge-light">Light</span>
+                   </div>
+                   <div class="margin-bottom-20">
+                       <span class="badge badge-outline-magenta">Magenta</span>
+                       <span class="badge badge-outline-yellow">Yellow</span>
+                       <span class="badge badge-outline-blue">Blue</span>
+                       <span class="badge badge-outline-red">Red</span>
+                       <span class="badge badge-outline-dark">Dark</span>
+                       <span class="badge badge-outline-light">Light</span>
+                   </div>
+                   <div class="margin-bottom-20">
+                       <span class="badge badge-solid-magenta">Magenta</span>
+                       <span class="badge badge-solid-yellow">Yellow</span>
+                       <span class="badge badge-solid-blue">Blue</span>
+                       <span class="badge badge-solid-red">Red</span>
+                       <span class="badge badge-solid-dark">Dark</span>
+                       <span class="badge badge-solid-light">Light</span>
+                   </div>
+               
+            </div>
+            <h3 class="titulo__seccion text-center fw-semibold margin-12">Escalado</h3>
+            <p class="text-center">Los badges cambian de tamaño automáticamente según el elemento que los contiene</p>
+    
+             <!--ESCALADO DE LOS BADGES-->
+            
+             <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center d-block">
+                <h1>Ejemplo de encabezado h1 <span class="badge badge-solid-magenta margin-bottom-12">Magenta</span></h1>
+                <h2>Ejemplo de encabezado h2 <span class="badge badge-outline-yellow margin-bottom-12">Yellow</span></h2>
+                <h3>Ejemplo de encabezado h3 <span class="badge badge-blue margin-bottom-12">Blue</span></h3>
+                <h4>Ejemplo de encabezado h4 <span class="badge badge-solid-red margin-bottom-12">Cerrar <i class='bx bxs-x-circle' style='color:#FEF9FF'></i></span></h4>
+                <h5>Ejemplo de encabezado h5 <span class="badge badge-outline-dark margin-bottom-12">Cerrar <i class='bx bx-x-circle' style='color:#161616'></i></span></h5>
+                <h6>Ejemplo de encabezado h6 <span class="badge badge-red margin-bottom-12">Cerrar <i class='bx bxs-x-circle' style='color:#b80303'></i></span></h6>
+                
+             </div>
+             <div class="bloque__codigo">
+                 <div class="code__copy margin-top-20 margin-bottom-20" style="overflow: hidden;">
+                     <div class="code__copy__header row justify-content-between margin-8">
+                         <div>CÓDIGO</div>
+                         <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                             onclick="copiarCodigo(this)" padding-8">
+                             <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                         </button>
+                     </div>
+                     <pre><code class="code__block language-markup">
+        &lt;h1&gt;Ejemplo de encabezado h1 &lt;span class="badge badge-solid-magenta margin-bottom-12"&gt;Magenta&lt;/span&gt;&lt;/h1&gt;
+        &lt;h2&gt;Ejemplo de encabezado h2 &lt;span class="badge badge-outline-yellow margin-bottom-12"&gt;Yellow&lt;/span&gt;&lt;/h2&gt;
+        &lt;h3&gt;Ejemplo de encabezado h3 &lt;span class="badge badge-blue margin-bottom-12"&gt;Blue&lt;/span&gt;&lt;/h3&gt;
+        &lt;h4&gt;Ejemplo de encabezado h4 &lt;span class="badge badge-solid-red margin-bottom-12"&gt;Cerrar &lt;i class='bx bxs-x-circle' style='color:#FEF9FF'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h4&gt;
+        &lt;h5&gt;Ejemplo de encabezado h5 &lt;span class="badge badge-outline-dark margin-bottom-12"&gt;Cerrar &lt;i class='bx bx-x-circle' style='color:#161616'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;   
+        &lt;h6&gt;Ejemplo de encabezado h6 &lt;span class="badge badge-red margin-bottom-12"&gt;Cerrar &lt;i class='bx bxs-x-circle' style='color:#b80303'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h6>
+                 </code></pre>
+                 </div>
+             </div>
+
+             <h3 class="titulo__seccion text-center fw-semibold margin-12">Personalización</h3>
+        <p>Library Spiderman Miles también te ofrece la posibilidad de poder personalizar los badges por medio de sus clases utilitarias</p>
+
+         <!--PERSONALIZACION DE LOS BADGES-->
+        
+        <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+            <span class="badge badge-solid-magenta margin-12 border-2 border-darkblue shadow-comic-blue">Magenta</span>
+            <span class="badge badge-outline-yellow margin-12 border-radius-0 shadow-comic-blue font-style-italic">Yellow</span>
+            <span class="badge badge-blue margin-12 border-2 border-blue shadow-peq">Blue</span>
         </div>
-    </div>
-
-    <div class="contenedor__ejemplos container-fluid">
-        <h3 class="titulo__seccion">Badges en fondo claro</h3>
-
-         <!--BADGES EN MODO CLARO DE LOS BADGES-->
-        
-         <div class="ejemplos__badges container-card width-60 badge-list margin-bottom-20 justify-content-center d-block">
-                <div class="margin-bottom-20">        
-                    <span class="badge badge-magenta">Magenta</span>
-                    <span class="badge badge-yellow">Yellow</span>
-                    <span class="badge badge-blue">Blue</span>
-                    <span class="badge badge-red">Red</span>
-                    <span class="badge badge-dark">Dark</span>
-                    <span class="badge badge-light">Light</span>
-                </div>
-                <div class="margin-bottom-20">
-                    <span class="badge badge-outline-magenta">Magenta</span>
-                    <span class="badge badge-outline-yellow">Yellow</span>
-                    <span class="badge badge-outline-blue">Blue</span>
-                    <span class="badge badge-outline-red">Red</span>
-                    <span class="badge badge-outline-dark">Dark</span>
-                    <span class="badge badge-outline-light">Light</span>
-                </div>
-                <div class="margin-bottom-20">
-                    <span class="badge badge-solid-magenta">Magenta</span>
-                    <span class="badge badge-solid-yellow">Yellow</span>
-                    <span class="badge badge-solid-blue">Blue</span>
-                    <span class="badge badge-solid-red">Red</span>
-                    <span class="badge badge-solid-dark">Dark</span>
-                    <span class="badge badge-solid-light">Light</span>
-                </div>
-            
-         </div>
-     </div>
-
-
-
-
-    <div class="contenedor__ejemplos container-fluid">
-        <h3 class="titulo__seccion">Escalado</h3>
-        <p>Los badges cambian de tamaño automáticamente según el elemento que los contiene</p>
-
-         <!--ESCALADO DE LOS BADGES-->
-        
-         <div class="ejemplos__badges container width-60 badge-list margin-bottom-20 justify-content-center d-block">
-            <h1>Ejemplo de encabezado h1 <span class="badge badge-solid-magenta margin-bottom-12">Magenta</span></h1>
-            <h2>Ejemplo de encabezado h2 <span class="badge badge-outline-yellow margin-bottom-12">Yellow</span></h2>
-            <h3>Ejemplo de encabezado h3 <span class="badge badge-blue margin-bottom-12">Blue</span></h3>
-            <h4>Ejemplo de encabezado h4 <span class="badge badge-solid-red margin-bottom-12">Cerrar <i class='bx bxs-x-circle' style='color:#FEF9FF'></i></span></h4>
-            <h5>Ejemplo de encabezado h5 <span class="badge badge-outline-dark margin-bottom-12">Cerrar <i class='bx bx-x-circle' style='color:#161616'></i></span></h5>
-            <h6>Ejemplo de encabezado h6 <span class="badge badge-red margin-bottom-12">Cerrar <i class='bx bxs-x-circle' style='color:#b80303'></i></span></h6>
-            
-         </div>
-         <div class="bloque__codigo container width-60">
-             <div class="code__copy" style=" font-family: Consolas, monospace;">
-                 <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
+         <div class="bloque__codigo">
+             <div class="code__copy margin-top-20 margin-bottom-20">
+                 <div class="code__copy__header row justify-content-between margin-8">
                      <div>CÓDIGO</div>
                      <button class="copy__clipboard border-none margin-right-12 border-radius-4"
                          onclick="copiarCodigo(this)" padding-8">
@@ -280,45 +309,13 @@
                      </button>
                  </div>
                  <pre><code class="code__block language-markup">
-    &lt;h1&gt;Ejemplo de encabezado h1 &lt;span class="badge badge-solid-magenta margin-bottom-12"&gt;Magenta&lt;/span&gt;&lt;/h1&gt;
-    &lt;h2&gt;Ejemplo de encabezado h2 &lt;span class="badge badge-outline-yellow margin-bottom-12"&gt;Yellow&lt;/span&gt;&lt;/h2&gt;
-    &lt;h3&gt;Ejemplo de encabezado h3 &lt;span class="badge badge-blue margin-bottom-12"&gt;Blue&lt;/span&gt;&lt;/h3&gt;
-    &lt;h4&gt;Ejemplo de encabezado h4 &lt;span class="badge badge-solid-red margin-bottom-12"&gt;Cerrar &lt;i class='bx bxs-x-circle' style='color:#FEF9FF'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h4&gt;
-    &lt;h5&gt;Ejemplo de encabezado h5 &lt;span class="badge badge-outline-dark margin-bottom-12"&gt;Cerrar &lt;i class='bx bx-x-circle' style='color:#161616'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;   
-    &lt;h6&gt;Ejemplo de encabezado h6 &lt;span class="badge badge-red margin-bottom-12"&gt;Cerrar &lt;i class='bx bxs-x-circle' style='color:#b80303'&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h6>
-             </code></pre>
-             </div>
-         </div>
-     </div>
-
-     <div class="contenedor__ejemplos container-fluid">
-        <h3 class="titulo__seccion">Personalización</h3>
-        <p>Library Spiderman Miles también te ofrece la posibilidad de poder personalizar los badges por medio de sus clases utilitarias</p>
-
-         <!--PERSONALIZACION DE LOS BADGES-->
-        
-        <div class="ejemplos__badges container width-60 badge-list margin-bottom-20 justify-content-center">
-            <span class="badge badge-solid-magenta margin-12 border-2 border-darkblue shadow-comic-blue">Magenta</span>
-            <span class="badge badge-outline-yellow margin-12 border-radius-0 shadow-comic-blue font-style-italic">Yellow</span>
-            <span class="badge badge-blue margin-12 border-2 border-blue shadow-peq">Blue</span>
-        </div>
-         <div class="bloque__codigo container width-60">
-             <div class="code__copy justify-content-center">
-                 <div class="code__copy__header row justify-content-between margin-8 border-bottom-">
-                     <div>CÓDIGO</div>
-                     <button class="copy__clipboard border-none margin-right-12 border-radius-4"
-                         onclick="copiarCodigo(this)" padding-8">
-                         <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
-                     </button>
-                 </div>
-                 <pre><code class="code__block language-markup padding-right-12">
     &lt;span class="badge badge-solid-magenta margin-12 border-2 border-darkblue shadow-comic-blue"&gt;Magenta&lt;/span&gt;
     &lt;span class="badge container-comic-re font-color-white badge-outline-yellow margin-12 border-radius-0 shadow-comic-blue font-style-italic"&gt;Yellow&lt;/span&gt;    
     &lt;span class="badge badge-blue margin-12 border-2 border-blue shadow-peq"&gt;Blue&lt;/span&gt;
     </code></pre>
              </div>
          </div>
-     </div>
+    </div>
 
     </main>
 
