@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Library/Library.css"> 
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jairo0610/Librery-Spiderman-Miles-Morales-@main/Library/Library.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script> 
+   
+    <title>Documentacion Navbar</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__imagen">
+          <img src="../img/logo.jpg" alt="Logo Spiderman">
+        </div>
+        <ul class="menu__nav">
+          <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+          
+          <li class="nav__elemento--dropdown">
+              <div class="dropdown__boton">
+                  <span>Documentación</span>
+                  <div class="flecha"><div></div></div>            
+              </div>
+    
+              <ul class="dropdown__lista">
+                  <li class="nav__elemento"><a href="container.html">Container</a></li>
+                  <li class="nav__elemento"><a href="badges.html">Badges</a></li>
+                  <li class="nav__elemento"><a href="#">PRUEBA2</a></li>
+              </ul>   
+          </li>
+          <li class="nav__elemento"><a href="#">Repositorio</a></li>
+      </ul>
+    </nav>
+
+    <main class="font-primary">
+        <div class="container-comic-re margin-top-12 padding-20">
+            <h1 class="text-left fw-bold margin-4">Navbar</h1>
+            <h5 class="text-left fw-normal margin-8">
+                Barra de navegación que contiene imagen, enlaces, dropdown y barra de búsqueda. 
+            </h5>
+        </div>
+        <div class="contenedor__ejemplos container padding-20">
+            <!--Navbar completo-->
+            
+            <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">
+                Barra de Navegación Completo.
+            </h3>    
+            <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+                <nav class="menu">
+                    <div class="menu__imagen">
+                      <img src="../img/logo.jpg" alt="logo" >
+                    </div>
+                    <ul class="menu__nav">
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento--dropdown">
+                            <div class="dropdown__boton">
+                                <span>Dropdown</span>
+                                <div class="flecha"><div></div></div>            
+                            </div>
+            
+                            <ul class="dropdown__lista">
+                                <li class="nav__elemento"><a href="#">Subelemento 1</a></li>
+                                <li class="nav__elemento"><a href="#">Subelemento 2</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+            
+                    <form role="search" class="menu__busqueda">
+                        <input type="text" class="busqueda--barra" name="" id="">
+                        <input type="button" class="busqueda--boton" name="" id="" value="Buscar">
+                    </form>
+                </nav>
+            </div> 
+            
+            <p >Genera esta barra de navegación con el siguiente código.</p>
+       
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-32">
+                    <div class="row justify-content-between margin-8">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                    </div>
+                        <pre><code class="code__block language-markup">
+        &lt;nav class=&quot;menu&quot;&gt;
+            &lt;div class=&quot;menu__imagen&quot;&gt; &lt;!--Contenedor para imagen (logo)--&gt;
+                &lt;img src=&quot;#&quot; alt=&quot;logo&quot; &gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;menu__nav&quot;&gt; &lt;!--Contenedor para enlaces principales--&gt;
+                &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;!--Coloca los enlaces como la línea anterior aquí--&gt;
+                &lt;li class=&quot;nav__elemento--dropdown&quot;&gt; &lt;!--Este es un elemento dropdown--&gt;
+                    &lt;div class=&quot;dropdown__boton&quot;&gt;
+                        &lt;span&gt;Dropdown&lt;/span&gt;
+                        &lt;div class=&quot;flecha&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;            
+                    &lt;/div&gt;
+
+                    &lt;ul class=&quot;dropdown__lista&quot;&gt;
+                        &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Subelemento 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;!--Coloca los subelementos de enlaces como la línea anterior aquí--&gt;
+                    &lt;/ul&gt;   
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;form role=&quot;search&quot; class=&quot;menu__busqueda&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;busqueda--barra&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+                &lt;input type=&quot;button&quot; class=&quot;busqueda--boton&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;Buscar&quot;&gt;
+            &lt;/form&gt;
+        &lt;/nav&gt;
+                    </code></pre>
+                </div>
+            </div>
+
+            <h3 class="titulo__seccion text-left fw-semibold margin-bottom-12">
+                Barra de Navegación Básico.
+            </h3> 
+            <p class="titulo__seccion text-left fw-semibold margin-bottom-12">
+                Puedes eliminar el formulario de búsqueda y cambiar el orden de los elementos si así lo prefieres.
+            </p>
+            <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+                <nav class="menu">
+                    <div class="menu__imagen">
+                      <img src="../img/logo.jpg" alt="logo" >
+                    </div>
+                    <ul class="menu__nav">
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento--dropdown">
+                            <div class="dropdown__boton">
+                                <span>Dropdown</span>
+                                <div class="flecha"><div></div></div>            
+                            </div>
+            
+                            <ul class="dropdown__lista">
+                                <li class="nav__elemento"><a href="#">Subelemento 1</a></li>
+                                <li class="nav__elemento"><a href="#">Subelemento 2</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+            
+
+                </nav>
+            </div> 
+
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-32">
+                    <div class="row justify-content-between margin-8">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                    </div>
+                        <pre><code class="code__block language-markup">
+        &lt;nav class=&quot;menu&quot;&gt;
+            &lt;div class=&quot;menu__imagen&quot;&gt; &lt;!--Contenedor para imagen (logo)--&gt;
+                &lt;img src=&quot;#&quot; alt=&quot;logo&quot; &gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;menu__nav&quot;&gt; &lt;!--Contenedor para enlaces principales--&gt;
+                &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;!--Coloca los enlaces como la línea anterior aquí--&gt;
+                &lt;li class=&quot;nav__elemento--dropdown&quot;&gt; &lt;!--Este es un elemento dropdown--&gt;
+                    &lt;div class=&quot;dropdown__boton&quot;&gt;
+                        &lt;span&gt;Dropdown&lt;/span&gt;
+                        &lt;div class=&quot;flecha&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;            
+                    &lt;/div&gt;
+
+                    &lt;ul class=&quot;dropdown__lista&quot;&gt;
+                        &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Subelemento 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;!--Coloca los subelementos de enlaces como la línea anterior aquí--&gt;
+                    &lt;/ul&gt;   
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="ejemplos__badges container badge-list margin-bottom-20 justify-content-center">
+                <nav class="menu">
+                    <ul class="menu__nav">
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento"><a href="#">Link</a></li>
+                        <li class="nav__elemento--dropdown">
+                            <div class="dropdown__boton">
+                                <span>Dropdown</span>
+                                <div class="flecha"><div></div></div>            
+                            </div>
+            
+                            <ul class="dropdown__lista">
+                                <li class="nav__elemento"><a href="#">Subelemento 1</a></li>
+                                <li class="nav__elemento"><a href="#">Subelemento 2</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                    <div class="menu__imagen">
+                        <img src="../img/logo.jpg" alt="logo" >
+                    </div>
+                </nav>
+            </div> 
+
+            <div class="bloque__codigo">
+                <div class="code__copy margin-top-20 margin-bottom-32">
+                    <div class="row justify-content-between margin-8">
+                        <div>CÓDIGO</div>
+                        <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                            onclick="copiarCodigo(this)" padding-8">
+                            <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                        </button>
+                    </div>
+                        <pre><code class="code__block language-markup">
+        &lt;nav class=&quot;menu&quot;&gt;
+            &lt;ul class=&quot;menu__nav&quot;&gt; &lt;!--Contenedor para enlaces principales--&gt;
+                &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;!--Coloca los enlaces como la línea anterior aquí--&gt;
+                &lt;li class=&quot;nav__elemento--dropdown&quot;&gt; &lt;!--Este es un elemento dropdown--&gt;
+                    &lt;div class=&quot;dropdown__boton&quot;&gt;
+                        &lt;span&gt;Dropdown&lt;/span&gt;
+                        &lt;div class=&quot;flecha&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;            
+                    &lt;/div&gt;
+
+                    &lt;ul class=&quot;dropdown__lista&quot;&gt;
+                        &lt;li class=&quot;nav__elemento&quot;&gt;&lt;a href=&quot;#&quot;&gt;Subelemento 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;!--Coloca los subelementos de enlaces como la línea anterior aquí--&gt;
+                    &lt;/ul&gt;   
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;menu__imagen&quot;&gt; &lt;!--Contenedor para imagen (logo)--&gt;
+                &lt;img src=&quot;#&quot; alt=&quot;logo&quot; &gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+                    </code></pre>
+                </div>
+            </div>
+
+
+                    
+        </div>
+       
+
+    </main>
+
+</body>
+
+</html>
