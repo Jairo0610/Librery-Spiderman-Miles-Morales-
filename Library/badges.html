@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="library_spider_miles_morales.css">
+    <script src="script.js"></script>
+
+    <title>Document</title>
+
+    <style>
+        .code__copy {
+            font-family: "Fira Code", monospace;
+            background-color: #2e2e2e;
+            color: #f8f8f2;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.8;
+            overflow: auto;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container margin-12">
+        <h1 class="text-center fw-semibold margin-4">Badges</h1>
+        <h4 class="text-center fw-normal margin-8">Pequeñas etiquetas visuales, perfectas para mostrar estados, alertas
+            o contadores.</h4>
+    </div>
+    <div class="container-fluid margin-24">
+        <h3>Colores y estilos disponibles</h3>
+        <p>Library Spiderman Miles cuenta con diferentes colores inspirados en el universo de Spider-Man: Across the
+            Spider-Verse.</p>
+        <!--BADGE CON FONDO SOLIDO-->
+        <h5 class="text-center margin-12">Badge con fondo sólido</h5>
+        <div class="container badge-list margin-12 justify-content-center">
+            <span class="badge badge-solid-magenta">Magenta</span>
+            <span class="badge badge-solid-yellow">Yellow</span>
+            <span class="badge badge-solid-blue">Blue</span>
+            <span class="badge badge-solid-red">Red</span>
+            <span class="badge badge-solid-dark">Dark</span>
+            <span class="badge badge-solid-light">Light</span>
+        </div>
+        <div class="bloque__codigo container width-60">
+            <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                <div class="row justify-content-between margin-8 border-bottom-">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block">
+                    &lt;!--Ejemplo de uso!--&gt;
+                    &lt;span class="badge badge-solid-magenta"&gt;Magenta&lt;/span&gt;
+                    &lt;span class="badge badge-solid-yellow"&gt;Yellow&lt;/span&gt;
+                    &lt;span class="badge badge-solid-blue"&gt;Blue&lt;/span&gt;
+                    &lt;span class="badge badge-solid-red"&gt;Red&lt;/span&gt;
+                    &lt;span class="badge badge-solid-dark"&gt;Dark&lt;/span&gt;
+                    &lt;span class="badge badge-solid-light"&gt;Light&lt;/span&gt;
+            </code></pre>
+
+            </div>
+        </div>
+        <p>Para generar los badges, incluye la clase badge y luego su variante de estilo y color</p>
+
+        <!-- BADGE OUTLINE -->
+
+        <h5 class="text-center margin-12">Badge Outline</h5>
+        <div class="container badge-list margin-12 justify-content-center">
+            <span class="badge badge-outline-magenta">Magenta</span>
+            <span class="badge badge-outline-yellow">Yellow</span>
+            <span class="badge badge-outline-blue">Blue</span>
+            <span class="badge badge-outline-red">Red</span>
+            <span class="badge badge-outline-dark">Dark</span>
+            <span class="badge badge-outline-light">Light</span>
+        </div>
+        <div class="bloque__codigo container width-60">
+            <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                <div class="row justify-content-between margin-8 border-bottom-">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block">
+                    &lt;!--Ejemplo de uso!--&gt;
+                    &lt;span class="badge badge-outline-magenta"&gt;Magenta&lt;/span&gt;
+                    &lt;span class="badge badge-outline-yellow"&gt;Yellow&lt;/span&gt;
+                    &lt;span class="badge badge-outline-blue"&gt;Blue&lt;/span&gt;
+                    &lt;span class="badge badge-outline-red"&gt;Red&lt;/span&gt;
+                    &lt;span class="badge badge-outline-dark"&gt;Dark&lt;/span&gt;
+                    &lt;span class="badge badge-outline-light"&gt;Light&lt;/span&gt;
+            </code></pre>
+            </div>
+        </div>
+
+        <!-- BADGE CON FONDO CLARO -->
+        <h5 class="text-center margin-12">Badge con fondo claro (por defecto)</h5>
+        <div class="container badge-list margin-12 justify-content-center">
+            <span class="badge badge-magenta">Magenta</span>
+            <span class="badge badge-yellow">Yellow</span>
+            <span class="badge badge-blue">Blue</span>
+            <span class="badge badge-red">Red</span>
+            <span class="badge badge-dark">Dark</span>
+            <span class="badge badge-light">Light</span>
+        </div>
+        <div class="bloque__codigo container width-60">
+            <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                <div class="row justify-content-between margin-8 border-bottom-">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <pre><code class="code__block">
+                    &lt;!--Ejemplo de uso!--&gt;
+                    &lt;span class="badge badge-magenta"&gt;Magenta&lt;/span&gt;
+                    &lt;span class="badge badge-yellow"&gt;Yellow&lt;/span&gt;
+                    &lt;span class="badge badge-blue"&gt;Blue&lt;/span&gt;
+                    &lt;span class="badge badge-red"&gt;Red&lt;/span&gt;
+                    &lt;span class="badge badge-dark"&gt;Dark&lt;/span&gt;
+                    &lt;span class="badge badge-light"&gt;Light&lt;/span&gt;
+            </code></pre>
+            </div>
+        </div>
+
+        <!-- BADGE CON ICONO PERSONALIZADO -->
+        <h5 class="text-center margin-12">Badge con icono personalizado</h5>
+        <p class="font-style-italic text-center">Puedes personalizar tus badges agregando iconos de cualquier fuente,
+            haciéndolos más descriptivos y visualmente atractivos.</p>
+        <p class="text-center">En este caso, utilizaremos iconos de <a href="https://boxicons.com/">Boxicons</a>, que
+            puedes integrar fácilmente en tus páginas utilizando el siguiente link</p>
+        <div class="bloque__codigo container width-60">
+            <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                <div class="row justify-content-between margin-8 border-bottom-">
+                    <div>ENLACE</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+                </div>
+                <code class="code__block text-center">
+                    &lt;link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'&gt;
+                </code>
+            </div>
+        </div>
+
+        <div class="container badge-list margin-12 justify-content-center">
+            <span class="badge badge-outline-red"> <i class='bx bx-home' style='color:#b80303'></i>Home</span>
+            <span class="badge badge-magenta"><i class='bx bxs-check-circle' style='color:#c0189b'></i>Success</span>
+            <span class="badge badge-solid-blue"><i class='bx bx-images' style='color:#ffffff'></i>Images</span>
+        </div>
+        <div class="bloque__codigo container width-60">
+            <div class="code__copy container-card " style=" font-family: Consolas, monospace;">
+                <div class="row justify-content-between margin-8 border-bottom-">
+                    <div>CÓDIGO</div>
+                    <button class="copy__clipboard border-none margin-right-12 border-radius-4"
+                        onclick="copiarCodigo(this)" padding-8">
+                        <i class='bx bx-clipboard' style='color:#000000'></i> Copiar
+                    </button>
+
+                    <code class="code__block">
+                        &lt;span class="badge badge-outline-red"&gt; &lt;i class='bx bx-home' style='color:#b80303'&gt;&lt;/i&gt;Home&lt;/span&gt;<br>
+                        &lt;span class="badge badge-magenta"&gt;&lt;i class='bx bxs-check-circle' style='color:#c0189b'&gt;&lt;/i&gt;Success&lt;/span&gt;<br>
+                        &lt;span class="badge badge-solid-blue"&gt;&lt;i class='bx bx-images' style='color:#ffffff'&gt;&lt;/i&gt;Images&lt;/span&gt;<br>
+                  </code>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
