@@ -255,7 +255,9 @@ $font-style-normal: normal;
 /*=====================
          BORDES
 =====================*/
-
+.border-none {
+  border: none;
+}
 .border-1 {
     border: 1px solid black;
 }
@@ -389,4 +391,22 @@ $font-style-normal: normal;
 }
 .order-12{
   order: 12;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-inline.flex {
+  display: inline-flex !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-grid{
+  display: grid !important;
+}
+.d-inline-grid{
+  display: inline-block !important;
 }
