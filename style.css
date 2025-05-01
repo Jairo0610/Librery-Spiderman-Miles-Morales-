@@ -13,11 +13,12 @@ h3{
 }
 .sidebar {
   width: 230px;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-color: #0e1621;
   padding-top: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
 }
+
 .sidebar a {
   display: block;
   padding: 15px 25px;
@@ -26,14 +27,15 @@ h3{
   font-size: 17px;
   transition: 0.3s;
 }
+
 .sidebar a:hover {
   background-color: #1a252f;
   color: #fff;
 }
+
 .contenido {
-  margin-top: 70px; /* espacio del navbar */
-  margin-left: 230px; /* espacio del sidebar */
   padding: 30px;
+  /* ya NO usar margin-left */
 }
 .main__head__logo{
   padding: 10px;
