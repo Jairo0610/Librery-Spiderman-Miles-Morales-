@@ -7,6 +7,7 @@ Yanira Verenice Martínez Aguilar Ma22013
 Fatima Arely Cruz Marquez CM23015
 Jairo Alexander Argueta Alvarenga AA23027
 Javier Orlando Colocho Bolainez CB23001
+
 ##¿Cómo instalarla?
 
 La instalación de la libreria es algo muy sencillo:
