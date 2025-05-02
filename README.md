@@ -3,7 +3,7 @@
 Una librería de componentes frontend inspirada en la estética vibrante y urbana de **Miles Morales / Spider-Man**, creada para proyectos modernos con un estilo oscuro, elegante y llamativo.
 
 #Enlace de página de githubpages
-https://jairo0610.github.io/Librery-Spiderman-Miles-Morales-/Sections/navbar.html
+https://jairo0610.github.io/Librery-Spiderman-Miles-Morales-/index.html
 
 # Integrantes
 Yanira Verenice Martínez Aguilar Ma22013,
