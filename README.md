@@ -48,3 +48,9 @@ Y listo, ya puedes utilizar todos los componentes de la libreria.
 
 ![ejemplo navbar](img/readme/Tarjeta1.png)
 ![ejemplo navbar](img/readme/Tarjeta2.png)
+
+### Contenedores
+
+![ejemplo navbar](img/readme/container1.png)
+![ejemplo navbar](img/readme/container2.png)
+![ejemplo navbar](img/readme/container3.png)
